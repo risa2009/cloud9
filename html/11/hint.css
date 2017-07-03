@@ -1,0 +1,35 @@
+body{
+    min-width: 960px;
+}
+header {
+    background: red;
+}
+main{
+    background-color: #f5f5dd;
+}
+.contents{
+    display: flex;
+}
+.left_flex{
+    flex-basis: 150px;
+    background-color: green;
+}
+.center_flex{
+    flex-grow: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: gray;
+}
+.right_flex{
+    flex-basis: 154px;
+    background-color: pink;
+}
+footer {
+    background-color: yellow;
+}
+
+.container{
+    width: 960px;
+    margin: 0 auto;
+    border: 1px solid black;
+}

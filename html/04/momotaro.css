@@ -1,0 +1,14 @@
+body {
+  background-color: #000000;
+}
+h1 {
+  color: #FF0000;
+  font-size: 24px;
+  text-align: center;
+  border-top: dashed 3px #FFFFFF;
+  border-bottom: dashed 3px #FFFFFF;
+}
+p {
+  color: #FFFFFF;
+  font-size: 16px;
+}

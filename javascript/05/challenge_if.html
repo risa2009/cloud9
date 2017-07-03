@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+<script>
+　// 0~9のランダムな数字を取得
+　var rand = Math.floor(Math.random() * 8);
+　document.write('<p>rand: ' + rand + '</p>');
+　// 2で割り余りが0なら偶数、そうでなければ奇数と判定する
+　if (rand % 2 == 0) {
+　    document.write('<p>偶数</p>');
+　// それ以外の場合
+　} else {
+　    document.write('<p>奇数</p>');
+　}
+</script>
+</body>
+</html>

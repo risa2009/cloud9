@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  width :960px ;
+}
+main {
+  border: solid 2px;
+  display: flex;
+}
+img {
+  width: 300px;
+}

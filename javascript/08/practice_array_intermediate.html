@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+<script>
+  var data1 = [59, 39, 100, 2, 15, 40, 84, 97];
+  var data2 = [];
+   // 配列データの表示
+  for (var i = 0; i < data1.length; i++) {
+      document.write(data1[i] + '<br />');
+   // 40未満の数値を入れる
+   if (data1[i] < 40) {
+       data2.push(data1[i]);
+   }
+  }
+  document.write('<p>40点未満の人は' + data2.length + '人です</p>');
+</script>
+</body>
+</html>
+
+("<p>data1：" + data1[i] + "</p>");

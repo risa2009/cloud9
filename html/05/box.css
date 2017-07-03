@@ -1,0 +1,10 @@
+body {
+   border: solid 3px #000000;
+   margin: 0px;
+   padding: 20px;
+}
+p {
+   border: solid 3px #0000ff;
+   margin: 20px;
+   padding: 20px;
+}

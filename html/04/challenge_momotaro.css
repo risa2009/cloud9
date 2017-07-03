@@ -1,0 +1,17 @@
+body {
+  background-color: #FFFFFF;
+}
+h1 {
+  color: #0000FF;
+  font-size: 24px;
+  text-align: center;
+  border-top: dotted 3px #0000FF;
+  border-bottom: dotted 3px #0000FF;
+}
+p {
+  color: #000000;
+  font-size: 16px;
+}
+a {
+  font-size: 16px;
+}

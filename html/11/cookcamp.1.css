@@ -1,0 +1,137 @@
+body{
+    min-width: 960px;
+}
+header {
+    background: #FFFFFF;
+    color: #664433;
+    border-bottom: solid 1px #cccccc;
+}
+main{
+    background-color: #f5f5dd; /*背景色*/
+}
+.contents {
+    display: flex;
+    margin: 0px;
+}
+.left-navi {
+    display: block;
+    flex-basis: 300px;
+    background-color: #FFFFFF;
+    line-height: 160%;
+    height: 300px;
+}
+.center {
+    flex-grow: 1;
+    background-color: #FFFFFF;
+}
+.right { 
+    flex-basis: 154px;
+    background-color: #FFFFFF;
+    display: block;
+}
+footer {
+    background-color: #FFFFFF;
+    border-top: solid 1px #cccccc;
+    text-align: center;
+}
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+ul.navi {
+    list-style-type: none;
+    display: flex;
+    padding: 5px; /*メニュー文字の余白*/
+}
+li.navi {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid black; /*右に見た目上区切りの線*/
+}
+li:last-child {
+  border-right: 0;
+}
+.cooking-form {
+    display: flex;
+    justify-content: flex-end; /*フォーム右寄せ*/
+}
+a {
+  text-decoration: none;  /*リンクの下線消し*/
+  color: #664433;
+}
+.mainvie-img img {
+  width:960px;
+  height: auto;
+}
+h1 {
+  background-image: url(dish.png);
+  background-color: #99bb22;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  padding-left: 30px;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-position: 1%
+}
+.new {
+    display: flex;
+    justify-content: space-around;
+    font-size: 80%;
+}
+.name {
+  border-bottom:dotted 1px #cccccc;
+  background-image: url(arrow.png);
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  padding-left: 20px;
+  margin: 5px;
+}
+p {
+    display: block;
+    color: #664433;
+    font-size: 85%;
+    text-indent: 10px; /*先頭文字を一文字下げる*/
+    margin: 10px;
+    padding: 0px;
+}
+
+h2 {
+    color: #664433;
+}
+.next {
+    color: #fc8833;
+    background-image: url(arrow.png);
+    background-repeat: no-repeat;
+    text-align: right;
+}
+ul.footer-navi {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px; /*メニュー文字の余白*/
+}
+li.footer-navi {
+    text-align: center;
+    border-right: 1px solid black;
+    font-size: 80%;
+}
+li:last-child {
+  border-right: 0;
+}
+.newrecipes {
+    margin: 10px 10px 10px 10px;
+}
+.special {
+    margin-bottom: 0px;
+}
+.recommend {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.recommen2 {
+    margin-top: 30px;
+}
+.special-text {
+    padding-left: 10px;
+}

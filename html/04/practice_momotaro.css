@@ -1,0 +1,35 @@
+body {
+  background-color: #ffffe0;
+}
+
+h1 {
+  background-color: #6495ED;
+  color: #0000FF;
+  font-size: 20px;
+  text-align: center;
+  border-top: dotted 3px #0000FF;
+  border-bottom: dotted 3px #0000FF;
+}
+
+p {
+  color: #000000;
+  font-size: 16px;
+}
+
+ul {
+   list-style-type: square;
+}
+
+h2 {
+  color: #0000FF;
+  font-size: 20px;
+  text-align: center;
+  border-top: dotted 3px #0000FF;
+  border-bottom: dotted 3px #0000FF;
+  background-color: #99cc00;
+}
+
+a {
+  color: #FF1493;
+  font-size: 16px;
+}

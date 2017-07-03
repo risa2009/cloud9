@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+<script>
+ var rand1 = Math.floor(Math.random() * 100);
+ var rand2 = Math.floor(Math.random() * 100);
+ var rand3 = Math.floor(Math.random() * 100);
+ document.write('<p>rand1: ' + rand1 + '</p>');
+ document.write('<p>rand2: ' + rand2 + '</p>');
+ document.write('<p>rand3: ' + rand3 + '</p>');
+ // rend1が1番大きい場合
+ if (rand1 > rand2 || rand1 > rand3) {
+     document.write('<p>一番大きい数値: ' + rand1 + '</p>');
+ // rand2が1番大きい場合
+ } else if (rand2 > rand1 || rand2 > rand3) {
+     document.write('<p>一番大きい数値: ' + rand2 + '</p>');
+ // rand3が1番大きい場合
+ } else if (rand3 > rand1 || rand3 > rand2) {
+     document.write('<p>一番大きい数値: ' + rand3 + '</p>');
+ }
+</script>
+</body>
+</html>

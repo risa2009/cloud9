@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ITアンケート</title>
+</head>
+<body>
+  <h1>ITアンケート</h1>
+  <form action="#">
+   <p>
+     <label for="name">お名前: </label>
+     <input type="text" name="name" id="name">
+   </p>
+   <p>
+     <label for="mail">メールアドレス: </label>
+     <input type="email" name="mail" id="mail">
+   </p>
+   <p>
+     <label for="tel">電話番号: </label>
+     <input type="text" name="tel" id="tel" maxlength="11">
+   </p>
+   <p>
+     現在のHTMLの理解度を教えてください:
+     <input type="radio" name="gender" value="man">低い
+     <input type="radio" name="gender" value="woman">普通
+     <input type="radio" name="gender" value="woman">高い
+   </p>
+　 <p>
+     現在のCSSの理解度を教えてください:
+     <input type="radio" name="gender" value="man">低い
+     <input type="radio" name="gender" value="woman">普通
+     <input type="radio" name="gender" value="woman">高い
+   </p>
+　 <p>
+     聞いたことがあるプログラミング言語を選択してください(複数選択可):
+     <input type="checkbox" name="gender" value="man">C
+     <input type="checkbox" name="gender" value="woman">Java
+     <input type="checkbox" name="gender" value="woman">PHP
+     <input type="checkbox" name="gender" value="woman">Ruby
+     <input type="checkbox" name="gender" value="woman">Java Script
+   </p>
+   <p>
+     <input type="submit" value="送信">
+   </p>
+  </form>
+</body>
+</html>

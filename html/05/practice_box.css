@@ -1,0 +1,56 @@
+body {
+  margin: 10px;
+  padding: 20px;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px solid #FFB6C1;
+  width: 800px;
+}
+
+h2 {
+margin: 0; /* 見出しのマージン */
+padding: 6px 10px; /* 見出しのパディング（上下、左右） */
+background-color: #FFB6C1; /* 見出しの背景色 */
+border-bottom: 1px #FFB6C1 solid; /* 見出しの下境界線 */
+font-size: 100%; /* 見出しの文字サイズ */
+}
+
+.prof-1 {
+width: 500px; /* ボックスの幅 */
+background-color: #ffffff; /* ボックスの背景色 */
+border: 1px #c0c0c0 solid; /* ボックスの境界線 */
+font-size: 80%; /* ボックスの文字サイズ */
+margin: 0 auto;
+line-height: 160%;
+margin-bottom: 20px;
+}
+
+.name {
+    border-bottom:dotted 1px #0000FF;
+}
+
+.prof-2 {
+width: 500px; /* ボックスの幅 */
+background-color: #ffffff; /* ボックスの背景色 */
+border: 1px #c0c0c0 solid; /* ボックスの境界線 */
+font-size: 80%; /* ボックスの文字サイズ */
+margin: 0 auto;
+line-height: 160%;
+margin-bottom: 20px;
+}
+
+.close {
+width: 500px; /* ボックスの幅 */
+background-color: #FFB6C1; /* ボックスの背景色 */
+border: 1px #c0c0c0 solid; /* ボックスの境界線 */
+margin: 0 auto;
+font-weight:700;
+}
+
+a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration:none;
+}

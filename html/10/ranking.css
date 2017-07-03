@@ -1,0 +1,6 @@
+.ranking {
+    background-image: url(ranking.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
