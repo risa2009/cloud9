@@ -1,4 +1,5 @@
 <?php
+/* 最終課題の商品管理ページ */
    $host     = 'localhost';
    $username = 'risayamasaki';   // MySQLのユーザ名
    $password = '';       // MySQLのパスワード
@@ -25,6 +26,7 @@ if ($sql_kind === 'insert') {
 
   $new_name   = '';
   $new_price  = '';
+  $new_stock  = '';
   $new_img    = '';
 
   if (isset($_POST['new_name']) === TRUE) {
@@ -35,6 +37,11 @@ if ($sql_kind === 'insert') {
   if (isset($_POST['new_price']) === TRUE) {
     // 半角・全角空白のトリム
     $new_price = preg_replace('/\A[　\s]*|[　\s]*\z/u', '', $_POST['new_price']);
+  }
+  
+  if (isset($_POST['new_stock']) === TRUE) {
+    // 半角・全角空白のトリム
+    $new_stock = preg_replace('/\A[　\s]*|[　\s]*\z/u', '', $_POST['new_stock']);
   }
 
   //  HTTP POST でファイルがアップロードされたか確認
@@ -75,6 +82,21 @@ if ($sql_kind === 'insert') {
   } else {
     $err_msg[] = 'ファイルを選択してください。';
   }
+// 変更の場合の入力項目チェック
+} else if ($sql_kind === 'update') {
+    
+  $update_stock = '';
+  $drink_id     = '';
+  
+  if (isset($_POST['update_stock']) === TRUE) {
+    // 半角・全角空白のトリム
+    $update_stock = preg_replace('/\A[　\s]*|[　\s]*\z/u', '', $_POST['update_stock']);
+  }
+  
+  if (isset($_POST['drink_id']) === TRUE) {
+    $drink_id = $_POST['drink_id'];
+  }
+  
 }
 
 try {
@@ -84,43 +106,49 @@ try {
   $dbh->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 
   if (count($err_msg) === 0 && $_SERVER['REQUEST_METHOD'] === 'POST') {
-    
+      
     // 現在日時を取得
     $now_date = date('Y-m-d H:i:s');
 
     // 商品追加の場合
     if ($sql_kind === 'insert') {
-
+      
       try {
         // SQL文を作成
-        $sql = 'INSERT INTO test_drink_master (drink_name, price, img, create_datetime) VALUES (?, ?, ?, ?)';
+        $sql = 'INSERT INTO items (name, price, img, status, stock, create_datetime) VALUES (?, ?, ?, ?, ?, ?)';
         // SQL文を実行する準備
         $stmt = $dbh->prepare($sql);
         // SQL文のプレースホルダに値をバインド
         $stmt->bindValue(1, $new_name,    PDO::PARAM_STR);
         $stmt->bindValue(2, $new_price,   PDO::PARAM_INT);
         $stmt->bindValue(3, $new_img,     PDO::PARAM_STR);
+        $stmt->bindValue(3, $new_status,  PDO::PARAM_INT);
+        $stmt->bindValue(3, $new_stock,   PDO::PARAM_INT);
         $stmt->bindValue(4, $now_date,    PDO::PARAM_STR);
         // SQLを実行
         $stmt->execute();
-
+        
+        // 表示メッセージの設定
         $result_msg =  '追加成功';
 
       } catch (PDOException $e) {
         // 例外をスロー
         throw $e;
       }
-    }
+    } 
   }
 
   try {
     // SQL文を作成
     $sql = 'SELECT 
-              test_drink_master.drink_id,
-              test_drink_master.drink_name,
-              test_drink_master.price,
-              test_drink_master.img
-            FROM test_drink_master';
+              items.id,
+              items.name,
+              items.price,
+              items.img,
+              items.status,
+              items.stock,
+            FROM items JOIN test_drink_stock
+            ON  test_drink_master.drink_id = test_drink_stock.drink_id';
     // SQL文を実行する準備
     $stmt = $dbh->prepare($sql);
     // SQLを実行
@@ -130,10 +158,11 @@ try {
     // 1行ずつ結果を配列で取得します
     $i = 0;
     foreach ($rows as $row) {
-      $data[$i]['drink_id']   = htmlspecialchars($row['drink_id'],   ENT_QUOTES, 'UTF-8');
-      $data[$i]['drink_name'] = htmlspecialchars($row['drink_name'], ENT_QUOTES, 'UTF-8');
+      $data[$i]['id']   = htmlspecialchars($row['id'],   ENT_QUOTES, 'UTF-8');
+      $data[$i]['name'] = htmlspecialchars($row['name'], ENT_QUOTES, 'UTF-8');
       $data[$i]['price']      = htmlspecialchars($row['price'],      ENT_QUOTES, 'UTF-8');
       $data[$i]['img']        = htmlspecialchars($row['img'],        ENT_QUOTES, 'UTF-8');
+      $data[$i]['stock']      = htmlspecialchars($row['stock'],        ENT_QUOTES, 'UTF-8');
       $i++;
     }
 
@@ -149,8 +178,8 @@ try {
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <title>自動販売機</title>
+ <meta charset="UTF-8">
+ <title>My Apron</title>
   <style>
     section {
       margin-bottom: 20px;
@@ -176,7 +205,7 @@ try {
       text-align: right;
     }
 
-    .drink_name_width {
+    .name_width_width {
       width: 100px;
     }
 
@@ -192,34 +221,50 @@ try {
 <?php foreach ($err_msg as $value) { ?>
   <p><?php print $value; ?></p>
 <?php } ?>
-  <h1>自動販売機管理ツール</h1>
+  <h1>My Apron 管理ページ</h1>
   <section>
-    <h2>新規商品追加</h2>
+    <h2>商品の登録</h2>
     <form method="post" enctype="multipart/form-data">
-      <div><label>名前: <input type="text" name="new_name" value=""></label></div>
-      <div><label>値段: <input type="text" name="new_price" value=""></label></div>
-      <div><input type="file" name="new_img"></div>
+      <div><label>商品名： <input type="text" name="new_name" value=""></label></div>
+      <div><label>値段： <input type="text" name="new_price" value=""></label></div>
+      <div><label>個数： <input type="text" name="new_stock" value=""></label></div>
+      <div><label>商品画像： <input type="file" name="new_img"></label></div>
+      <div><label>ステータス： <select name="new_status">
+        <option value="0">非公開</option><option value="1">公開</option></select></label></div>
       <input type="hidden" name="sql_kind" value="insert">
-      <div><input type="submit" value="商品を追加"></div>
+      <div><input type="submit" value="商品を登録する"></div>
     </form>
   </section>
   <section>
-    <h2>商品情報変更</h2>
+    <h2>商品情報の一覧・変更</h2>
     <table>
-      <caption>商品一覧</caption>
-      <tr>
-        <th>商品画像</th>
-        <th>商品名</th>
-        <th>価格</th>
-      </tr>
+     <tr>
+       <th>商品画像</th>
+       <th>商品名</th>
+       <th>価格</th>
+       <th>在庫数</th>
+       <th>ステータス</th>
+       <th>操作</th>
+     </tr>
 <?php foreach ($data as $value)  { ?>
-      <tr>
-        <form method="post">
-          <td><img src="<?php print $img_dir . $value['img']; ?>"></td>
-          <td class="drink_name_width"><?php print $value['drink_name']; ?></td>
-          <td class="text_align_right"><?php print $value['price']; ?>円</td>
-        </form>
-      <tr>
+     <tr>
+	<form method="post">
+		<td><img src="<?php print $img_dir . $value['img']; ?>"></td>
+		<td class="name_width"><?php print $value['name']; ?></td>
+		<td class="text_align_right"><?php print $value['price']; ?>円</td>
+		<td><input type="text"  class="input_text_width text_align_right" name="update_stock" value="<?php print $value['stock']; ?>">個&nbsp;&nbsp;<input type="submit" value="変更"></td>
+		<input type="hidden" name="drink_id" value="2">
+		<input type="hidden" name="sql_kind" value="update">
+	</form>
+	<form method="post">
+		<td><input type="submit" value="公開 → 非公開"></td>
+		<input type="hidden" name="change_status" value="0">
+		<input type="hidden" name="drink_id" value="2">
+		<input type="hidden" name="sql_kind" value="change">
+	</form>
+	<form method="post">
+	    <td><input type="submit" value="削除"></td>
+　　 </tr>
 <?php } ?>
     </table>
   </section>

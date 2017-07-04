@@ -107,11 +107,11 @@ try {
 
   if (count($err_msg) === 0 && $_SERVER['REQUEST_METHOD'] === 'POST') {
 
+    // 現在日時を取得
+    $now_date = date('Y-m-d H:i:s');
+
     // 商品追加の場合
     if ($sql_kind === 'insert') {
-      
-       // 現在日時を取得
-    $now_date = date('Y-m-d H:i:s');
       
       // トランザクション開始
       $dbh->beginTransaction();
