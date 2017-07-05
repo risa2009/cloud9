@@ -1,11 +1,13 @@
 <?php
-/* トランザクションの方の課題 */
-   $host     = 'localhost';
-   $username = 'risayamasaki';   // MySQLのユーザ名
-   $password = '';       // MySQLのパスワード
-   $dbname   = 'camp';   // MySQLのDB名
-   $charset  = 'utf8';   // データベースの文字コード
-   
+/* トランザクションの課題 */
+
+// MySQL接続情報
+$host     = 'localhost';
+$username = 'risayamasaki';   // MySQLのユーザ名
+$password = '';       // MySQLのパスワード
+$dbname   = 'camp';   // MySQLのDB名
+$charset  = 'utf8';   // データベースの文字コード
+
 // MySQL用のDNS文字列
 $dsn = 'mysql:dbname='.$dbname.';host='.$host.';charset='.$charset;
 
@@ -38,7 +40,7 @@ if ($sql_kind === 'insert') {
     // 半角・全角空白のトリム
     $new_price = preg_replace('/\A[　\s]*|[　\s]*\z/u', '', $_POST['new_price']);
   }
-  
+
   if (isset($_POST['new_stock']) === TRUE) {
     // 半角・全角空白のトリム
     $new_stock = preg_replace('/\A[　\s]*|[　\s]*\z/u', '', $_POST['new_stock']);
@@ -82,21 +84,22 @@ if ($sql_kind === 'insert') {
   } else {
     $err_msg[] = 'ファイルを選択してください。';
   }
+
 // 変更の場合の入力項目チェック
 } else if ($sql_kind === 'update') {
-    
+
   $update_stock = '';
   $drink_id     = '';
-  
+
   if (isset($_POST['update_stock']) === TRUE) {
     // 半角・全角空白のトリム
     $update_stock = preg_replace('/\A[　\s]*|[　\s]*\z/u', '', $_POST['update_stock']);
   }
-  
+
   if (isset($_POST['drink_id']) === TRUE) {
     $drink_id = $_POST['drink_id'];
   }
-  
+    
 }
 
 try {
@@ -112,7 +115,7 @@ try {
 
     // 商品追加の場合
     if ($sql_kind === 'insert') {
-      
+
       // トランザクション開始
       $dbh->beginTransaction();
 
@@ -128,21 +131,21 @@ try {
         $stmt->bindValue(4, $now_date,    PDO::PARAM_STR);
         // SQLを実行
         $stmt->execute();
-        
+
         // INSERTされたデータのIDを取得
         $drink_id = $dbh->lastInsertId('drink_id');
-        
+
         // SQL文を作成
         $sql = 'INSERT INTO test_drink_stock (drink_id, stock, create_datetime) VALUES (?, ?, ?)';
         // SQL文を実行する準備
         $stmt = $dbh->prepare($sql);
         // SQL文のプレースホルダに値をバインド
-        $stmt->bindValue(1, $drink_id, PDO::PARAM_INT);
-        $stmt->bindValue(2, $new_stock, PDO::PARAM_STR);
-        $stmt->bindValue(3, $now_date, PDO::PARAM_STR);
+        $stmt->bindValue(1, $drink_id,    PDO::PARAM_INT);
+        $stmt->bindValue(2, $new_stock,   PDO::PARAM_STR);
+        $stmt->bindValue(3, $now_date,    PDO::PARAM_STR);
         // SQLを実行
         $stmt->execute();
-        // コミット処理
+        // コミット
         $dbh->commit();
         // 表示メッセージの設定
         $result_msg =  '追加成功';
@@ -154,17 +157,17 @@ try {
     } else if ($sql_kind === 'update') {
       try {
         // SQL文を作成
-        $sql = 'UPDATE test_drink_stock SET stock = ? , update_datetime = ? WHERE drink_id = ?';
-        // SQL文の実行する準備
+        $sql = 'UPDATE test_drink_stock SET stock = ?, update_datetime = ? WHERE drink_id = ?';
+        // SQL文を実行する準備
         $stmt = $dbh->prepare($sql);
         // SQL文のプレースホルダに値をバインド
-        $stmt->bindValue(1, $update_stock, PDO::PARAM_INT);
-        $stmt->bindValue(2, $now_date, PDO::PARAM_STR);
-        $stmt->bindValue(3, $drink_id, PDO::PARAM_INT);
+        $stmt->bindValue(1, $update_stock,    PDO::PARAM_INT);
+        $stmt->bindValue(2, $now_date,        PDO::PARAM_STR);
+        $stmt->bindValue(3, $drink_id,        PDO::PARAM_INT);
         // SQLを実行
         $stmt->execute();
         // 表示メッセージの設定
-        $result_msg = '在庫変更しました';
+        $result_msg = '在庫変更成功';
       } catch (PDOException $e) {
         // ロールバック処理
         $dbh->rollback();
@@ -197,7 +200,7 @@ try {
       $data[$i]['drink_name'] = htmlspecialchars($row['drink_name'], ENT_QUOTES, 'UTF-8');
       $data[$i]['price']      = htmlspecialchars($row['price'],      ENT_QUOTES, 'UTF-8');
       $data[$i]['img']        = htmlspecialchars($row['img'],        ENT_QUOTES, 'UTF-8');
-      $data[$i]['stock']      = htmlspecialchars($row['stock'],        ENT_QUOTES, 'UTF-8');
+      $data[$i]['stock']      = htmlspecialchars($row['stock'],      ENT_QUOTES, 'UTF-8');
       $i++;
     }
 

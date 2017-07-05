@@ -1,10 +1,10 @@
 <?php
 /* 最終課題の商品管理ページ */
-   $host     = 'localhost';
-   $username = 'risayamasaki';   // MySQLのユーザ名
-   $password = '';       // MySQLのパスワード
-   $dbname   = 'camp';   // MySQLのDB名
-   $charset  = 'utf8';   // データベースの文字コード
+ $host     = 'localhost';
+ $username = 'risayamasaki';   // MySQLのユーザ名
+ $password = '';       // MySQLのパスワード
+ $dbname   = 'camp';   // MySQLのDB名
+ $charset  = 'utf8';   // データベースの文字コード
    
 // MySQL用のDNS文字列
 $dsn = 'mysql:dbname='.$dbname.';host='.$host.';charset='.$charset;
@@ -27,21 +27,33 @@ if ($sql_kind === 'insert') {
   $new_name   = '';
   $new_price  = '';
   $new_stock  = '';
+  $new_status = '';
   $new_img    = '';
 
-  if (isset($_POST['new_name']) === TRUE) {
+  if (isset($_POST['new_name']) !== TRUE || mb_strlen($_POST['new_name']) ===0) {
+    $err_msg[] = "商品名を入力してください。";
+  }else{
     // 半角・全角空白のトリム
     $new_name = preg_replace('/\A[　\s]*|[　\s]*\z/u', '', $_POST['new_name']);
   }
 
-  if (isset($_POST['new_price']) === TRUE) {
+  if (isset($_POST['new_price']) !== TRUE || mb_strlen($_POST['new_price']) ===0) {
+    $err_msg[] = "値段を入力してください。";
+  }else{
     // 半角・全角空白のトリム
     $new_price = preg_replace('/\A[　\s]*|[　\s]*\z/u', '', $_POST['new_price']);
   }
   
-  if (isset($_POST['new_stock']) === TRUE) {
+  if (isset($_POST['new_stock']) === TRUE || mb_strlen($_POST['new_stock']) ===0) {
+    $err_msg[] = "個数を入力してください。";
+  }else{
     // 半角・全角空白のトリム
     $new_stock = preg_replace('/\A[　\s]*|[　\s]*\z/u', '', $_POST['new_stock']);
+  }
+  
+  if (isset($_POST['new_status']) === TRUE) {
+    // 半角・全角空白のトリム
+    $new_stock = preg_replace('/\A[　\s]*|[　\s]*\z/u', '', $_POST['new_status']);
   }
 
   //  HTTP POST でファイルがアップロードされたか確認
@@ -86,15 +98,15 @@ if ($sql_kind === 'insert') {
 } else if ($sql_kind === 'update') {
     
   $update_stock = '';
-  $drink_id     = '';
+  $item_id     = '';
   
   if (isset($_POST['update_stock']) === TRUE) {
     // 半角・全角空白のトリム
     $update_stock = preg_replace('/\A[　\s]*|[　\s]*\z/u', '', $_POST['update_stock']);
   }
   
-  if (isset($_POST['drink_id']) === TRUE) {
-    $drink_id = $_POST['drink_id'];
+  if (isset($_POST['item_id']) === TRUE) {
+    $item_id = $_POST['item_id'];
   }
   
 }
@@ -122,9 +134,9 @@ try {
         $stmt->bindValue(1, $new_name,    PDO::PARAM_STR);
         $stmt->bindValue(2, $new_price,   PDO::PARAM_INT);
         $stmt->bindValue(3, $new_img,     PDO::PARAM_STR);
-        $stmt->bindValue(3, $new_status,  PDO::PARAM_INT);
-        $stmt->bindValue(3, $new_stock,   PDO::PARAM_INT);
-        $stmt->bindValue(4, $now_date,    PDO::PARAM_STR);
+        $stmt->bindValue(4, $new_status,  PDO::PARAM_INT);
+        $stmt->bindValue(5, $new_stock,   PDO::PARAM_INT);
+        $stmt->bindValue(6, $now_date,    PDO::PARAM_STR);
         // SQLを実行
         $stmt->execute();
         
@@ -135,34 +147,53 @@ try {
         // 例外をスロー
         throw $e;
       }
-    } 
-  }
-
+    } else if ($sql_kind === 'update') {
+    try {
+     // SQL文を作成
+     $sql = 'UPDATE items SET stock = ?, update_datetime = ? WHERE item_id = ?';
+     // SQL文を実行する準備
+     $stmt = $dbh->prepare($sql);
+     // SQL文のプレースホルダに値をバインド
+     $stmt->bindValue(1, $update_stock, PDO::PARAM_INT);
+     $stmt->bindValue(2, $now_date,     PDO::PARAM_STR);
+     $stmt->bindValue(3, $item_id,      PDO::PARAM_INT);
+     // SQLを実行
+     $stmt->execute();
+     // 表示メッセージの設定
+     $result_msg = '在庫変更成功';
+    } catch (PDOException $e) {
+     // 例外をスロー
+     throw $e;
+    }
+  } 
+  } 
+  
   try {
     // SQL文を作成
     $sql = 'SELECT 
-              items.id,
+              items.item_id,
               items.name,
               items.price,
               items.img,
               items.status,
-              items.stock,
-            FROM items JOIN test_drink_stock
-            ON  test_drink_master.drink_id = test_drink_stock.drink_id';
+              items.stock
+            FROM items';
     // SQL文を実行する準備
     $stmt = $dbh->prepare($sql);
     // SQLを実行
     $stmt->execute();
     // レコードの取得
     $rows = $stmt->fetchAll();
+
     // 1行ずつ結果を配列で取得します
     $i = 0;
     foreach ($rows as $row) {
-      $data[$i]['id']   = htmlspecialchars($row['id'],   ENT_QUOTES, 'UTF-8');
-      $data[$i]['name'] = htmlspecialchars($row['name'], ENT_QUOTES, 'UTF-8');
-      $data[$i]['price']      = htmlspecialchars($row['price'],      ENT_QUOTES, 'UTF-8');
-      $data[$i]['img']        = htmlspecialchars($row['img'],        ENT_QUOTES, 'UTF-8');
-      $data[$i]['stock']      = htmlspecialchars($row['stock'],        ENT_QUOTES, 'UTF-8');
+      $data[$i]['item_id']   = htmlspecialchars($row['item_id'],   ENT_QUOTES, 'UTF-8');
+      $data[$i]['name']      = htmlspecialchars($row['name'],      ENT_QUOTES, 'UTF-8');
+      $data[$i]['price']     = htmlspecialchars($row['price'],     ENT_QUOTES, 'UTF-8');
+      $data[$i]['img']       = htmlspecialchars($row['img'],       ENT_QUOTES, 'UTF-8');
+      $data[$i]['status']    = htmlspecialchars($row['status'],    ENT_QUOTES, 'UTF-8');
+      $data[$i]['stock']     = htmlspecialchars($row['stock'],     ENT_QUOTES, 'UTF-8');
       $i++;
     }
 
@@ -253,13 +284,13 @@ try {
 		<td class="name_width"><?php print $value['name']; ?></td>
 		<td class="text_align_right"><?php print $value['price']; ?>円</td>
 		<td><input type="text"  class="input_text_width text_align_right" name="update_stock" value="<?php print $value['stock']; ?>">個&nbsp;&nbsp;<input type="submit" value="変更"></td>
-		<input type="hidden" name="drink_id" value="2">
+		<input type="hidden" name="item_id" value="2">
 		<input type="hidden" name="sql_kind" value="update">
 	</form>
 	<form method="post">
 		<td><input type="submit" value="公開 → 非公開"></td>
 		<input type="hidden" name="change_status" value="0">
-		<input type="hidden" name="drink_id" value="2">
+		<input type="hidden" name="item_id" value="2">
 		<input type="hidden" name="sql_kind" value="change">
 	</form>
 	<form method="post">

@@ -1,0 +1,24 @@
+[05-Jul-2017 14:52:35 Asia/Tokyo] PHP Notice:  Undefined variable: new_stock in /home/ubuntu/workspace/MyApron/tool.php on line 151
+[05-Jul-2017 14:52:35 Asia/Tokyo] PHP Stack trace:
+[05-Jul-2017 14:52:35 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/tool.php:0
+[05-Jul-2017 15:09:06 Asia/Tokyo] PHP Notice:  Undefined index: update_stock in /home/ubuntu/workspace/MyApron/tool.php on line 280
+[05-Jul-2017 15:09:06 Asia/Tokyo] PHP Stack trace:
+[05-Jul-2017 15:09:06 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/tool.php:0
+[05-Jul-2017 15:09:06 Asia/Tokyo] PHP Notice:  Undefined index: update_stock in /home/ubuntu/workspace/MyApron/tool.php on line 280
+[05-Jul-2017 15:09:06 Asia/Tokyo] PHP Stack trace:
+[05-Jul-2017 15:09:06 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/tool.php:0
+[05-Jul-2017 15:09:06 Asia/Tokyo] PHP Notice:  Undefined index: update_stock in /home/ubuntu/workspace/MyApron/tool.php on line 280
+[05-Jul-2017 15:09:06 Asia/Tokyo] PHP Stack trace:
+[05-Jul-2017 15:09:06 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/tool.php:0
+[05-Jul-2017 15:09:06 Asia/Tokyo] PHP Notice:  Undefined index: update_stock in /home/ubuntu/workspace/MyApron/tool.php on line 280
+[05-Jul-2017 15:09:06 Asia/Tokyo] PHP Stack trace:
+[05-Jul-2017 15:09:06 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/tool.php:0
+[05-Jul-2017 15:09:06 Asia/Tokyo] PHP Notice:  Undefined index: update_stock in /home/ubuntu/workspace/MyApron/tool.php on line 280
+[05-Jul-2017 15:09:06 Asia/Tokyo] PHP Stack trace:
+[05-Jul-2017 15:09:06 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/tool.php:0
+[05-Jul-2017 15:09:06 Asia/Tokyo] PHP Notice:  Undefined index: update_stock in /home/ubuntu/workspace/MyApron/tool.php on line 280
+[05-Jul-2017 15:09:06 Asia/Tokyo] PHP Stack trace:
+[05-Jul-2017 15:09:06 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/tool.php:0
+[05-Jul-2017 15:09:06 Asia/Tokyo] PHP Notice:  Undefined index: update_stock in /home/ubuntu/workspace/MyApron/tool.php on line 280
+[05-Jul-2017 15:09:06 Asia/Tokyo] PHP Stack trace:
+[05-Jul-2017 15:09:06 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/tool.php:0
