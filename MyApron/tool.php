@@ -36,26 +36,26 @@ if ($sql_kind === 'insert') {
     // 半角・全角空白のトリム
     $new_name = preg_replace('/\A[　\s]*|[　\s]*\z/u', '', $_POST['new_name']);
   }
-
+  
   if (isset($_POST['new_price']) !== TRUE || mb_strlen($_POST['new_price']) ===0) {
     $err_msg[] = "値段を入力してください。";
+  }else if(preg_match('/^([1-9][0-9]*|0)$/', $_POST['new_price']) !== 1){
+    //ただし、このままでは0もエラーになってしまうので/^([1-9][0-9]*|0)$/として、0も含むようにしましょう。
+    $err_msg[] = '正しい形式で入力してください。';
   }else{
     // 半角・全角空白のトリム
     $new_price = preg_replace('/\A[　\s]*|[　\s]*\z/u', '', $_POST['new_price']);
   }
   
-  if (isset($_POST['new_stock']) === TRUE || mb_strlen($_POST['new_stock']) ===0) {
+  if (isset($_POST['new_stock']) !== TRUE || mb_strlen($_POST['new_stock']) ===0) {
     $err_msg[] = "個数を入力してください。";
+  }else if(preg_match('/^([1-9][0-9]*|0)$/', $_POST['new_stock']) !== 1){
+    $err_msg[] = '正しい形式で入力してください。';
   }else{
     // 半角・全角空白のトリム
     $new_stock = preg_replace('/\A[　\s]*|[　\s]*\z/u', '', $_POST['new_stock']);
   }
   
-  if (isset($_POST['new_status']) === TRUE) {
-    // 半角・全角空白のトリム
-    $new_stock = preg_replace('/\A[　\s]*|[　\s]*\z/u', '', $_POST['new_status']);
-  }
-
   //  HTTP POST でファイルがアップロードされたか確認
   if (is_uploaded_file($_FILES['new_img']['tmp_name']) === TRUE) {
 
@@ -94,13 +94,17 @@ if ($sql_kind === 'insert') {
   } else {
     $err_msg[] = 'ファイルを選択してください。';
   }
-// 変更の場合の入力項目チェック
+// 在庫変更の場合の入力項目チェック
 } else if ($sql_kind === 'update') {
     
   $update_stock = '';
   $item_id     = '';
   
-  if (isset($_POST['update_stock']) === TRUE) {
+  if (isset($_POST['update_stock']) !== TRUE || mb_strlen($_POST['update_stock']) ===0) {
+    $err_msg[] = "個数を入力してください。";
+  }else if(preg_match('/^([1-9][0-9]*|0)$/', $_POST['update_stock']) !== 1){
+    $err_msg[] = '正しい形式で入力してください。';
+  }else{
     // 半角・全角空白のトリム
     $update_stock = preg_replace('/\A[　\s]*|[　\s]*\z/u', '', $_POST['update_stock']);
   }
@@ -125,30 +129,31 @@ try {
     // 商品追加の場合
     if ($sql_kind === 'insert') {
       
-      try {
-        // SQL文を作成
-        $sql = 'INSERT INTO items (name, price, img, status, stock, create_datetime) VALUES (?, ?, ?, ?, ?, ?)';
-        // SQL文を実行する準備
-        $stmt = $dbh->prepare($sql);
-        // SQL文のプレースホルダに値をバインド
-        $stmt->bindValue(1, $new_name,    PDO::PARAM_STR);
-        $stmt->bindValue(2, $new_price,   PDO::PARAM_INT);
-        $stmt->bindValue(3, $new_img,     PDO::PARAM_STR);
-        $stmt->bindValue(4, $new_status,  PDO::PARAM_INT);
-        $stmt->bindValue(5, $new_stock,   PDO::PARAM_INT);
-        $stmt->bindValue(6, $now_date,    PDO::PARAM_STR);
-        // SQLを実行
-        $stmt->execute();
-        
-        // 表示メッセージの設定
-        $result_msg =  '追加成功';
+    try {
+      // SQL文を作成
+      $sql = 'INSERT INTO items (name, price, img, status, stock, create_datetime) VALUES (?, ?, ?, ?, ?, ?)';
+      // SQL文を実行する準備
+      $stmt = $dbh->prepare($sql);
+      // SQL文のプレースホルダに値をバインド
+      $stmt->bindValue(1, $new_name,    PDO::PARAM_STR);
+      $stmt->bindValue(2, $new_price,   PDO::PARAM_INT);
+      $stmt->bindValue(3, $new_img,     PDO::PARAM_STR);
+      $stmt->bindValue(4, $new_status,  PDO::PARAM_INT);
+      $stmt->bindValue(5, $new_stock,   PDO::PARAM_INT);
+      $stmt->bindValue(6, $now_date,    PDO::PARAM_STR);
+      // SQLを実行
+      $stmt->execute();
+      
+      // 表示メッセージの設定
+      $result_msg =  '追加成功';
 
-      } catch (PDOException $e) {
-        // 例外をスロー
-        throw $e;
+    } catch (PDOException $e) {
+      // 例外をスロー
+      throw $e;
       }
     } else if ($sql_kind === 'update') {
     try {
+     // 在庫変更
      // SQL文を作成
      $sql = 'UPDATE items SET stock = ?, update_datetime = ? WHERE item_id = ?';
      // SQL文を実行する準備
@@ -159,8 +164,10 @@ try {
      $stmt->bindValue(3, $item_id,      PDO::PARAM_INT);
      // SQLを実行
      $stmt->execute();
+     
      // 表示メッセージの設定
      $result_msg = '在庫変更成功';
+     
     } catch (PDOException $e) {
      // 例外をスロー
      throw $e;
@@ -184,6 +191,7 @@ try {
     $stmt->execute();
     // レコードの取得
     $rows = $stmt->fetchAll();
+    var_dump($rows);
 
     // 1行ずつ結果を配列で取得します
     $i = 0;
@@ -284,17 +292,19 @@ try {
 		<td class="name_width"><?php print $value['name']; ?></td>
 		<td class="text_align_right"><?php print $value['price']; ?>円</td>
 		<td><input type="text"  class="input_text_width text_align_right" name="update_stock" value="<?php print $value['stock']; ?>">個&nbsp;&nbsp;<input type="submit" value="変更"></td>
-		<input type="hidden" name="item_id" value="2">
+		<input type="hidden" name="item_id" value="<?php print $value['item_id']; ?>">
 		<input type="hidden" name="sql_kind" value="update">
 	</form>
 	<form method="post">
 		<td><input type="submit" value="公開 → 非公開"></td>
 		<input type="hidden" name="change_status" value="0">
-		<input type="hidden" name="item_id" value="2">
+		<input type="hidden" name="status" value="<?php print $value['item_id']; ?>">
 		<input type="hidden" name="sql_kind" value="change">
 	</form>
 	<form method="post">
-	    <td><input type="submit" value="削除"></td>
+	    <td><input type="submit" value="削除">
+	</form>
+	    </td>
 　　 </tr>
 <?php } ?>
     </table>
