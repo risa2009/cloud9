@@ -94,25 +94,54 @@ if ($sql_kind === 'insert') {
   } else {
     $err_msg[] = 'ファイルを選択してください。';
   }
-// 在庫変更の場合の入力項目チェック
-} else if ($sql_kind === 'update') {
+    // 在庫変更の場合の入力項目チェック
+  } else if ($sql_kind === 'update') {
     
-  $update_stock = '';
-  $item_id     = '';
+      $update_stock = '';
+      $item_id     = '';
   
-  if (isset($_POST['update_stock']) !== TRUE || mb_strlen($_POST['update_stock']) ===0) {
+  if (isset($_POST['update_stock']) !== TRUE) {
     $err_msg[] = "個数を入力してください。";
   }else if(preg_match('/^([1-9][0-9]*|0)$/', $_POST['update_stock']) !== 1){
     $err_msg[] = '正しい形式で入力してください。';
   }else{
     // 半角・全角空白のトリム
     $update_stock = preg_replace('/\A[　\s]*|[　\s]*\z/u', '', $_POST['update_stock']);
+  } 
+  
+  if (isset($_POST['item_id']) === TRUE) {
+    $item_id = $_POST['item_id'];
+  }
+
+    // ステータスの入力項目チェック
+  } else if ($sql_kind === 'change') {
+    
+    $change_status = '';
+    $item_id       = '';
+  
+  if (isset($_POST['change_status']) === TRUE) {
+    $change_status = $_POST['change_status'];
+  }else{
+    $err_msg[] = 'ステータスを選択してください。';
   }
   
   if (isset($_POST['item_id']) === TRUE) {
     $item_id = $_POST['item_id'];
   }
   
+      // 商品を削除する
+  } else if ($sql_kind === 'delete') {
+    
+    $delete_item = '';
+    $item_id       = '';
+  
+  if (isset($_POST['delete_item']) === TRUE) {
+    $delete_item = $_POST['delete_item'];
+  }
+  
+  if (isset($_POST['item_id']) === TRUE) {
+    $item_id = $_POST['item_id'];
+  }
 }
 
 try {
@@ -125,7 +154,7 @@ try {
       
     // 現在日時を取得
     $now_date = date('Y-m-d H:i:s');
-
+    
     // 商品追加の場合
     if ($sql_kind === 'insert') {
       
@@ -151,9 +180,10 @@ try {
       // 例外をスロー
       throw $e;
       }
+      
+    // 在庫変更
     } else if ($sql_kind === 'update') {
     try {
-     // 在庫変更
      // SQL文を作成
      $sql = 'UPDATE items SET stock = ?, update_datetime = ? WHERE item_id = ?';
      // SQL文を実行する準備
@@ -172,6 +202,48 @@ try {
      // 例外をスロー
      throw $e;
     }
+    
+    // ステータス変更
+    }else if ($sql_kind === 'change') {
+    try {
+    // SQL文を作成
+    $sql = 'UPDATE items SET status = ?, update_datetime = ? WHERE item_id = ?';
+    // SQL文を実行する準備
+    $stmt = $dbh->prepare($sql);
+     // SQL文のプレースホルダに値をバインド
+     $stmt->bindValue(1, $change_status, PDO::PARAM_INT);
+     $stmt->bindValue(2, $now_date,      PDO::PARAM_STR);
+     $stmt->bindValue(3, $item_id,       PDO::PARAM_INT);
+     // SQLを実行
+     $stmt->execute();
+     
+     // 表示メッセージの設定
+      $result_msg = 'ステータスを更新しました';
+      
+    } catch (PDOException $e) {
+      // 例外をスロー
+      throw $e;
+    }
+    
+    // 商品削除
+    }else if ($sql_kind === 'delete') {
+    try {
+    // SQL文を作成
+    $sql = 'DELETE FROM items WHERE item_id = ?';
+    // SQL文を実行する準備
+    $stmt = $dbh->prepare($sql);
+     // SQL文のプレースホルダに値をバインド
+     $stmt->bindValue(1, $item_id,       PDO::PARAM_INT);
+     // SQLを実行
+     $stmt->execute();
+     
+     // 表示メッセージの設定
+      $result_msg = '削除しました';
+      
+    } catch (PDOException $e) {
+      // 例外をスロー
+      throw $e;
+    } 
   } 
   } 
   
@@ -191,7 +263,6 @@ try {
     $stmt->execute();
     // レコードの取得
     $rows = $stmt->fetchAll();
-    var_dump($rows);
 
     // 1行ずつ結果を配列で取得します
     $i = 0;
@@ -218,7 +289,7 @@ try {
 <html lang="ja">
 <head>
  <meta charset="UTF-8">
- <title>My Apron</title>
+ <title>My Apron 管理ページ</title>
   <style>
     section {
       margin-bottom: 20px;
@@ -251,6 +322,10 @@ try {
     .input_text_width {
       width: 60px;
     }
+    
+    .status_false {
+      background-color: #A9A9A9;
+    }
   </style>
 </head>
 <body>
@@ -269,7 +344,9 @@ try {
       <div><label>個数： <input type="text" name="new_stock" value=""></label></div>
       <div><label>商品画像： <input type="file" name="new_img"></label></div>
       <div><label>ステータス： <select name="new_status">
-        <option value="0">非公開</option><option value="1">公開</option></select></label></div>
+        <option value="0">非公開</option>
+        <option value="1">公開</option></select></label>
+      </div>
       <input type="hidden" name="sql_kind" value="insert">
       <div><input type="submit" value="商品を登録する"></div>
     </form>
@@ -286,7 +363,11 @@ try {
        <th>操作</th>
      </tr>
 <?php foreach ($data as $value)  { ?>
+<?php if ($value['status'] === '1') { ?>
      <tr>
+<?php } else { ?>
+     <tr class="status_false">
+<?php } ?>
 	<form method="post">
 		<td><img src="<?php print $img_dir . $value['img']; ?>"></td>
 		<td class="name_width"><?php print $value['name']; ?></td>
@@ -296,13 +377,20 @@ try {
 		<input type="hidden" name="sql_kind" value="update">
 	</form>
 	<form method="post">
+<?php if ($value['status'] === '1') { ?>
 		<td><input type="submit" value="公開 → 非公開"></td>
 		<input type="hidden" name="change_status" value="0">
-		<input type="hidden" name="status" value="<?php print $value['item_id']; ?>">
+<?php } else { ?>
+    <td><input type="submit" value="公開 → 非公開"></td>
+		<input type="hidden" name="change_status" value="1">
+<?php } ?>
+    <input type="hidden" name="item_id" value="<?php print $value['item_id']; ?>">
 		<input type="hidden" name="sql_kind" value="change">
 	</form>
 	<form method="post">
 	    <td><input type="submit" value="削除">
+	    <input type="hidden" name="item_id" value="<?php print $value['item_id']; ?>">
+	    <input type="hidden" name="sql_kind" value="delete">
 	</form>
 	    </td>
 　　 </tr>

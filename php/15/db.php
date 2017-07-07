@@ -7,7 +7,7 @@
   <body>
    <?php
    $host     = 'localhost';
-   $username = 'risayamasaki';
+   $username = 'root';
    $password = '';
    $dbname   = 'camp';
    $charset  = 'utf8';

@@ -7,7 +7,7 @@
   <body>
     <?php
     $host     = 'localhost';
-    $username = 'risayamasaki';   // MySQLのユーザ名
+    $username = 'root';   // MySQLのユーザ名
     $password = '';       // MySQLのパスワード
     $dbname   = 'camp';   // MySQLのDB名
     $charset  = 'utf8';   // データベースの文字コード

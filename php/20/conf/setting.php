@@ -3,7 +3,7 @@
 define('TAX', 1.08);  // 消費税
 
 // データベースの接続情報
-define('DB_USER',   'risayamasaki');  // MySQLのユーザ名
+define('DB_USER',   'root');  // MySQLのユーザ名
 define('DB_PASSWD', '');      // MySQLのパスワード
 define('DNS', 'mysql:dbname=camp;host=localhost;charset=utf8');  // データベースのDNS情報
 

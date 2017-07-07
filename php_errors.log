@@ -136,3 +136,24 @@
 [06-Jul-2017 01:35:36 Asia/Tokyo] PHP Notice:  Undefined index: update_stock in /home/ubuntu/workspace/MyApron/tool.php on line 291
 [06-Jul-2017 01:35:36 Asia/Tokyo] PHP Stack trace:
 [06-Jul-2017 01:35:36 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/tool.php:0
+[07-Jul-2017 01:25:23 Asia/Tokyo] PHP Notice:  Undefined variable: change_status in /home/ubuntu/workspace/MyApron/tool.php on line 194
+[07-Jul-2017 01:25:23 Asia/Tokyo] PHP Stack trace:
+[07-Jul-2017 01:25:23 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/tool.php:0
+[07-Jul-2017 01:25:23 Asia/Tokyo] PHP Notice:  Undefined variable: item_id in /home/ubuntu/workspace/MyApron/tool.php on line 195
+[07-Jul-2017 01:25:23 Asia/Tokyo] PHP Stack trace:
+[07-Jul-2017 01:25:23 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/tool.php:0
+[07-Jul-2017 01:32:07 Asia/Tokyo] PHP Notice:  Undefined variable: change_status in /home/ubuntu/workspace/MyApron/tool.php on line 195
+[07-Jul-2017 01:32:07 Asia/Tokyo] PHP Stack trace:
+[07-Jul-2017 01:32:07 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/tool.php:0
+[07-Jul-2017 01:32:07 Asia/Tokyo] PHP Notice:  Undefined variable: item_id in /home/ubuntu/workspace/MyApron/tool.php on line 196
+[07-Jul-2017 01:32:07 Asia/Tokyo] PHP Stack trace:
+[07-Jul-2017 01:32:07 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/tool.php:0
+[07-Jul-2017 01:33:37 Asia/Tokyo] PHP Notice:  Undefined variable: item_id in /home/ubuntu/workspace/MyApron/tool.php on line 197
+[07-Jul-2017 01:33:37 Asia/Tokyo] PHP Stack trace:
+[07-Jul-2017 01:33:37 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/tool.php:0
+[07-Jul-2017 01:36:13 Asia/Tokyo] PHP Notice:  Undefined variable: item_id in /home/ubuntu/workspace/MyApron/tool.php on line 197
+[07-Jul-2017 01:36:13 Asia/Tokyo] PHP Stack trace:
+[07-Jul-2017 01:36:13 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/tool.php:0
+[07-Jul-2017 01:37:12 Asia/Tokyo] PHP Notice:  Undefined variable: item_id in /home/ubuntu/workspace/MyApron/tool.php on line 197
+[07-Jul-2017 01:37:12 Asia/Tokyo] PHP Stack trace:
+[07-Jul-2017 01:37:12 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/tool.php:0

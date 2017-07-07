@@ -1,7 +1,7 @@
 <?php
 
 // データベースの接続情報
-define('DB_USER',   'risayamasaki');    // MySQLのユーザ名
+define('DB_USER',   'root');    // MySQLのユーザ名
 define('DB_PASSWD', '');    // MySQLのパスワード
 define('DSN', 'mysql:dbname=camp;host=localhost;charset=utf8');  // データベースのDSN情報
 
