@@ -1,8 +1,8 @@
 <?php
 // MySQL接続情報
 $host     = 'localhost';
-$username = 'root';   // MySQLのユーザ名
-$password = 'root';   // MySQLのパスワード
+$username = 'risayamasaki';   // MySQLのユーザ名
+$password = '';   // MySQLのパスワード
 $dbname   = 'camp';   // MySQLのDB名
 $charset  = 'utf8';   // データベースの文字コード
 

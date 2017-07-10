@@ -1,0 +1,22 @@
+body{
+    min-width: 960px;
+}
+
+header {
+    background: #FFFFFF;
+    border-bottom: solid 1px #cccccc;
+}
+
+.header-box {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+.contents {
+    display: flex;
+}
+
+.register {
+    margin: 0 auto;
+}

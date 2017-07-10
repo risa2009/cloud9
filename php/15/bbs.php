@@ -1,6 +1,6 @@
 <?php
    $host     = 'localhost';
-   $username = 'root';   // MySQLのユーザ名
+   $username = 'risayamasaki';   // MySQLのユーザ名
    $password = '';       // MySQLのパスワード
    $dbname   = 'camp';   // MySQLのDB名
    $charset  = 'utf8';   // データベースの文字コード
@@ -68,7 +68,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
       
       // レコードの取得
       $rows = $stmt->fetchAll();
-      var_dump($rows);
 
     } catch (PDOException $e) {
       echo '接続できませんでした。理由：'.$e->getMessage();

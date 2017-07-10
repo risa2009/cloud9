@@ -157,3 +157,46 @@
 [07-Jul-2017 01:37:12 Asia/Tokyo] PHP Notice:  Undefined variable: item_id in /home/ubuntu/workspace/MyApron/tool.php on line 197
 [07-Jul-2017 01:37:12 Asia/Tokyo] PHP Stack trace:
 [07-Jul-2017 01:37:12 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/tool.php:0
+[08-Jul-2017 21:13:31 Asia/Tokyo] PHP Notice:  Undefined index: user_name in /home/ubuntu/workspace/MyApron/register.php on line 22
+[08-Jul-2017 21:13:31 Asia/Tokyo] PHP Stack trace:
+[08-Jul-2017 21:13:31 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/register.php:0
+[08-Jul-2017 21:13:31 Asia/Tokyo] PHP Notice:  Undefined index: password in /home/ubuntu/workspace/MyApron/register.php on line 35
+[08-Jul-2017 21:13:31 Asia/Tokyo] PHP Stack trace:
+[08-Jul-2017 21:13:31 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/register.php:0
+[09-Jul-2017 11:49:42 Asia/Tokyo] PHP Notice:  Undefined variable: dbname in /home/ubuntu/workspace/MyApron/register.php on line 8
+[09-Jul-2017 11:49:42 Asia/Tokyo] PHP Stack trace:
+[09-Jul-2017 11:49:42 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/register.php:0
+[09-Jul-2017 11:49:42 Asia/Tokyo] PHP Notice:  Undefined variable: host in /home/ubuntu/workspace/MyApron/register.php on line 8
+[09-Jul-2017 11:49:42 Asia/Tokyo] PHP Stack trace:
+[09-Jul-2017 11:49:42 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/register.php:0
+[09-Jul-2017 11:49:42 Asia/Tokyo] PHP Notice:  Undefined variable: charset in /home/ubuntu/workspace/MyApron/register.php on line 8
+[09-Jul-2017 11:49:42 Asia/Tokyo] PHP Stack trace:
+[09-Jul-2017 11:49:42 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/register.php:0
+[09-Jul-2017 11:49:42 Asia/Tokyo] PHP Notice:  Undefined variable: username in /home/ubuntu/workspace/MyApron/register.php on line 45
+[09-Jul-2017 11:49:42 Asia/Tokyo] PHP Stack trace:
+[09-Jul-2017 11:49:42 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/register.php:0
+[09-Jul-2017 11:52:19 Asia/Tokyo] PHP Notice:  Undefined variable: dbname in /home/ubuntu/workspace/MyApron/register.php on line 8
+[09-Jul-2017 11:52:19 Asia/Tokyo] PHP Stack trace:
+[09-Jul-2017 11:52:19 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/register.php:0
+[09-Jul-2017 11:52:19 Asia/Tokyo] PHP Notice:  Undefined variable: host in /home/ubuntu/workspace/MyApron/register.php on line 8
+[09-Jul-2017 11:52:19 Asia/Tokyo] PHP Stack trace:
+[09-Jul-2017 11:52:19 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/register.php:0
+[09-Jul-2017 11:52:19 Asia/Tokyo] PHP Notice:  Undefined variable: charset in /home/ubuntu/workspace/MyApron/register.php on line 8
+[09-Jul-2017 11:52:19 Asia/Tokyo] PHP Stack trace:
+[09-Jul-2017 11:52:19 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/register.php:0
+[09-Jul-2017 11:52:19 Asia/Tokyo] PHP Notice:  Undefined variable: username in /home/ubuntu/workspace/MyApron/register.php on line 45
+[09-Jul-2017 11:52:19 Asia/Tokyo] PHP Stack trace:
+[09-Jul-2017 11:52:19 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/register.php:0
+[09-Jul-2017 11:58:53 Asia/Tokyo] PHP Notice:  Use of undefined constant DB_PASS - assumed 'DB_PASS' in /home/ubuntu/workspace/MyApron/register.php on line 49
+[09-Jul-2017 11:58:53 Asia/Tokyo] PHP Stack trace:
+[09-Jul-2017 11:58:53 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/register.php:0
+[09-Jul-2017 11:59:00 Asia/Tokyo] PHP Notice:  Use of undefined constant DB_PASS - assumed 'DB_PASS' in /home/ubuntu/workspace/MyApron/register.php on line 49
+[09-Jul-2017 11:59:00 Asia/Tokyo] PHP Stack trace:
+[09-Jul-2017 11:59:00 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/register.php:0
+[09-Jul-2017 11:59:06 Asia/Tokyo] PHP Notice:  Use of undefined constant DB_PASS - assumed 'DB_PASS' in /home/ubuntu/workspace/MyApron/register.php on line 49
+[09-Jul-2017 11:59:06 Asia/Tokyo] PHP Stack trace:
+[09-Jul-2017 11:59:06 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/register.php:0
+[09-Jul-2017 21:30:21 Asia/Tokyo] PHP Fatal error:  Cannot use try without catch or finally in /home/ubuntu/workspace/MyApron/register.php on line 93
+[09-Jul-2017 21:52:48 Asia/Tokyo] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/MyApron/register.php on line 135
+[10-Jul-2017 01:51:50 Asia/Tokyo] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/MyApron/register.php on line 114
+[10-Jul-2017 21:29:17 Asia/Tokyo] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/MyApron/register.php on line 109
