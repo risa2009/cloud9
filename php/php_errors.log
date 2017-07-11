@@ -1000,3 +1000,11 @@ Stack trace:
 [02-Jul-2017 23:20:56 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/php/20/controller.php:0
 [02-Jul-2017 23:20:56 Asia/Tokyo] PHP   2. get_post_list() /home/ubuntu/workspace/php/20/controller.php:55
 [02-Jul-2017 23:20:56 Asia/Tokyo] PHP   3. get_as_array() /home/ubuntu/workspace/php/20/model/model.php:230
+[11-Jul-2017 00:21:49 Asia/Tokyo] PHP Warning:  move_uploaded_file(./img/417b460e70940b9543373efe342143eb.jpg): failed to open stream: No such file or directory in /home/ubuntu/workspace/php/21/tool.php on line 87
+[11-Jul-2017 00:21:49 Asia/Tokyo] PHP Stack trace:
+[11-Jul-2017 00:21:49 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/php/21/tool.php:0
+[11-Jul-2017 00:21:49 Asia/Tokyo] PHP   2. move_uploaded_file() /home/ubuntu/workspace/php/21/tool.php:87
+[11-Jul-2017 00:21:49 Asia/Tokyo] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpRLF4Dm' to './img/417b460e70940b9543373efe342143eb.jpg' in /home/ubuntu/workspace/php/21/tool.php on line 87
+[11-Jul-2017 00:21:49 Asia/Tokyo] PHP Stack trace:
+[11-Jul-2017 00:21:49 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/php/21/tool.php:0
+[11-Jul-2017 00:21:49 Asia/Tokyo] PHP   2. move_uploaded_file() /home/ubuntu/workspace/php/21/tool.php:87

@@ -200,3 +200,56 @@
 [09-Jul-2017 21:52:48 Asia/Tokyo] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/MyApron/register.php on line 135
 [10-Jul-2017 01:51:50 Asia/Tokyo] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/MyApron/register.php on line 114
 [10-Jul-2017 21:29:17 Asia/Tokyo] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/MyApron/register.php on line 109
+[10-Jul-2017 23:27:11 Asia/Tokyo] PHP Warning:  Illegal string offset 'user_name' in /home/ubuntu/workspace/MyApron/register.php on line 70
+[10-Jul-2017 23:27:11 Asia/Tokyo] PHP Stack trace:
+[10-Jul-2017 23:27:11 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/register.php:0
+[10-Jul-2017 23:28:12 Asia/Tokyo] PHP Warning:  Illegal string offset 'user_name' in /home/ubuntu/workspace/MyApron/register.php on line 70
+[10-Jul-2017 23:28:12 Asia/Tokyo] PHP Stack trace:
+[10-Jul-2017 23:28:12 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/register.php:0
+[11-Jul-2017 00:44:47 Asia/Tokyo] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/MyApron/itemlist.php on line 84
+[11-Jul-2017 00:48:48 Asia/Tokyo] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/MyApron/itemlist.php on line 83
+[11-Jul-2017 01:03:31 Asia/Tokyo] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/ubuntu/workspace/MyApron/itemlist.php on line 119
+[11-Jul-2017 01:04:04 Asia/Tokyo] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/ubuntu/workspace/MyApron/itemlist.php on line 119
+[11-Jul-2017 01:05:18 Asia/Tokyo] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/MyApron/itemlist.php on line 124
+[11-Jul-2017 10:04:40 Asia/Tokyo] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/MyApron/itemlist.php on line 87
+[11-Jul-2017 10:23:28 Asia/Tokyo] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/MyApron/itemlist.php on line 95
+[11-Jul-2017 21:09:03 Asia/Tokyo] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/MyApron/itemlist.php on line 86
+[11-Jul-2017 21:09:34 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/itemlist.php on line 79
+[11-Jul-2017 21:09:34 Asia/Tokyo] PHP Stack trace:
+[11-Jul-2017 21:09:34 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[11-Jul-2017 21:09:34 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/itemlist.php on line 80
+[11-Jul-2017 21:09:34 Asia/Tokyo] PHP Stack trace:
+[11-Jul-2017 21:09:34 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[11-Jul-2017 21:09:34 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/itemlist.php on line 81
+[11-Jul-2017 21:09:34 Asia/Tokyo] PHP Stack trace:
+[11-Jul-2017 21:09:34 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[11-Jul-2017 21:23:54 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/itemlist.php on line 87
+[11-Jul-2017 21:23:54 Asia/Tokyo] PHP Stack trace:
+[11-Jul-2017 21:23:54 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[11-Jul-2017 21:23:54 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/itemlist.php on line 88
+[11-Jul-2017 21:23:54 Asia/Tokyo] PHP Stack trace:
+[11-Jul-2017 21:23:54 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[11-Jul-2017 21:23:54 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/itemlist.php on line 89
+[11-Jul-2017 21:23:54 Asia/Tokyo] PHP Stack trace:
+[11-Jul-2017 21:23:54 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[11-Jul-2017 21:23:54 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/itemlist.php on line 90
+[11-Jul-2017 21:23:54 Asia/Tokyo] PHP Stack trace:
+[11-Jul-2017 21:23:54 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[11-Jul-2017 21:24:27 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/itemlist.php on line 87
+[11-Jul-2017 21:24:27 Asia/Tokyo] PHP Stack trace:
+[11-Jul-2017 21:24:27 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[11-Jul-2017 21:24:27 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/itemlist.php on line 88
+[11-Jul-2017 21:24:27 Asia/Tokyo] PHP Stack trace:
+[11-Jul-2017 21:24:27 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[11-Jul-2017 21:24:27 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/itemlist.php on line 89
+[11-Jul-2017 21:24:27 Asia/Tokyo] PHP Stack trace:
+[11-Jul-2017 21:24:27 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[11-Jul-2017 21:24:27 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/itemlist.php on line 90
+[11-Jul-2017 21:24:27 Asia/Tokyo] PHP Stack trace:
+[11-Jul-2017 21:24:27 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[11-Jul-2017 21:24:27 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/itemlist.php on line 91
+[11-Jul-2017 21:24:27 Asia/Tokyo] PHP Stack trace:
+[11-Jul-2017 21:24:27 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[11-Jul-2017 21:24:27 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/itemlist.php on line 92
+[11-Jul-2017 21:24:27 Asia/Tokyo] PHP Stack trace:
+[11-Jul-2017 21:24:27 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
