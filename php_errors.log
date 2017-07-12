@@ -253,3 +253,15 @@
 [11-Jul-2017 21:24:27 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/itemlist.php on line 92
 [11-Jul-2017 21:24:27 Asia/Tokyo] PHP Stack trace:
 [11-Jul-2017 21:24:27 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[12-Jul-2017 10:54:37 Asia/Tokyo] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/MyApron/itemlist.php on line 104
+[12-Jul-2017 11:00:44 Asia/Tokyo] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/MyApron/itemlist.php on line 104
+[12-Jul-2017 11:03:03 Asia/Tokyo] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/MyApron/itemlist.php on line 105
+[12-Jul-2017 11:11:36 Asia/Tokyo] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/MyApron/itemlist.php on line 104
+[12-Jul-2017 11:28:04 Asia/Tokyo] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/MyApron/itemlist.php on line 106
+[12-Jul-2017 11:50:30 Asia/Tokyo] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/MyApron/itemlist.php on line 106
+[12-Jul-2017 12:17:17 Asia/Tokyo] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/MyApron/itemlist.php on line 107
+[12-Jul-2017 13:34:16 Asia/Tokyo] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/ubuntu/workspace/MyApron/itemlist.php on line 103
+[12-Jul-2017 13:35:48 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/MyApron/itemlist.php on line 104
+[12-Jul-2017 13:36:31 Asia/Tokyo] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/ubuntu/workspace/MyApron/itemlist.php on line 103
+[12-Jul-2017 13:42:47 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/MyApron/itemlist.php on line 110
+[12-Jul-2017 13:43:10 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/MyApron/itemlist.php on line 109

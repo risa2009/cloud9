@@ -69,7 +69,7 @@ try {
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>My Apron：無料会員登録</title>
+  <title>My Apron：商品一覧</title>
   <link rel="stylesheet" href="MyApron.css">
 </head>
 <body>
@@ -80,19 +80,32 @@ try {
       </a>
     </div>
   </header>
+  <div class="item_list">
+<?php if (count($err_msg) === 0) { ?>
 <?php foreach ($data as $value)  { ?>
-  <div class="contents">
+  <div class="item">
+     <form action="cart.php" method="post">
+　　　 <span class="item_img_size"><img src="<?php print $img_dir . $value['img']; ?>"></span>
+　　　 <input type="hidden" name="item_id" value="<?php print $value['item_id']; ?>">
+　　　 <span><?php print $value['name']; ?></span>
+　　　 <input type="hidden" name="item_id" value="<?php print $value['item_id']; ?>">
+　　　 <span><?php print $value['price']; ?>円</span>
+　　　 <input type="hidden" name="item_id" value="<?php print $value['item_id']; ?>">
+<?php if ($value['stock'] > 0) { ?>
+<input type="checkbox" name="item_id" value="<?php print $value['item_id']; ?>" checked>
+<?php 
+} else {
+?>
+<span>売り切れ</span>
 <?php } ?>
-    <div class="register">
-     <form method="post">
-<span><img src="<?php print $img_dir . $value['img']; ?>"></span>
-<input type="hidden" name="item_id" value="<?php print $value['item_id']; ?>">
-<span><?php print $value['name']; ?></span>
-<input type="hidden" name="item_id" value="<?php print $value['item_id']; ?>">
-<span><?php print $value['price']; ?>円</span>
-<input type="hidden" name="item_id" value="<?php print $value['item_id']; ?>">
+<input type="submit" value="カートに入れる">
      </form>
-    </div>
+<?php foreach ($err_msg as $value) { ?>
+     <p><?php print $value; ?></p>
+<?php } ?>
+  </div>
+<?php } ?>
+<?php } ?>
   </div>
 </body>
 </html>

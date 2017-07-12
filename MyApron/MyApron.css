@@ -21,3 +21,16 @@ header {
     display: flex;
     margin: 0 auto;
 }
+
+.item_list {
+    display: flex;
+}
+
+.item {
+    display: block;
+    margin:0 0 10px 0;
+}
+
+.item_img_size {  /*商品一覧の商品画像*/
+    height: 125px;
+}
