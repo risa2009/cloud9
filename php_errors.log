@@ -265,3 +265,67 @@
 [12-Jul-2017 13:36:31 Asia/Tokyo] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/ubuntu/workspace/MyApron/itemlist.php on line 103
 [12-Jul-2017 13:42:47 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/MyApron/itemlist.php on line 110
 [12-Jul-2017 13:43:10 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/MyApron/itemlist.php on line 109
+[12-Jul-2017 14:47:53 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/MyApron/cart.php on line 31
+[12-Jul-2017 21:08:02 Asia/Tokyo] PHP Fatal error:  Cannot use try without catch or finally in /home/ubuntu/workspace/MyApron/cart.php on line 97
+[12-Jul-2017 22:55:56 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/MyApron/cart.php on line 108
+[12-Jul-2017 22:56:56 Asia/Tokyo] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/MyApron/cart.php on line 146
+[12-Jul-2017 23:26:40 Asia/Tokyo] PHP Fatal error:  Cannot use try without catch or finally in /home/ubuntu/workspace/MyApron/cart.php on line 74
+[12-Jul-2017 23:29:26 Asia/Tokyo] PHP Parse error:  syntax error, unexpected 'catch' (T_CATCH) in /home/ubuntu/workspace/MyApron/cart.php on line 68
+[13-Jul-2017 00:20:25 Asia/Tokyo] PHP Parse error:  syntax error, unexpected 'catch' (T_CATCH) in /home/ubuntu/workspace/MyApron/cart.php on line 69
+[13-Jul-2017 00:46:15 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/cart.php on line 41
+[13-Jul-2017 00:46:15 Asia/Tokyo] PHP Stack trace:
+[13-Jul-2017 00:46:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[13-Jul-2017 00:46:15 Asia/Tokyo] PHP Notice:  Undefined variable: amount in /home/ubuntu/workspace/MyApron/cart.php on line 43
+[13-Jul-2017 00:46:15 Asia/Tokyo] PHP Stack trace:
+[13-Jul-2017 00:46:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[13-Jul-2017 00:50:42 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/cart.php on line 41
+[13-Jul-2017 00:50:42 Asia/Tokyo] PHP Stack trace:
+[13-Jul-2017 00:50:42 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[13-Jul-2017 00:50:42 Asia/Tokyo] PHP Notice:  Undefined variable: amount in /home/ubuntu/workspace/MyApron/cart.php on line 43
+[13-Jul-2017 00:50:42 Asia/Tokyo] PHP Stack trace:
+[13-Jul-2017 00:50:42 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[13-Jul-2017 20:46:45 Asia/Tokyo] PHP Parse error:  syntax error, unexpected 'catch' (T_CATCH) in /home/ubuntu/workspace/MyApron/cart.php on line 106
+[13-Jul-2017 20:48:34 Asia/Tokyo] PHP Notice:  Undefined variable: dbh in /home/ubuntu/workspace/MyApron/cart.php on line 82
+[13-Jul-2017 20:48:34 Asia/Tokyo] PHP Stack trace:
+[13-Jul-2017 20:48:34 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[13-Jul-2017 20:48:34 Asia/Tokyo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/MyApron/cart.php on line 82
+[13-Jul-2017 20:48:34 Asia/Tokyo] PHP Stack trace:
+[13-Jul-2017 20:48:34 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[13-Jul-2017 20:50:54 Asia/Tokyo] PHP Notice:  Undefined variable: dbh in /home/ubuntu/workspace/MyApron/cart.php on line 86
+[13-Jul-2017 20:50:54 Asia/Tokyo] PHP Stack trace:
+[13-Jul-2017 20:50:54 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[13-Jul-2017 20:50:54 Asia/Tokyo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/MyApron/cart.php on line 86
+[13-Jul-2017 20:50:54 Asia/Tokyo] PHP Stack trace:
+[13-Jul-2017 20:50:54 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[13-Jul-2017 21:02:15 Asia/Tokyo] PHP Notice:  Undefined variable: dbh in /home/ubuntu/workspace/MyApron/cart.php on line 86
+[13-Jul-2017 21:02:15 Asia/Tokyo] PHP Stack trace:
+[13-Jul-2017 21:02:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[13-Jul-2017 21:02:15 Asia/Tokyo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/MyApron/cart.php on line 86
+[13-Jul-2017 21:02:15 Asia/Tokyo] PHP Stack trace:
+[13-Jul-2017 21:02:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[13-Jul-2017 21:10:35 Asia/Tokyo] PHP Notice:  Undefined variable: dbh in /home/ubuntu/workspace/MyApron/cart.php on line 86
+[13-Jul-2017 21:10:35 Asia/Tokyo] PHP Stack trace:
+[13-Jul-2017 21:10:35 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[13-Jul-2017 21:10:35 Asia/Tokyo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/MyApron/cart.php on line 86
+[13-Jul-2017 21:10:35 Asia/Tokyo] PHP Stack trace:
+[13-Jul-2017 21:10:35 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[13-Jul-2017 21:13:32 Asia/Tokyo] PHP Notice:  Undefined variable: dbh in /home/ubuntu/workspace/MyApron/cart.php on line 86
+[13-Jul-2017 21:13:32 Asia/Tokyo] PHP Stack trace:
+[13-Jul-2017 21:13:32 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[13-Jul-2017 21:13:32 Asia/Tokyo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/MyApron/cart.php on line 86
+[13-Jul-2017 21:13:32 Asia/Tokyo] PHP Stack trace:
+[13-Jul-2017 21:13:32 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[13-Jul-2017 22:37:18 Asia/Tokyo] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/MyApron/cart.php on line 181
+[13-Jul-2017 23:03:07 Asia/Tokyo] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/MyApron/cart.php on line 181
+[13-Jul-2017 23:03:26 Asia/Tokyo] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/MyApron/cart.php on line 181
+[13-Jul-2017 23:35:06 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/MyApron/itemlist.php on line 63
+[13-Jul-2017 23:36:26 Asia/Tokyo] PHP Fatal error:  Cannot use try without catch or finally in /home/ubuntu/workspace/MyApron/cart.php on line 93
+[14-Jul-2017 01:38:50 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/itemlist.php on line 58
+[14-Jul-2017 01:38:50 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 01:38:50 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 01:38:50 Asia/Tokyo] PHP Notice:  Undefined variable: amount in /home/ubuntu/workspace/MyApron/itemlist.php on line 60
+[14-Jul-2017 01:38:50 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 01:38:50 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 01:38:50 Asia/Tokyo] PHP Notice:  Undefined variable: now_date in /home/ubuntu/workspace/MyApron/itemlist.php on line 61
+[14-Jul-2017 01:38:50 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 01:38:50 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0

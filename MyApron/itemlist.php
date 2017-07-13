@@ -20,28 +20,55 @@ if (isset($_POST['item_id']) === TRUE) {
     $item_id = $_POST['item_id'];
   }
   
-try {
-  // データベースに接続
-  $dbh = new PDO($dsn, $username, $password);
-  $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  $dbh->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
-  
-try {
-  // SQL文を作成
-  $sql = 'SELECT 
-              items.item_id,
-              items.name,
-              items.price,
-              items.img,
-              items.status,
-              items.stock
-         FROM items
-         WHERE status = 1';
-          
+  try {
+    // データベースに接続
+    $dbh = new PDO($dsn, $username, $password);
+    $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $dbh->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+    
+    // 公開商品のみ表示
+    $sql = 'SELECT 
+                items.item_id,
+                items.name,
+                items.price,
+                items.img,
+                items.status,
+                items.stock
+           FROM items
+           WHERE status = 1';
+            
     // SQL文を実行する準備
     $stmt = $dbh->prepare($sql);
+    
     // SQLを実行
     $stmt->execute();
+    
+    // 指定された商品idと現在のユーザーidをWHEREの条件にしてcartテーブルをSELECT
+    $sql = 'SELECT
+               carts.user_id,
+               carts.item_id,
+               carts.amount
+            FROM carts
+            WHERE item_id = ?
+            AND user_id = ?';
+            
+    // SQL文を実行する準備
+    $stmt = $dbh->prepare($sql);
+    // SQL文のプレースホルダに値をバインド
+    $stmt->bindValue(1, $user_id,    PDO::PARAM_INT);
+    $stmt->bindValue(2, $item_id,    PDO::PARAM_INT);
+    $stmt->bindValue(3, $amount,     PDO::PARAM_INT);
+    $stmt->bindValue(4, $now_date,   PDO::PARAM_STR);
+    
+    // SQLを実行
+    $stmt->execute();
+    // レコードの取得
+    $rows = $stmt->fetchAll();
+    
+    // SELECTで合致する行がある場合amountをUPDATE（購入数+1)
+    
+    
+    
     // レコードの取得
     $rows = $stmt->fetchAll();
     // 1行ずつ結果を配列で取得します
@@ -54,15 +81,12 @@ try {
       $data[$i]['status']    = htmlspecialchars($row['status'],    ENT_QUOTES, 'UTF-8');
       $data[$i]['stock']     = htmlspecialchars($row['stock'],     ENT_QUOTES, 'UTF-8');
       $i++;
- }
- $result_msg =  '追加成功';
-} catch (PDOException $e) {
+    }
+  
+  } catch (PDOException $e) {
     // 例外をスロー
     throw $e;
-}
-} catch (PDOException $e) {
-    $err_msg[] = '予期せぬエラーが発生しました。管理者へお問い合わせください。'.$e->getMessage();
-}
+  }
 ?>
 
 <!DOCTYPE html>
@@ -92,7 +116,7 @@ try {
 　　　 <span><?php print $value['price']; ?>円</span>
 　　　 <input type="hidden" name="item_id" value="<?php print $value['item_id']; ?>">
 <?php if ($value['stock'] > 0) { ?>
-<input type="checkbox" name="item_id" value="<?php print $value['item_id']; ?>" checked>
+<input type="radio" name="item_id" value="<?php print $value['item_id']; ?>">
 <?php 
 } else {
 ?>
