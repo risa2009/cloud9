@@ -34,3 +34,13 @@ header {
 .item_img_size {  /*商品一覧の商品画像*/
     height: 125px;
 }
+
+.cart_logo {
+    margin-left: auto; /*右寄せ*/
+}
+
+/*
+.cart-list {
+    display: flex;
+}
+*/

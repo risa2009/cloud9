@@ -11,82 +11,123 @@ $dsn = 'mysql:dbname='.$dbname.';host='.$host.';charset='.$charset;
 
 $img_dir    = './img/';  // 画像のディレクトリ
 
-$data       = [];     // DBから取得した値を格納する配列
 $err_msg    = [];     // エラーメッセージを格納する配列
+$msg        = [];     //エラー以外のメッセージを格納する配列
 
 $item_id    = '';
+$user_id    = 1;      //仮実装、ユーザーIDを１で固定
+
+//ログインチェックの処理(ログイン画面を実装後、表示します)
+// if(isset($_SESSION['user_id']) === TRUE){
+//   $user_id = $_SESSION['user_id']
+// }else{
+//   header('location: login.php');//ログインしていなければ、ログイン画面へリダイレクト
+// }
 
 if (isset($_POST['item_id']) === TRUE) {
     $item_id = $_POST['item_id'];
   }
+  // 現在日時を取得
+  $now_date = date('Y-m-d H:i:s');
   
   try {
     // データベースに接続
     $dbh = new PDO($dsn, $username, $password);
     $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $dbh->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+
+    if($_SERVER['REQUEST_METHOD'] === 'POST') {
+      //select文でカート内のデータを取得
+      $sql = 'SELECT
+                   carts.user_id,
+                   carts.item_id,
+                   carts.amount,
+                   items.name
+              FROM carts JOIN items
+              ON carts.item_id = items.item_id
+              WHERE carts.item_id = ?
+              AND user_id = ?';
+   
+       $stmt = $dbh->prepare($sql);
+      
+        // SQL文のプレースホルダに値をバインド
+        $stmt->bindValue(1, $item_id,    PDO::PARAM_INT);
+        $stmt->bindValue(2, $user_id,    PDO::PARAM_INT);
+        
+        // SQLを実行
+        $stmt->execute();
+        
+        // レコードの取得
+        $cart_list = $stmt->fetchAll();
+        //var_dump($cart_list);
+        
+    //カート内に該当のレコードがあるかどうかをチェック
+    if(count($cart_list) >= 1){ //レコードが一つ以上取得できれば
     
-    // 公開商品のみ表示
-    $sql = 'SELECT 
-                items.item_id,
-                items.name,
-                items.price,
-                items.img,
-                items.status,
-                items.stock
-           FROM items
-           WHERE status = 1';
-            
-    // SQL文を実行する準備
-    $stmt = $dbh->prepare($sql);
-    
-    // SQLを実行
-    $stmt->execute();
-    
-    // 指定された商品idと現在のユーザーidをWHEREの条件にしてcartテーブルをSELECT
-    $sql = 'SELECT
-               carts.user_id,
-               carts.item_id,
-               carts.amount
-            FROM carts
-            WHERE item_id = ?
-            AND user_id = ?';
-            
-    // SQL文を実行する準備
-    $stmt = $dbh->prepare($sql);
-    // SQL文のプレースホルダに値をバインド
-    $stmt->bindValue(1, $user_id,    PDO::PARAM_INT);
-    $stmt->bindValue(2, $item_id,    PDO::PARAM_INT);
-    $stmt->bindValue(3, $amount,     PDO::PARAM_INT);
-    $stmt->bindValue(4, $now_date,   PDO::PARAM_STR);
-    
-    // SQLを実行
-    $stmt->execute();
-    // レコードの取得
-    $rows = $stmt->fetchAll();
-    
-    // SELECTで合致する行がある場合amountをUPDATE（購入数+1)
-    
-    
-    
-    // レコードの取得
-    $rows = $stmt->fetchAll();
-    // 1行ずつ結果を配列で取得します
-    $i = 0;
-    foreach ($rows as $row) {
-      $data[$i]['item_id']   = htmlspecialchars($row['item_id'],   ENT_QUOTES, 'UTF-8');
-      $data[$i]['name']      = htmlspecialchars($row['name'],      ENT_QUOTES, 'UTF-8');
-      $data[$i]['price']     = htmlspecialchars($row['price'],     ENT_QUOTES, 'UTF-8');
-      $data[$i]['img']       = htmlspecialchars($row['img'],       ENT_QUOTES, 'UTF-8');
-      $data[$i]['status']    = htmlspecialchars($row['status'],    ENT_QUOTES, 'UTF-8');
-      $data[$i]['stock']     = htmlspecialchars($row['stock'],     ENT_QUOTES, 'UTF-8');
-      $i++;
+      $sql = 'UPDATE carts
+        SET amount = ?
+        WHERE item_id = ?';
+        
+      //レコード一つだけなので$cart_listの0番目に取得されている。
+      $amount = $cart_list[0]['amount'] +1;
+      
+      $stmt = $dbh->prepare($sql);
+      $stmt->bindValue(1, $amount,     PDO::PARAM_INT);
+      $stmt->bindValue(2, $item_id,    PDO::PARAM_INT);
+      $stmt->execute();
+      // update文では、結果を取得するわけではないのでfetchallは不要
+      
+      $msg[] = 'カートに商品を追加しました。現在の購入数:' 
+               . $cart_list[0]['name'] 
+               . '[' . $cart_list[0]['amount'] . '個]';
+
+    }else{
+      $amount = 1; //まだカートに一つも入っていない状態
+      //$stmt->bindValue(3, 1, PDO::PARAM_INT);としてもOK
+
+      $sql =  'INSERT INTO carts (user_id, item_id, amount, create_datetime) 
+              VALUES (?, ?, ?, ?)';
+      
+      $stmt = $dbh->prepare($sql);
+      $stmt->bindValue(1, $user_id,    PDO::PARAM_INT);
+      $stmt->bindValue(2, $item_id,    PDO::PARAM_INT);
+      $stmt->bindValue(3, $amount,     PDO::PARAM_INT);
+      $stmt->bindValue(4, $now_date,   PDO::PARAM_STR);
+      
+      $stmt->execute();
+      }
+      
     }
-  
+
+    // 公開商品のみ表示
+      $sql = 'SELECT 
+                  items.item_id,
+                  items.name,
+                  items.price,
+                  items.img,
+                  items.status,
+                  items.stock
+            FROM items
+            WHERE status = 1';
+              
+      // SQL文を実行する準備
+      $stmt = $dbh->prepare($sql);
+      
+      // SQLを実行
+      $stmt->execute();
+      
+      // レコードの取得
+      $item_list = $stmt->fetchAll();
+
   } catch (PDOException $e) {
     // 例外をスロー
-    throw $e;
+    // throw $e;
+    echo 'データベース処理でエラーが発生しました。理由：'.$e->getMessage();
   }
+
+function h($str){
+  return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
+}
 ?>
 
 <!DOCTYPE html>
@@ -99,37 +140,41 @@ if (isset($_POST['item_id']) === TRUE) {
 <body>
   <header>
     <div class="header-box">
-      <a href="#">
+      <a href="https://risayamasaki-risayamasaki.c9users.io/MyApron/itemlist.php">
         <img class="logo" src="./img/logo.png" alt="MyApron">
       </a>
     </div>
+    <div class="cart_logo">
+      <a href="https://risayamasaki-risayamasaki.c9users.io/MyApron/cart.php">
+      <img class="logo" src="./img/cart.png" alt="MyApron">
+      </a>
+    </div>
   </header>
+<?php foreach ($msg as $value) { ?>
+     <p><?php print h($value); ?></p>
+<?php } ?>
   <div class="item_list">
-<?php if (count($err_msg) === 0) { ?>
-<?php foreach ($data as $value)  { ?>
-  <div class="item">
-     <form action="cart.php" method="post">
-　　　 <span class="item_img_size"><img src="<?php print $img_dir . $value['img']; ?>"></span>
-　　　 <input type="hidden" name="item_id" value="<?php print $value['item_id']; ?>">
-　　　 <span><?php print $value['name']; ?></span>
-　　　 <input type="hidden" name="item_id" value="<?php print $value['item_id']; ?>">
-　　　 <span><?php print $value['price']; ?>円</span>
-　　　 <input type="hidden" name="item_id" value="<?php print $value['item_id']; ?>">
+<?php foreach ($item_list as $value)  { ?>
+   <div class="item">
+    <form method="post">
+      <span class="item_img_size"><img src="<?php print h($img_dir . $value['img']); ?>"></span>
+      <span><?php print h($value['name']); ?></span>
+      <span><?php print h($value['price']); ?>円</span>
+      <input type="hidden" name="sql_kind" value="add_product_to_cart">
 <?php if ($value['stock'] > 0) { ?>
-<input type="radio" name="item_id" value="<?php print $value['item_id']; ?>">
+      <input type="hidden" name="item_id" value="<?php print h($value['item_id']); ?>">
 <?php 
 } else {
 ?>
-<span>売り切れ</span>
+      <span>売り切れ</span>
 <?php } ?>
-<input type="submit" value="カートに入れる">
-     </form>
+      <input type="submit" value="カートに入れる">
+      </form>
+<?php } ?>
 <?php foreach ($err_msg as $value) { ?>
-     <p><?php print $value; ?></p>
+     <p><?php print h($value); ?></p>
 <?php } ?>
-  </div>
-<?php } ?>
-<?php } ?>
+   </div>
   </div>
 </body>
 </html>

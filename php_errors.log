@@ -329,3 +329,686 @@
 [14-Jul-2017 01:38:50 Asia/Tokyo] PHP Notice:  Undefined variable: now_date in /home/ubuntu/workspace/MyApron/itemlist.php on line 61
 [14-Jul-2017 01:38:50 Asia/Tokyo] PHP Stack trace:
 [14-Jul-2017 01:38:50 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 17:44:54 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/itemlist.php on line 58
+[14-Jul-2017 17:44:54 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 17:44:54 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 17:44:54 Asia/Tokyo] PHP Notice:  Undefined variable: amount in /home/ubuntu/workspace/MyApron/itemlist.php on line 60
+[14-Jul-2017 17:44:54 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 17:44:54 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 17:44:54 Asia/Tokyo] PHP Notice:  Undefined variable: now_date in /home/ubuntu/workspace/MyApron/itemlist.php on line 61
+[14-Jul-2017 17:44:54 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 17:44:54 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 17:47:01 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/itemlist.php on line 58
+[14-Jul-2017 17:47:01 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 17:47:01 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 17:47:01 Asia/Tokyo] PHP Notice:  Undefined variable: amount in /home/ubuntu/workspace/MyApron/itemlist.php on line 60
+[14-Jul-2017 17:47:01 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 17:47:01 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 17:47:01 Asia/Tokyo] PHP Notice:  Undefined variable: now_date in /home/ubuntu/workspace/MyApron/itemlist.php on line 61
+[14-Jul-2017 17:47:01 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 17:47:01 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 17:49:20 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/itemlist.php on line 60
+[14-Jul-2017 17:49:20 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 17:49:20 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 17:49:20 Asia/Tokyo] PHP Notice:  Undefined variable: amount in /home/ubuntu/workspace/MyApron/itemlist.php on line 62
+[14-Jul-2017 17:49:20 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 17:49:20 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 17:49:20 Asia/Tokyo] PHP Notice:  Undefined variable: now_date in /home/ubuntu/workspace/MyApron/itemlist.php on line 63
+[14-Jul-2017 17:49:20 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 17:49:20 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 20:31:39 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/itemlist.php on line 60
+[14-Jul-2017 20:31:39 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 20:31:39 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 20:31:39 Asia/Tokyo] PHP Notice:  Undefined variable: amount in /home/ubuntu/workspace/MyApron/itemlist.php on line 62
+[14-Jul-2017 20:31:39 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 20:31:39 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 20:31:39 Asia/Tokyo] PHP Notice:  Undefined variable: now_date in /home/ubuntu/workspace/MyApron/itemlist.php on line 63
+[14-Jul-2017 20:31:39 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 20:31:39 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 20:31:39 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/itemlist.php on line 82
+[14-Jul-2017 20:31:39 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 20:31:39 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 20:31:39 Asia/Tokyo] PHP Notice:  Undefined variable: amount in /home/ubuntu/workspace/MyApron/itemlist.php on line 84
+[14-Jul-2017 20:31:39 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 20:31:39 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 20:31:39 Asia/Tokyo] PHP Notice:  Undefined variable: now_date in /home/ubuntu/workspace/MyApron/itemlist.php on line 85
+[14-Jul-2017 20:31:39 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 20:31:39 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 20:31:39 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null' in /home/ubuntu/workspace/MyApron/itemlist.php:86
+Stack trace:
+#0 /home/ubuntu/workspace/MyApron/itemlist.php(86): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/MyApron/itemlist.php on line 86
+[14-Jul-2017 20:35:09 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/itemlist.php on line 62
+[14-Jul-2017 20:35:09 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 20:35:09 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 20:35:09 Asia/Tokyo] PHP Notice:  Undefined variable: amount in /home/ubuntu/workspace/MyApron/itemlist.php on line 64
+[14-Jul-2017 20:35:09 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 20:35:09 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 20:35:09 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/itemlist.php on line 84
+[14-Jul-2017 20:35:09 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 20:35:09 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 20:35:09 Asia/Tokyo] PHP Notice:  Undefined variable: amount in /home/ubuntu/workspace/MyApron/itemlist.php on line 86
+[14-Jul-2017 20:35:09 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 20:35:09 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 20:35:09 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null' in /home/ubuntu/workspace/MyApron/itemlist.php:88
+Stack trace:
+#0 /home/ubuntu/workspace/MyApron/itemlist.php(88): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/MyApron/itemlist.php on line 88
+[14-Jul-2017 20:37:45 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/itemlist.php on line 62
+[14-Jul-2017 20:37:45 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 20:37:45 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 20:37:45 Asia/Tokyo] PHP Notice:  Undefined variable: amount in /home/ubuntu/workspace/MyApron/itemlist.php on line 64
+[14-Jul-2017 20:37:45 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 20:37:45 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 20:37:45 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/itemlist.php on line 84
+[14-Jul-2017 20:37:45 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 20:37:45 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 20:37:45 Asia/Tokyo] PHP Notice:  Undefined variable: amount in /home/ubuntu/workspace/MyApron/itemlist.php on line 86
+[14-Jul-2017 20:37:45 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 20:37:45 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 20:37:45 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null' in /home/ubuntu/workspace/MyApron/itemlist.php:88
+Stack trace:
+#0 /home/ubuntu/workspace/MyApron/itemlist.php(88): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/MyApron/itemlist.php on line 88
+[14-Jul-2017 20:39:07 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/itemlist.php on line 62
+[14-Jul-2017 20:39:07 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 20:39:07 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 20:39:07 Asia/Tokyo] PHP Notice:  Undefined variable: amount in /home/ubuntu/workspace/MyApron/itemlist.php on line 64
+[14-Jul-2017 20:39:07 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 20:39:07 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 20:39:07 Asia/Tokyo] PHP Notice:  Undefined variable: amount in /home/ubuntu/workspace/MyApron/itemlist.php on line 76
+[14-Jul-2017 20:39:07 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 20:39:07 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 20:48:28 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/itemlist.php on line 62
+[14-Jul-2017 20:48:28 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 20:48:28 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 20:48:28 Asia/Tokyo] PHP Notice:  Undefined variable: amount in /home/ubuntu/workspace/MyApron/itemlist.php on line 64
+[14-Jul-2017 20:48:28 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 20:48:28 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 20:48:28 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/itemlist.php on line 84
+[14-Jul-2017 20:48:28 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 20:48:28 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 20:48:28 Asia/Tokyo] PHP Notice:  Undefined variable: amount in /home/ubuntu/workspace/MyApron/itemlist.php on line 86
+[14-Jul-2017 20:48:28 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 20:48:28 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 20:48:28 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null' in /home/ubuntu/workspace/MyApron/itemlist.php:88
+Stack trace:
+#0 /home/ubuntu/workspace/MyApron/itemlist.php(88): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/MyApron/itemlist.php on line 88
+[14-Jul-2017 21:00:02 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/itemlist.php on line 62
+[14-Jul-2017 21:00:02 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 21:00:02 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 21:00:02 Asia/Tokyo] PHP Notice:  Undefined variable: amount in /home/ubuntu/workspace/MyApron/itemlist.php on line 64
+[14-Jul-2017 21:00:02 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 21:00:02 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 21:00:02 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/itemlist.php on line 84
+[14-Jul-2017 21:00:02 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 21:00:02 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 21:00:02 Asia/Tokyo] PHP Notice:  Undefined variable: amount in /home/ubuntu/workspace/MyApron/itemlist.php on line 86
+[14-Jul-2017 21:00:02 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 21:00:02 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 21:00:02 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null' in /home/ubuntu/workspace/MyApron/itemlist.php:88
+Stack trace:
+#0 /home/ubuntu/workspace/MyApron/itemlist.php(88): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/MyApron/itemlist.php on line 88
+[14-Jul-2017 21:02:05 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/itemlist.php on line 62
+[14-Jul-2017 21:02:05 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 21:02:05 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 21:02:05 Asia/Tokyo] PHP Notice:  Undefined variable: amount in /home/ubuntu/workspace/MyApron/itemlist.php on line 64
+[14-Jul-2017 21:02:05 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 21:02:05 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 21:02:05 Asia/Tokyo] PHP Notice:  Undefined variable: amount in /home/ubuntu/workspace/MyApron/itemlist.php on line 76
+[14-Jul-2017 21:02:05 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 21:02:05 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 21:02:05 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number' in /home/ubuntu/workspace/MyApron/itemlist.php:77
+Stack trace:
+#0 /home/ubuntu/workspace/MyApron/itemlist.php(77): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/MyApron/itemlist.php on line 77
+[14-Jul-2017 21:05:29 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/itemlist.php on line 62
+[14-Jul-2017 21:05:29 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 21:05:29 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 21:05:29 Asia/Tokyo] PHP Notice:  Undefined variable: amount in /home/ubuntu/workspace/MyApron/itemlist.php on line 64
+[14-Jul-2017 21:05:29 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 21:05:29 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 21:05:29 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/itemlist.php on line 81
+[14-Jul-2017 21:05:29 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 21:05:29 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 21:05:29 Asia/Tokyo] PHP Notice:  Undefined variable: amount in /home/ubuntu/workspace/MyApron/itemlist.php on line 83
+[14-Jul-2017 21:05:29 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 21:05:29 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 21:05:29 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null' in /home/ubuntu/workspace/MyApron/itemlist.php:85
+Stack trace:
+#0 /home/ubuntu/workspace/MyApron/itemlist.php(85): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/MyApron/itemlist.php on line 85
+[14-Jul-2017 21:07:36 Asia/Tokyo] PHP Fatal error:  Cannot use try without catch or finally in /home/ubuntu/workspace/MyApron/cart.php on line 93
+[14-Jul-2017 21:08:22 Asia/Tokyo] PHP Fatal error:  Cannot use try without catch or finally in /home/ubuntu/workspace/MyApron/cart.php on line 93
+[14-Jul-2017 21:09:14 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/itemlist.php on line 62
+[14-Jul-2017 21:09:14 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 21:09:14 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 21:09:14 Asia/Tokyo] PHP Notice:  Undefined variable: amount in /home/ubuntu/workspace/MyApron/itemlist.php on line 64
+[14-Jul-2017 21:09:14 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 21:09:14 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 21:09:14 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/itemlist.php on line 81
+[14-Jul-2017 21:09:14 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 21:09:14 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 21:09:14 Asia/Tokyo] PHP Notice:  Undefined variable: amount in /home/ubuntu/workspace/MyApron/itemlist.php on line 83
+[14-Jul-2017 21:09:14 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 21:09:14 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 21:09:14 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null' in /home/ubuntu/workspace/MyApron/itemlist.php:85
+Stack trace:
+#0 /home/ubuntu/workspace/MyApron/itemlist.php(85): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/MyApron/itemlist.php on line 85
+[14-Jul-2017 21:11:25 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/itemlist.php on line 65
+[14-Jul-2017 21:11:25 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 21:11:25 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 21:11:25 Asia/Tokyo] PHP Notice:  Undefined variable: amount in /home/ubuntu/workspace/MyApron/itemlist.php on line 67
+[14-Jul-2017 21:11:25 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 21:11:25 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 21:11:25 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/itemlist.php on line 88
+[14-Jul-2017 21:11:25 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 21:11:25 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 21:11:25 Asia/Tokyo] PHP Notice:  Undefined variable: amount in /home/ubuntu/workspace/MyApron/itemlist.php on line 90
+[14-Jul-2017 21:11:25 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 21:11:25 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 21:11:25 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null' in /home/ubuntu/workspace/MyApron/itemlist.php:92
+Stack trace:
+#0 /home/ubuntu/workspace/MyApron/itemlist.php(92): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/MyApron/itemlist.php on line 92
+[14-Jul-2017 21:12:26 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/itemlist.php on line 65
+[14-Jul-2017 21:12:26 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 21:12:26 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 21:12:26 Asia/Tokyo] PHP Notice:  Undefined variable: amount in /home/ubuntu/workspace/MyApron/itemlist.php on line 67
+[14-Jul-2017 21:12:26 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 21:12:26 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 21:14:44 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'item_id' in where clause is ambiguous' in /home/ubuntu/workspace/MyApron/itemlist.php:64
+Stack trace:
+#0 /home/ubuntu/workspace/MyApron/itemlist.php(64): PDO->prepare('SELECT?        ...')
+#1 {main}
+  thrown in /home/ubuntu/workspace/MyApron/itemlist.php on line 64
+[14-Jul-2017 21:17:16 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'item_id' in where clause is ambiguous' in /home/ubuntu/workspace/MyApron/itemlist.php:64
+Stack trace:
+#0 /home/ubuntu/workspace/MyApron/itemlist.php(64): PDO->prepare('SELECT?        ...')
+#1 {main}
+  thrown in /home/ubuntu/workspace/MyApron/itemlist.php on line 64
+[14-Jul-2017 21:17:37 Asia/Tokyo] PHP Warning:  PDO::prepare() expects at least 1 parameter, 0 given in /home/ubuntu/workspace/MyApron/itemlist.php on line 64
+[14-Jul-2017 21:17:37 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 21:17:37 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 21:17:37 Asia/Tokyo] PHP   2. PDO->prepare() /home/ubuntu/workspace/MyApron/itemlist.php:64
+[14-Jul-2017 21:17:37 Asia/Tokyo] PHP Fatal error:  Call to a member function bindValue() on a non-object in /home/ubuntu/workspace/MyApron/itemlist.php on line 66
+[14-Jul-2017 21:17:37 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 21:17:37 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 21:18:35 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'item_id' in where clause is ambiguous' in /home/ubuntu/workspace/MyApron/itemlist.php:64
+Stack trace:
+#0 /home/ubuntu/workspace/MyApron/itemlist.php(64): PDO->prepare('SELECT?        ...')
+#1 {main}
+  thrown in /home/ubuntu/workspace/MyApron/itemlist.php on line 64
+[14-Jul-2017 21:20:59 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'item_id' in where clause is ambiguous' in /home/ubuntu/workspace/MyApron/itemlist.php:64
+Stack trace:
+#0 /home/ubuntu/workspace/MyApron/itemlist.php(64): PDO->prepare('SELECT?        ...')
+#1 {main}
+  thrown in /home/ubuntu/workspace/MyApron/itemlist.php on line 64
+[14-Jul-2017 21:27:05 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'item_id' in where clause is ambiguous' in /home/ubuntu/workspace/MyApron/itemlist.php:64
+Stack trace:
+#0 /home/ubuntu/workspace/MyApron/itemlist.php(64): PDO->prepare('SELECT?        ...')
+#1 {main}
+  thrown in /home/ubuntu/workspace/MyApron/itemlist.php on line 64
+[14-Jul-2017 21:29:35 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'item_id' in where clause is ambiguous' in /home/ubuntu/workspace/MyApron/itemlist.php:64
+Stack trace:
+#0 /home/ubuntu/workspace/MyApron/itemlist.php(64): PDO->prepare('SELECT?        ...')
+#1 {main}
+  thrown in /home/ubuntu/workspace/MyApron/itemlist.php on line 64
+[14-Jul-2017 21:38:57 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'item_id' in where clause is ambiguous' in /home/ubuntu/workspace/MyApron/itemlist.php:64
+Stack trace:
+#0 /home/ubuntu/workspace/MyApron/itemlist.php(64): PDO->prepare('SELECT?        ...')
+#1 {main}
+  thrown in /home/ubuntu/workspace/MyApron/itemlist.php on line 64
+[14-Jul-2017 21:47:57 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'item_id' in where clause is ambiguous' in /home/ubuntu/workspace/MyApron/itemlist.php:72
+Stack trace:
+#0 /home/ubuntu/workspace/MyApron/itemlist.php(72): PDO->prepare('SELECT?        ...')
+#1 {main}
+  thrown in /home/ubuntu/workspace/MyApron/itemlist.php on line 72
+[14-Jul-2017 22:20:21 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'item_id' in where clause is ambiguous' in /home/ubuntu/workspace/MyApron/itemlist.php:97
+Stack trace:
+#0 /home/ubuntu/workspace/MyApron/itemlist.php(97): PDO->prepare('SELECT?        ...')
+#1 {main}
+  thrown in /home/ubuntu/workspace/MyApron/itemlist.php on line 97
+[14-Jul-2017 22:20:35 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'item_id' in where clause is ambiguous' in /home/ubuntu/workspace/MyApron/itemlist.php:97
+Stack trace:
+#0 /home/ubuntu/workspace/MyApron/itemlist.php(97): PDO->prepare('SELECT?        ...')
+#1 {main}
+  thrown in /home/ubuntu/workspace/MyApron/itemlist.php on line 97
+[14-Jul-2017 22:30:23 Asia/Tokyo] PHP Notice:  Undefined variable: amount in /home/ubuntu/workspace/MyApron/itemlist.php on line 162
+[14-Jul-2017 22:30:23 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 22:30:23 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 22:30:23 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'amount' cannot be null' in /home/ubuntu/workspace/MyApron/itemlist.php:164
+Stack trace:
+#0 /home/ubuntu/workspace/MyApron/itemlist.php(164): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/MyApron/itemlist.php on line 164
+[14-Jul-2017 22:30:23 Asia/Tokyo] PHP Notice:  Undefined variable: amount in /home/ubuntu/workspace/MyApron/itemlist.php on line 162
+[14-Jul-2017 22:30:23 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 22:30:23 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 22:30:23 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'amount' cannot be null' in /home/ubuntu/workspace/MyApron/itemlist.php:164
+Stack trace:
+#0 /home/ubuntu/workspace/MyApron/itemlist.php(164): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/MyApron/itemlist.php on line 164
+[14-Jul-2017 23:01:47 Asia/Tokyo] PHP Notice:  Undefined variable: amount in /home/ubuntu/workspace/MyApron/itemlist.php on line 167
+[14-Jul-2017 23:01:47 Asia/Tokyo] PHP Stack trace:
+[14-Jul-2017 23:01:47 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[14-Jul-2017 23:01:47 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'amount' cannot be null' in /home/ubuntu/workspace/MyApron/itemlist.php:169
+Stack trace:
+#0 /home/ubuntu/workspace/MyApron/itemlist.php(169): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/MyApron/itemlist.php on line 169
+[15-Jul-2017 01:39:53 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'item_id' in where clause is ambiguous' in /home/ubuntu/workspace/MyApron/itemlist.php:76
+Stack trace:
+#0 /home/ubuntu/workspace/MyApron/itemlist.php(76): PDO->prepare('SELECT?        ...')
+#1 {main}
+  thrown in /home/ubuntu/workspace/MyApron/itemlist.php on line 76
+[15-Jul-2017 01:42:36 Asia/Tokyo] PHP Notice:  Undefined variable: amount in /home/ubuntu/workspace/MyApron/itemlist.php on line 97
+[15-Jul-2017 01:42:36 Asia/Tokyo] PHP Stack trace:
+[15-Jul-2017 01:42:36 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[15-Jul-2017 01:42:36 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'amount' cannot be null' in /home/ubuntu/workspace/MyApron/itemlist.php:99
+Stack trace:
+#0 /home/ubuntu/workspace/MyApron/itemlist.php(99): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/MyApron/itemlist.php on line 99
+[15-Jul-2017 01:43:18 Asia/Tokyo] PHP Notice:  Undefined variable: amount in /home/ubuntu/workspace/MyApron/itemlist.php on line 97
+[15-Jul-2017 01:43:18 Asia/Tokyo] PHP Stack trace:
+[15-Jul-2017 01:43:18 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[15-Jul-2017 01:43:18 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'amount' cannot be null' in /home/ubuntu/workspace/MyApron/itemlist.php:99
+Stack trace:
+#0 /home/ubuntu/workspace/MyApron/itemlist.php(99): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/MyApron/itemlist.php on line 99
+[15-Jul-2017 13:37:41 Asia/Tokyo] PHP Notice:  Undefined variable: amount in /home/ubuntu/workspace/MyApron/itemlist.php on line 97
+[15-Jul-2017 13:37:41 Asia/Tokyo] PHP Stack trace:
+[15-Jul-2017 13:37:41 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[15-Jul-2017 13:37:41 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'amount' cannot be null' in /home/ubuntu/workspace/MyApron/itemlist.php:99
+Stack trace:
+#0 /home/ubuntu/workspace/MyApron/itemlist.php(99): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/MyApron/itemlist.php on line 99
+[15-Jul-2017 13:38:03 Asia/Tokyo] PHP Notice:  Undefined variable: amount in /home/ubuntu/workspace/MyApron/itemlist.php on line 97
+[15-Jul-2017 13:38:03 Asia/Tokyo] PHP Stack trace:
+[15-Jul-2017 13:38:03 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[15-Jul-2017 13:38:03 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'amount' cannot be null' in /home/ubuntu/workspace/MyApron/itemlist.php:99
+Stack trace:
+#0 /home/ubuntu/workspace/MyApron/itemlist.php(99): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/MyApron/itemlist.php on line 99
+[15-Jul-2017 17:39:32 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '　' (T_STRING) in /home/ubuntu/workspace/MyApron/cart.php on line 73
+[15-Jul-2017 21:46:15 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '$stmt' (T_VARIABLE) in /home/ubuntu/workspace/MyApron/cart.php on line 52
+[15-Jul-2017 21:46:48 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '$stmt' (T_VARIABLE) in /home/ubuntu/workspace/MyApron/cart.php on line 52
+[15-Jul-2017 21:47:06 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '$stmt' (T_VARIABLE) in /home/ubuntu/workspace/MyApron/cart.php on line 52
+[15-Jul-2017 21:48:41 Asia/Tokyo] PHP Fatal error:  Cannot use try without catch or finally in /home/ubuntu/workspace/MyApron/cart.php on line 54
+[15-Jul-2017 21:49:20 Asia/Tokyo] PHP Fatal error:  Cannot use try without catch or finally in /home/ubuntu/workspace/MyApron/cart.php on line 54
+[15-Jul-2017 21:49:43 Asia/Tokyo] PHP Notice:  Undefined variable: dbh in /home/ubuntu/workspace/MyApron/cart.php on line 80
+[15-Jul-2017 21:49:43 Asia/Tokyo] PHP Stack trace:
+[15-Jul-2017 21:49:43 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[15-Jul-2017 21:49:43 Asia/Tokyo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/MyApron/cart.php on line 80
+[15-Jul-2017 21:49:43 Asia/Tokyo] PHP Stack trace:
+[15-Jul-2017 21:49:43 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[15-Jul-2017 21:50:43 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/cart.php on line 88
+[15-Jul-2017 21:50:43 Asia/Tokyo] PHP Stack trace:
+[15-Jul-2017 21:50:43 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[15-Jul-2017 21:50:43 Asia/Tokyo] PHP Notice:  Undefined variable: amount in /home/ubuntu/workspace/MyApron/cart.php on line 90
+[15-Jul-2017 21:50:43 Asia/Tokyo] PHP Stack trace:
+[15-Jul-2017 21:50:43 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[15-Jul-2017 21:50:43 Asia/Tokyo] PHP Notice:  Undefined variable: now_date in /home/ubuntu/workspace/MyApron/cart.php on line 91
+[15-Jul-2017 21:50:43 Asia/Tokyo] PHP Stack trace:
+[15-Jul-2017 21:50:43 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[15-Jul-2017 21:50:43 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null' in /home/ubuntu/workspace/MyApron/cart.php:94
+Stack trace:
+#0 /home/ubuntu/workspace/MyApron/cart.php(94): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/MyApron/cart.php on line 94
+[15-Jul-2017 21:50:59 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/cart.php on line 86
+[15-Jul-2017 21:50:59 Asia/Tokyo] PHP Stack trace:
+[15-Jul-2017 21:50:59 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[15-Jul-2017 21:50:59 Asia/Tokyo] PHP Notice:  Undefined variable: amount in /home/ubuntu/workspace/MyApron/cart.php on line 88
+[15-Jul-2017 21:50:59 Asia/Tokyo] PHP Stack trace:
+[15-Jul-2017 21:50:59 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[15-Jul-2017 21:50:59 Asia/Tokyo] PHP Notice:  Undefined variable: now_date in /home/ubuntu/workspace/MyApron/cart.php on line 89
+[15-Jul-2017 21:50:59 Asia/Tokyo] PHP Stack trace:
+[15-Jul-2017 21:50:59 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[15-Jul-2017 21:50:59 Asia/Tokyo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null' in /home/ubuntu/workspace/MyApron/cart.php:92
+Stack trace:
+#0 /home/ubuntu/workspace/MyApron/cart.php(92): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/MyApron/cart.php on line 92
+[16-Jul-2017 01:09:27 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /home/ubuntu/workspace/MyApron/itemlist.php on line 88
+[16-Jul-2017 01:12:16 Asia/Tokyo] PHP Fatal error:  Cannot use try without catch or finally in /home/ubuntu/workspace/MyApron/itemlist.php on line 88
+[16-Jul-2017 09:51:11 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /home/ubuntu/workspace/MyApron/itemlist.php on line 99
+[16-Jul-2017 10:52:29 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '[', expecting variable (T_VARIABLE) or '$' in /home/ubuntu/workspace/MyApron/itemlist.php on line 51
+[16-Jul-2017 10:52:32 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '[', expecting variable (T_VARIABLE) or '$' in /home/ubuntu/workspace/MyApron/itemlist.php on line 51
+[16-Jul-2017 10:56:23 Asia/Tokyo] PHP Parse error:  syntax error, unexpected 'var_dump' (T_STRING) in /home/ubuntu/workspace/MyApron/itemlist.php on line 79
+[16-Jul-2017 10:56:28 Asia/Tokyo] PHP Parse error:  syntax error, unexpected 'var_dump' (T_STRING) in /home/ubuntu/workspace/MyApron/itemlist.php on line 79
+[16-Jul-2017 11:45:22 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '$stmt' (T_VARIABLE) in /home/ubuntu/workspace/MyApron/itemlist.php on line 118
+[16-Jul-2017 11:45:33 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '$stmt' (T_VARIABLE) in /home/ubuntu/workspace/MyApron/itemlist.php on line 118
+[16-Jul-2017 11:57:26 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '$stmt' (T_VARIABLE) in /home/ubuntu/workspace/MyApron/itemlist.php on line 133
+[16-Jul-2017 11:57:26 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '$stmt' (T_VARIABLE) in /home/ubuntu/workspace/MyApron/itemlist.php on line 133
+[16-Jul-2017 11:58:55 Asia/Tokyo] PHP Notice:  Undefined variable: item_list in /home/ubuntu/workspace/MyApron/itemlist.php on line 258
+[16-Jul-2017 11:58:55 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 11:58:55 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[16-Jul-2017 11:58:55 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/itemlist.php on line 258
+[16-Jul-2017 11:58:55 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 11:58:55 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[16-Jul-2017 11:58:57 Asia/Tokyo] PHP Notice:  Undefined variable: item_list in /home/ubuntu/workspace/MyApron/itemlist.php on line 258
+[16-Jul-2017 11:58:57 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 11:58:57 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[16-Jul-2017 11:58:57 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/itemlist.php on line 258
+[16-Jul-2017 11:58:57 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 11:58:57 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[16-Jul-2017 11:59:39 Asia/Tokyo] PHP Notice:  Undefined variable: item_list in /home/ubuntu/workspace/MyApron/itemlist.php on line 258
+[16-Jul-2017 11:59:39 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 11:59:39 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[16-Jul-2017 11:59:39 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/itemlist.php on line 258
+[16-Jul-2017 11:59:39 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 11:59:39 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[16-Jul-2017 12:00:44 Asia/Tokyo] PHP Notice:  Undefined variable: item_list in /home/ubuntu/workspace/MyApron/itemlist.php on line 258
+[16-Jul-2017 12:00:44 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 12:00:44 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[16-Jul-2017 12:00:44 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/itemlist.php on line 258
+[16-Jul-2017 12:00:44 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 12:00:44 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[16-Jul-2017 12:02:17 Asia/Tokyo] PHP Notice:  Undefined variable: item_list in /home/ubuntu/workspace/MyApron/itemlist.php on line 261
+[16-Jul-2017 12:02:17 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 12:02:17 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[16-Jul-2017 12:02:17 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/itemlist.php on line 261
+[16-Jul-2017 12:02:17 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 12:02:17 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[16-Jul-2017 13:24:04 Asia/Tokyo] PHP Notice:  Undefined index: name in /home/ubuntu/workspace/MyApron/itemlist.php on line 80
+[16-Jul-2017 13:24:04 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 13:24:04 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[16-Jul-2017 13:25:08 Asia/Tokyo] PHP Notice:  Undefined index: name in /home/ubuntu/workspace/MyApron/itemlist.php on line 80
+[16-Jul-2017 13:25:08 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 13:25:08 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[16-Jul-2017 13:36:04 Asia/Tokyo] PHP Notice:  Undefined index: name in /home/ubuntu/workspace/MyApron/itemlist.php on line 80
+[16-Jul-2017 13:36:04 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 13:36:04 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[16-Jul-2017 14:06:58 Asia/Tokyo] PHP Fatal error:  Cannot use try without catch or finally in /home/ubuntu/workspace/MyApron/cart.php on line 61
+[16-Jul-2017 14:07:18 Asia/Tokyo] PHP Fatal error:  Cannot use try without catch or finally in /home/ubuntu/workspace/MyApron/cart.php on line 61
+[16-Jul-2017 14:24:10 Asia/Tokyo] PHP Notice:  Undefined variable: msg in /home/ubuntu/workspace/MyApron/cart.php on line 82
+[16-Jul-2017 14:24:10 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 14:24:10 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 14:24:10 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/cart.php on line 82
+[16-Jul-2017 14:24:10 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 14:24:10 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 14:24:10 Asia/Tokyo] PHP Fatal error:  Call to undefined function h() in /home/ubuntu/workspace/MyApron/cart.php on line 89
+[16-Jul-2017 14:24:10 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 14:24:10 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 14:24:26 Asia/Tokyo] PHP Fatal error:  Call to undefined function h() in /home/ubuntu/workspace/MyApron/cart.php on line 87
+[16-Jul-2017 14:24:26 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 14:24:26 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 14:24:44 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/cart.php on line 90
+[16-Jul-2017 14:24:44 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 14:24:44 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 14:32:30 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/cart.php on line 96
+[16-Jul-2017 14:32:30 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 14:32:30 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 14:32:30 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/cart.php on line 97
+[16-Jul-2017 14:32:30 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 14:32:30 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 14:32:30 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/cart.php on line 98
+[16-Jul-2017 14:32:30 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 14:32:30 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 14:32:30 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/cart.php on line 99
+[16-Jul-2017 14:32:30 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 14:32:30 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 14:36:23 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/cart.php on line 96
+[16-Jul-2017 14:36:23 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 14:36:23 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 14:36:23 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/cart.php on line 97
+[16-Jul-2017 14:36:23 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 14:36:23 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 14:36:23 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/cart.php on line 98
+[16-Jul-2017 14:36:23 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 14:36:23 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 14:36:23 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/cart.php on line 99
+[16-Jul-2017 14:36:23 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 14:36:23 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 14:36:35 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/cart.php on line 96
+[16-Jul-2017 14:36:35 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 14:36:35 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 14:36:35 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/cart.php on line 97
+[16-Jul-2017 14:36:35 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 14:36:35 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 14:36:35 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/cart.php on line 98
+[16-Jul-2017 14:36:35 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 14:36:35 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 14:36:35 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/cart.php on line 99
+[16-Jul-2017 14:36:35 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 14:36:35 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 14:48:22 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '$i' (T_VARIABLE) in /home/ubuntu/workspace/MyApron/cart.php on line 58
+[16-Jul-2017 14:51:26 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/cart.php on line 86
+[16-Jul-2017 14:51:26 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 14:51:26 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 14:51:26 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/cart.php on line 86
+[16-Jul-2017 14:51:26 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 14:51:26 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 15:18:36 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/cart.php on line 87
+[16-Jul-2017 15:18:36 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 15:18:36 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 15:18:36 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/cart.php on line 87
+[16-Jul-2017 15:18:36 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 15:18:36 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 15:19:44 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/cart.php on line 87
+[16-Jul-2017 15:19:44 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 15:19:44 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 15:19:44 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/cart.php on line 87
+[16-Jul-2017 15:19:44 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 15:19:44 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 15:19:55 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/cart.php on line 87
+[16-Jul-2017 15:19:55 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 15:19:55 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 15:19:55 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/cart.php on line 87
+[16-Jul-2017 15:19:55 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 15:19:55 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 15:25:07 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '*' in /home/ubuntu/workspace/MyApron/cart.php on line 104
+[16-Jul-2017 15:25:24 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/cart.php on line 87
+[16-Jul-2017 15:25:24 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 15:25:24 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 15:25:24 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/cart.php on line 87
+[16-Jul-2017 15:25:24 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 15:25:24 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 15:25:36 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/cart.php on line 87
+[16-Jul-2017 15:25:36 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 15:25:36 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 15:25:36 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/cart.php on line 87
+[16-Jul-2017 15:25:36 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 15:25:36 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 15:40:00 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/cart.php on line 87
+[16-Jul-2017 15:40:00 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 15:40:00 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 15:40:00 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/cart.php on line 87
+[16-Jul-2017 15:40:00 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 15:40:00 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 15:40:02 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/cart.php on line 87
+[16-Jul-2017 15:40:02 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 15:40:02 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 15:40:02 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/cart.php on line 87
+[16-Jul-2017 15:40:02 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 15:40:02 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 15:42:09 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/cart.php on line 87
+[16-Jul-2017 15:42:09 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 15:42:09 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 15:42:09 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/cart.php on line 87
+[16-Jul-2017 15:42:09 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 15:42:09 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 15:46:05 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/cart.php on line 87
+[16-Jul-2017 15:46:05 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 15:46:05 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 15:46:05 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/cart.php on line 87
+[16-Jul-2017 15:46:05 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 15:46:05 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 15:48:34 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/cart.php on line 87
+[16-Jul-2017 15:48:34 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 15:48:34 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 15:48:34 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/cart.php on line 87
+[16-Jul-2017 15:48:34 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 15:48:34 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 15:50:01 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/cart.php on line 87
+[16-Jul-2017 15:50:01 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 15:50:01 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 15:50:01 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/cart.php on line 87
+[16-Jul-2017 15:50:01 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 15:50:01 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 16:07:43 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '$stmt' (T_VARIABLE) in /home/ubuntu/workspace/MyApron/cart.php on line 50
+[16-Jul-2017 16:10:17 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '$stmt' (T_VARIABLE) in /home/ubuntu/workspace/MyApron/cart.php on line 51
+[16-Jul-2017 16:16:50 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '$stmt' (T_VARIABLE) in /home/ubuntu/workspace/MyApron/cart.php on line 51
+[16-Jul-2017 16:20:05 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/cart.php on line 91
+[16-Jul-2017 16:20:05 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 16:20:05 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 16:20:05 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/cart.php on line 91
+[16-Jul-2017 16:20:05 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 16:20:05 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 16:31:07 Asia/Tokyo] PHP Notice:  Undefined variable: rows in /home/ubuntu/workspace/MyApron/cart.php on line 92
+[16-Jul-2017 16:31:07 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 16:31:07 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 16:31:07 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/cart.php on line 92
+[16-Jul-2017 16:31:07 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 16:31:07 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 16:31:26 Asia/Tokyo] PHP Notice:  Undefined variable: rows in /home/ubuntu/workspace/MyApron/cart.php on line 92
+[16-Jul-2017 16:31:26 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 16:31:26 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 16:31:26 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/cart.php on line 92
+[16-Jul-2017 16:31:26 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 16:31:26 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 16:46:41 Asia/Tokyo] PHP Notice:  Undefined variable: rows in /home/ubuntu/workspace/MyApron/cart.php on line 92
+[16-Jul-2017 16:46:41 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 16:46:41 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 16:46:41 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/cart.php on line 92
+[16-Jul-2017 16:46:41 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 16:46:41 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 17:51:11 Asia/Tokyo] PHP Notice:  Undefined variable: rows in /home/ubuntu/workspace/MyApron/cart.php on line 92
+[16-Jul-2017 17:51:11 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 17:51:11 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 17:51:11 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/cart.php on line 92
+[16-Jul-2017 17:51:11 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 17:51:11 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 17:51:38 Asia/Tokyo] PHP Notice:  Undefined variable: rows in /home/ubuntu/workspace/MyApron/cart.php on line 92
+[16-Jul-2017 17:51:38 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 17:51:38 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 17:51:38 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/cart.php on line 92
+[16-Jul-2017 17:51:38 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 17:51:38 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 18:07:39 Asia/Tokyo] PHP Notice:  Undefined variable: rows in /home/ubuntu/workspace/MyApron/cart.php on line 92
+[16-Jul-2017 18:07:39 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 18:07:39 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 18:07:39 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/cart.php on line 92
+[16-Jul-2017 18:07:39 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 18:07:39 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 18:13:43 Asia/Tokyo] PHP Notice:  Undefined variable: rows in /home/ubuntu/workspace/MyApron/cart.php on line 101
+[16-Jul-2017 18:13:43 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 18:13:43 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 18:13:43 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/cart.php on line 101
+[16-Jul-2017 18:13:43 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 18:13:43 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 18:16:54 Asia/Tokyo] PHP Notice:  Undefined variable: rows in /home/ubuntu/workspace/MyApron/cart.php on line 113
+[16-Jul-2017 18:16:54 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 18:16:54 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 18:16:54 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/cart.php on line 113
+[16-Jul-2017 18:16:54 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 18:16:54 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 18:17:22 Asia/Tokyo] PHP Notice:  Undefined variable: rows in /home/ubuntu/workspace/MyApron/cart.php on line 113
+[16-Jul-2017 18:17:22 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 18:17:22 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 18:17:22 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/cart.php on line 113
+[16-Jul-2017 18:17:22 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 18:17:22 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 18:17:54 Asia/Tokyo] PHP Notice:  Undefined variable: rows in /home/ubuntu/workspace/MyApron/cart.php on line 113
+[16-Jul-2017 18:17:54 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 18:17:54 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 18:17:54 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/cart.php on line 113
+[16-Jul-2017 18:17:54 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 18:17:54 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 18:19:15 Asia/Tokyo] PHP Notice:  Undefined variable: rows in /home/ubuntu/workspace/MyApron/cart.php on line 114
+[16-Jul-2017 18:19:15 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 18:19:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 18:19:15 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/cart.php on line 114
+[16-Jul-2017 18:19:15 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 18:19:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 18:19:20 Asia/Tokyo] PHP Notice:  Undefined variable: rows in /home/ubuntu/workspace/MyApron/cart.php on line 114
+[16-Jul-2017 18:19:20 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 18:19:20 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 18:19:20 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/cart.php on line 114
+[16-Jul-2017 18:19:20 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 18:19:20 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 18:20:15 Asia/Tokyo] PHP Notice:  Undefined variable: rows in /home/ubuntu/workspace/MyApron/cart.php on line 114
+[16-Jul-2017 18:20:15 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 18:20:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 18:20:15 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/cart.php on line 114
+[16-Jul-2017 18:20:15 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 18:20:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 18:21:32 Asia/Tokyo] PHP Notice:  Undefined variable: rows in /home/ubuntu/workspace/MyApron/cart.php on line 113
+[16-Jul-2017 18:21:32 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 18:21:32 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 18:21:32 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/cart.php on line 113
+[16-Jul-2017 18:21:32 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 18:21:32 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 18:23:07 Asia/Tokyo] PHP Notice:  Undefined variable: rows in /home/ubuntu/workspace/MyApron/cart.php on line 112
+[16-Jul-2017 18:23:07 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 18:23:07 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 18:23:07 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/cart.php on line 112
+[16-Jul-2017 18:23:07 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 18:23:07 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 18:24:26 Asia/Tokyo] PHP Notice:  Undefined variable: rows in /home/ubuntu/workspace/MyApron/cart.php on line 112
+[16-Jul-2017 18:24:26 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 18:24:26 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 18:24:26 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/cart.php on line 112
+[16-Jul-2017 18:24:26 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 18:24:26 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 18:26:51 Asia/Tokyo] PHP Notice:  Undefined variable: rows in /home/ubuntu/workspace/MyApron/cart.php on line 112
+[16-Jul-2017 18:26:51 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 18:26:51 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 18:26:51 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/cart.php on line 112
+[16-Jul-2017 18:26:51 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 18:26:51 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 18:31:44 Asia/Tokyo] PHP Notice:  Undefined variable: rows in /home/ubuntu/workspace/MyApron/cart.php on line 112
+[16-Jul-2017 18:31:44 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 18:31:44 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 18:31:44 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/cart.php on line 112
+[16-Jul-2017 18:31:44 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 18:31:44 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 18:31:45 Asia/Tokyo] PHP Notice:  Undefined variable: rows in /home/ubuntu/workspace/MyApron/cart.php on line 112
+[16-Jul-2017 18:31:45 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 18:31:45 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 18:31:45 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/cart.php on line 112
+[16-Jul-2017 18:31:45 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 18:31:45 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 18:39:41 Asia/Tokyo] PHP Notice:  Undefined variable: rows in /home/ubuntu/workspace/MyApron/cart.php on line 113
+[16-Jul-2017 18:39:41 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 18:39:41 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 18:39:41 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/cart.php on line 113
+[16-Jul-2017 18:39:41 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 18:39:41 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 18:41:46 Asia/Tokyo] PHP Notice:  Undefined variable: rows in /home/ubuntu/workspace/MyApron/cart.php on line 113
+[16-Jul-2017 18:41:46 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 18:41:46 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 18:41:46 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/cart.php on line 113
+[16-Jul-2017 18:41:46 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 18:41:46 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 18:46:12 Asia/Tokyo] PHP Notice:  Undefined variable: rows in /home/ubuntu/workspace/MyApron/cart.php on line 113
+[16-Jul-2017 18:46:12 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 18:46:12 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 18:46:12 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/cart.php on line 113
+[16-Jul-2017 18:46:12 Asia/Tokyo] PHP Stack trace:
+[16-Jul-2017 18:46:12 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[16-Jul-2017 20:42:18 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/MyApron/cart.php on line 59
+[16-Jul-2017 20:46:14 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/MyApron/cart.php on line 39
+[16-Jul-2017 21:24:16 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/MyApron/cart.php on line 40
+[16-Jul-2017 21:28:11 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/MyApron/cart.php on line 40
+[16-Jul-2017 21:28:20 Asia/Tokyo] PHP Parse error:  syntax error, unexpected 'catch' (T_CATCH) in /home/ubuntu/workspace/MyApron/cart.php on line 74
+[16-Jul-2017 21:31:51 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/MyApron/cart.php on line 40
+[16-Jul-2017 21:44:09 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/MyApron/cart.php on line 40
