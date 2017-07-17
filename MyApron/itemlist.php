@@ -1,4 +1,6 @@
 <?php
+
+
 /* 最終課題の商品一覧ページ */
  $host     = 'localhost';
  $username = 'risayamasaki';   // MySQLのユーザ名
@@ -15,14 +17,15 @@ $err_msg    = [];     // エラーメッセージを格納する配列
 $msg        = [];     //エラー以外のメッセージを格納する配列
 
 $item_id    = '';
-$user_id    = 1;      //仮実装、ユーザーIDを１で固定
 
-//ログインチェックの処理(ログイン画面を実装後、表示します)
-// if(isset($_SESSION['user_id']) === TRUE){
-//   $user_id = $_SESSION['user_id']
-// }else{
-//   header('location: login.php');//ログインしていなければ、ログイン画面へリダイレクト
-// }
+//セッション開始
+session_start();
+
+if(isset($_SESSION['user_id']) === TRUE){
+  $user_id = $_SESSION['user_id'];
+}else{
+  header('location: login.php');//ログインしていなければ、ログイン画面へリダイレクト
+}
 
 if (isset($_POST['item_id']) === TRUE) {
     $item_id = $_POST['item_id'];

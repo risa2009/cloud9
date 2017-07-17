@@ -1012,3 +1012,590 @@ Stack trace:
 [16-Jul-2017 21:28:20 Asia/Tokyo] PHP Parse error:  syntax error, unexpected 'catch' (T_CATCH) in /home/ubuntu/workspace/MyApron/cart.php on line 74
 [16-Jul-2017 21:31:51 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/MyApron/cart.php on line 40
 [16-Jul-2017 21:44:09 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/MyApron/cart.php on line 40
+[17-Jul-2017 11:08:15 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '$sql' (T_VARIABLE) in /home/ubuntu/workspace/MyApron/cart.php on line 70
+[17-Jul-2017 11:08:46 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '$sql' (T_VARIABLE) in /home/ubuntu/workspace/MyApron/cart.php on line 70
+[17-Jul-2017 11:10:57 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '$sql' (T_VARIABLE) in /home/ubuntu/workspace/MyApron/cart.php on line 70
+[17-Jul-2017 11:53:04 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '*' in /home/ubuntu/workspace/MyApron/cart.php on line 85
+[17-Jul-2017 11:53:17 Asia/Tokyo] PHP Notice:  Use of undefined constant ‘amount’ - assumed '‘amount’' in /home/ubuntu/workspace/MyApron/cart.php on line 85
+[17-Jul-2017 11:53:17 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 11:53:17 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[17-Jul-2017 11:53:17 Asia/Tokyo] PHP Notice:  Undefined offset: 2 in /home/ubuntu/workspace/MyApron/cart.php on line 85
+[17-Jul-2017 11:53:17 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 11:53:17 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[17-Jul-2017 11:53:17 Asia/Tokyo] PHP Notice:  Undefined offset: 4 in /home/ubuntu/workspace/MyApron/cart.php on line 85
+[17-Jul-2017 11:53:17 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 11:53:17 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[17-Jul-2017 11:54:25 Asia/Tokyo] PHP Notice:  Use of undefined constant ‘amount’ - assumed '‘amount’' in /home/ubuntu/workspace/MyApron/cart.php on line 85
+[17-Jul-2017 11:54:25 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 11:54:25 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[17-Jul-2017 11:54:25 Asia/Tokyo] PHP Notice:  Undefined offset: 2 in /home/ubuntu/workspace/MyApron/cart.php on line 85
+[17-Jul-2017 11:54:25 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 11:54:25 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[17-Jul-2017 11:54:25 Asia/Tokyo] PHP Notice:  Undefined offset: 4 in /home/ubuntu/workspace/MyApron/cart.php on line 85
+[17-Jul-2017 11:54:25 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 11:54:25 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[17-Jul-2017 12:17:29 Asia/Tokyo] PHP Parse error:  syntax error, unexpected ';' in /home/ubuntu/workspace/MyApron/cart.php on line 85
+[17-Jul-2017 12:25:03 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/cart.php on line 85
+[17-Jul-2017 12:25:03 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 12:25:03 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[17-Jul-2017 12:25:03 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/cart.php on line 85
+[17-Jul-2017 12:25:03 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 12:25:03 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[17-Jul-2017 12:25:03 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/cart.php on line 85
+[17-Jul-2017 12:25:03 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 12:25:03 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[17-Jul-2017 12:25:03 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/cart.php on line 85
+[17-Jul-2017 12:25:03 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 12:25:03 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[17-Jul-2017 12:26:50 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/cart.php on line 85
+[17-Jul-2017 12:26:50 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 12:26:50 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[17-Jul-2017 12:26:50 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/cart.php on line 85
+[17-Jul-2017 12:26:50 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 12:26:50 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[17-Jul-2017 12:26:50 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/cart.php on line 85
+[17-Jul-2017 12:26:50 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 12:26:50 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[17-Jul-2017 12:26:50 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/cart.php on line 85
+[17-Jul-2017 12:26:50 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 12:26:50 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[17-Jul-2017 12:28:41 Asia/Tokyo] PHP Notice:  Undefined offset: 2 in /home/ubuntu/workspace/MyApron/cart.php on line 85
+[17-Jul-2017 12:28:41 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 12:28:41 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[17-Jul-2017 12:28:41 Asia/Tokyo] PHP Notice:  Undefined offset: 4 in /home/ubuntu/workspace/MyApron/cart.php on line 85
+[17-Jul-2017 12:28:41 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 12:28:41 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[17-Jul-2017 12:29:03 Asia/Tokyo] PHP Notice:  Undefined offset: 2 in /home/ubuntu/workspace/MyApron/cart.php on line 85
+[17-Jul-2017 12:29:03 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 12:29:03 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[17-Jul-2017 12:29:03 Asia/Tokyo] PHP Notice:  Undefined offset: 4 in /home/ubuntu/workspace/MyApron/cart.php on line 85
+[17-Jul-2017 12:29:03 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 12:29:03 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[17-Jul-2017 12:43:14 Asia/Tokyo] PHP Notice:  Undefined offset: 2 in /home/ubuntu/workspace/MyApron/cart.php on line 85
+[17-Jul-2017 12:43:14 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 12:43:14 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[17-Jul-2017 12:43:14 Asia/Tokyo] PHP Notice:  Undefined offset: 4 in /home/ubuntu/workspace/MyApron/cart.php on line 85
+[17-Jul-2017 12:43:14 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 12:43:14 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[17-Jul-2017 12:43:22 Asia/Tokyo] PHP Notice:  Undefined offset: 2 in /home/ubuntu/workspace/MyApron/cart.php on line 85
+[17-Jul-2017 12:43:22 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 12:43:22 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[17-Jul-2017 12:43:22 Asia/Tokyo] PHP Notice:  Undefined offset: 4 in /home/ubuntu/workspace/MyApron/cart.php on line 85
+[17-Jul-2017 12:43:22 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 12:43:22 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[17-Jul-2017 14:44:14 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '）' (T_STRING) in /home/ubuntu/workspace/MyApron/finish.php on line 67
+[17-Jul-2017 14:45:00 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '$sql' (T_VARIABLE) in /home/ubuntu/workspace/MyApron/finish.php on line 71
+[17-Jul-2017 14:46:28 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '$sql' (T_VARIABLE) in /home/ubuntu/workspace/MyApron/finish.php on line 71
+[17-Jul-2017 15:51:24 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '）' (T_STRING) in /home/ubuntu/workspace/MyApron/finish.php on line 113
+[17-Jul-2017 15:51:25 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '）' (T_STRING) in /home/ubuntu/workspace/MyApron/finish.php on line 113
+[17-Jul-2017 15:51:41 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '）' (T_STRING) in /home/ubuntu/workspace/MyApron/finish.php on line 113
+[17-Jul-2017 15:52:52 Asia/Tokyo] PHP Fatal error:  Cannot use try without catch or finally in /home/ubuntu/workspace/MyApron/finish.php on line 138
+[17-Jul-2017 15:52:53 Asia/Tokyo] PHP Fatal error:  Cannot use try without catch or finally in /home/ubuntu/workspace/MyApron/finish.php on line 138
+[17-Jul-2017 16:10:24 Asia/Tokyo] PHP Notice:  Undefined variable: cart_data in /home/ubuntu/workspace/MyApron/finish.php on line 191
+[17-Jul-2017 16:10:24 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 16:10:24 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[17-Jul-2017 16:10:24 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 191
+[17-Jul-2017 16:10:24 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 16:10:24 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[17-Jul-2017 16:10:24 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/finish.php on line 216
+[17-Jul-2017 16:10:24 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 16:10:24 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[17-Jul-2017 16:20:27 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/finish.php on line 230
+[17-Jul-2017 16:20:27 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 16:20:27 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[17-Jul-2017 16:20:33 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/finish.php on line 230
+[17-Jul-2017 16:20:33 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 16:20:33 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[17-Jul-2017 16:24:07 Asia/Tokyo] PHP Notice:  Undefined variable: cart_data in /home/ubuntu/workspace/MyApron/finish.php on line 111
+[17-Jul-2017 16:24:07 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 16:24:07 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[17-Jul-2017 16:24:07 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 111
+[17-Jul-2017 16:24:07 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 16:24:07 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[17-Jul-2017 16:24:07 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/finish.php on line 136
+[17-Jul-2017 16:24:07 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 16:24:07 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[17-Jul-2017 16:44:53 Asia/Tokyo] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/MyApron/login.php on line 18
+[17-Jul-2017 20:25:41 Asia/Tokyo] PHP Fatal error:  Call to undefined function get_post_data() in /home/ubuntu/workspace/MyApron/login.php on line 41
+[17-Jul-2017 20:25:41 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 20:25:41 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/login.php:0
+[17-Jul-2017 20:25:46 Asia/Tokyo] PHP Fatal error:  Call to undefined function get_post_data() in /home/ubuntu/workspace/MyApron/login.php on line 41
+[17-Jul-2017 20:25:46 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 20:25:46 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/login.php:0
+[17-Jul-2017 20:32:00 Asia/Tokyo] PHP Warning:  Illegal string offset 'user_name' in /home/ubuntu/workspace/MyApron/register.php on line 69
+[17-Jul-2017 20:32:00 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 20:32:00 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/register.php:0
+[17-Jul-2017 21:25:11 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/itemlist.php on line 57
+[17-Jul-2017 21:25:11 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:11 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:11 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/itemlist.php on line 94
+[17-Jul-2017 21:25:11 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:11 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:11 Asia/Tokyo] PHP Notice:  Undefined variable: item_list in /home/ubuntu/workspace/MyApron/itemlist.php on line 159
+[17-Jul-2017 21:25:11 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:11 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:11 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/itemlist.php on line 159
+[17-Jul-2017 21:25:11 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:11 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:12 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/itemlist.php on line 57
+[17-Jul-2017 21:25:12 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:12 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:12 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/itemlist.php on line 94
+[17-Jul-2017 21:25:12 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:12 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:12 Asia/Tokyo] PHP Notice:  Undefined variable: item_list in /home/ubuntu/workspace/MyApron/itemlist.php on line 159
+[17-Jul-2017 21:25:12 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:12 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:12 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/itemlist.php on line 159
+[17-Jul-2017 21:25:12 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:12 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:12 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:12 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:12 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:12 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:12 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:12 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:12 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:12 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:12 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:12 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:12 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:12 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:13 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:14 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:16 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:16 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:16 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:16 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:16 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:16 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:16 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:16 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:16 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:16 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:16 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:16 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:17 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:17 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:17 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:17 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:17 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:17 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:17 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:17 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:17 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:17 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:17 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:17 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:17 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:17 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:17 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:17 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:17 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:17 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:17 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:17 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:17 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:17 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:17 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:17 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:18 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:18 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:18 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:18 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:18 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:18 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:18 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:18 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:18 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:18 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:18 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:18 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:18 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:18 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:18 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:18 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:18 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:18 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:18 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:18 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:18 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:18 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:18 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:18 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:18 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:18 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:18 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:18 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:18 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:18 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:18 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:18 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:18 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:18 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:18 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:18 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:32 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:32 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:32 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:32 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:32 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:32 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:32 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:32 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:32 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:32 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:32 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:32 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:32 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:32 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:32 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:32 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:32 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:32 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:33 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:34 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:35 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:35 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:35 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:35 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:35 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:35 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:35 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:35 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:35 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:25:35 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 116
+[17-Jul-2017 21:25:35 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:25:35 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:27:33 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 125
+[17-Jul-2017 21:27:33 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:27:33 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:27:33 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 125
+[17-Jul-2017 21:27:33 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:27:33 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:27:43 Asia/Tokyo] PHP Notice:  Undefined property: PDO::$pre in /home/ubuntu/workspace/MyApron/itemlist.php on line 125
+[17-Jul-2017 21:27:43 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:27:43 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:27:43 Asia/Tokyo] PHP Fatal error:  Call to undefined function pare() in /home/ubuntu/workspace/MyApron/itemlist.php on line 125
+[17-Jul-2017 21:27:43 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:27:43 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[17-Jul-2017 21:32:23 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/finish.php on line 136
+[17-Jul-2017 21:32:23 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:32:23 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[17-Jul-2017 21:37:41 Asia/Tokyo] PHP Notice:  Undefined variable: cart_data in /home/ubuntu/workspace/MyApron/finish.php on line 121
+[17-Jul-2017 21:37:41 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:37:41 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[17-Jul-2017 21:37:41 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 121
+[17-Jul-2017 21:37:41 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:37:41 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[17-Jul-2017 21:37:41 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/finish.php on line 146
+[17-Jul-2017 21:37:41 Asia/Tokyo] PHP Stack trace:
+[17-Jul-2017 21:37:41 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0

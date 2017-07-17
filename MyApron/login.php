@@ -1,5 +1,5 @@
 <?php
-/* 最終課題の会員登録ページ */
+/* 最終課題のログインページ */
 
 // データベースの接続情報
 //$dsn の代わりにDSNが使えるようになりました。
@@ -7,48 +7,106 @@ define('DB_USER',   'risayamasaki');    // MySQLのユーザ名
 define('DB_PASSWD', '');    // MySQLのパスワード
 define('DSN', 'mysql:dbname=camp;host=localhost;charset=utf8');
 
- $err_msg = [];  // エラーメッセージ用の配列
+$err_msg = [];  // エラーメッセージ用の配列
+$msg      = [];     //エラー以外のメッセージを格納する配列
+$user_name = ''; //初期化
+$password = '';
+//var_dump($_POST);
 
-// ログインボタンが押された場合
+//セッション開始
+session_start();
 
-if (isset($_POST['login']) === TRUE){
- $login = preg_replace('/^[\s　]+|[\s　]+$/u', '', $_POST['user_name']);  //全角と半角の空白を取り除く。受け取り
+// セッション変数からログイン済みか確認
+if (isset($_SESSION['user_id'])) {
+  // ログイン済みの場合、ホームページへリダイレクト
+  header('Location: itemlist.php');
+  exit;
+}
+
+// POST値取得
+if (isset($_POST['user_name']) === TRUE){
+  //こっちは置換処理なのでpreg_replaceが必要です。
+  $user_name = preg_replace('/^[\s　]+|[\s　]+$/u', '', $_POST['user_name']);
+}
+if($user_name === ''){ 
+  $err_msg[] = 'ユーザー名を入力してください。';
+}else if(preg_match('/^[a-z\d_]{6,20}$/i', $user_name) !== 1){ 
+  $err_msg[] = "ユーザー名は半角英数字6文字以上でご入力ください。";
+}
+  
+if (isset($_POST['password']) === TRUE) {
+  $password = preg_replace('/^[\s　]+|[\s　]+$/u', '', $_POST['password']);
+}    
+//パスワードエラーチェック
+if($password === ''){ 
+  $err_msg[] = 'パスワードを入力してください。';
+}else if(preg_match('/^[a-z\d_]{6,20}$/i', $password) !== 1){
+  $err_msg[] = "パスワードは半角英数字6文字以上でご入力ください。";
+}
+//var_dump($err_msg);
+if(count($err_msg) ===0) {
+
+  //この高さの真下で初めて出てきた閉じかっこが対応する閉じです。
+  try {
+    // データベースに接続
+    //ここの$dsn, $username, $passwordが定数DSN, DB_USER, DB_PASSWDで置き換え
+    $dbh = new PDO(DSN, DB_USER, DB_PASSWD);
+    $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $dbh->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+    $sql = 'SELECT 
+              id
+              FROM  users
+              WHERE user_name = ? AND password = ?';
+    $stmt = $dbh->prepare($sql);
+    $stmt->bindValue(1, $user_name, PDO::PARAM_INT);
+    $stmt->bindValue(2, $password,  PDO::PARAM_INT);
+    $stmt->execute();
+    $rows = $stmt->fetchAll();
+    //var_dump($rows);
+    // if(count($rows) >=1){ //1件以上取得できたら
+      
+    // }
+    if(isset($rows[0]['id']) === true){ //idが取得できていたら
+      //セッションにuser_idを保存する処理
+      $_SESSION['user_id'] = $rows[0]['id'];
+      header('Location: itemlist.php');
+      exit;
+    }else{
+      //user_idを取得できなかった場合（失敗メッセージ）
+      $err_msg[] = 'ログインできませんでした。';
     }
-// エラーチェック
-   if()
+    
+  }catch (PDOException $e) {
+    echo 'データベース処理でエラーが発生しました。理由：'.$e->getMessage();
+  }
 }
 
 ?>
-
 
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>My Apron：カート</title>
+  <title>My Apron：ログインページ</title>
   <link rel="stylesheet" href="MyApron.css">
 </head>
 <body>
   <header>
-  <div class="header-box">
-    <a href="#">
-    <img class="logo" src="./img/logo.png" alt="MyApron">
-    </a>
-  </div>
+    <div class="header-box">
+      <a href="#">
+        <img class="logo" src="./img/logo.png" alt="MyApron">
+      </a>
+    </div>
   </header>
-  <div class="cart_list">
-  <div class="cart">
-  <table>
-   <tr><th>商品名</th><th>単価</th><th>数量</th><th>小計</th></tr>
-   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-   </tr>
-   <tr><td colspan='2'> </td><td><strong>合計</strong></td><td>円</td></tr>
-  </table>
-  </div>
+  <div class="contents">
+    <div class="register">
+      <form method="post" action="login.php">
+        <div>ユーザー名：<input type="text" name="user_name" placeholder="ユーザー名"></div>
+        <div>パスワード：<input type="password" name="password" placeholder="パスワード"></div>
+        <div><input type="submit" value="ログイン"></div>
+      </form>
+    </div>
+    <a href="register.html">ユーザーの新規作成</a>
   </div>
 </body>
 </html>

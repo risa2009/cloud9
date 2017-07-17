@@ -5,28 +5,28 @@
  $password = '';     // MySQLのパスワード
  $dbname = 'camp';   // MySQLのDB名
  $charset = 'utf8';   // データベースの文字コード
-
   // MySQL用のDNS文字列
 $dsn = 'mysql:dbname='.$dbname.';host='.$host.';charset='.$charset;
-
 $img_dir = './img/';  // 画像のディレクトリ
-
 $sql_kind = '';   // SQL処理の種類
 $err_msg  = [];   // エラーメッセージを格納する配列
 $msg      = [];     //エラー以外のメッセージを格納する配列
+$item_id  = '';
+$total    = 0;
 
-$item_id = '';
-$user_id    = 1;      //仮実装、ユーザーIDを１で固定
+//セッション開始
+session_start();
 
-  // // 現在日時を取得
-  // $now_date = date('Y-m-d H:i:s');
-  
+if(isset($_SESSION['user_id']) === TRUE){
+  $user_id = $_SESSION['user_id'];
+}else{
+  header('location: login.php');//ログインしていなければ、ログイン画面へリダイレクト
+}
   try {
     // データベースに接続
     $dbh = new PDO($dsn, $username, $password);
     $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $dbh->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
-
     if($_SERVER['REQUEST_METHOD'] === 'POST') {
       // var_dump($_POST);
       if(isset($_POST['sql_kind']) === TRUE){
@@ -48,12 +48,7 @@ $user_id    = 1;      //仮実装、ユーザーIDを１で固定
         $stmt->bindValue(2, $item_id,    PDO::PARAM_INT);
         $stmt->execute();
         $msg[] = '変更しました。';
-
       }else if($sql_kind === 'delete_cart_item'){
-        // if(isset($_POST['delete_cart_item']) === TRUE){
-        //   $delete_cart_item = $_POST['delete_cart_item'];
-        // }
-        var_dump('test');
         //カートからの削除処理
         $sql = 'DELETE FROM carts WHERE item_id = ?';
         $stmt = $dbh->prepare($sql);
@@ -86,13 +81,18 @@ $user_id    = 1;      //仮実装、ユーザーIDを１で固定
     // レコードの取得
     $rows = $stmt->fetchAll();
     //var_dump($rows);
-      
+ 
+     $total = 0;
+    foreach($rows as $row){
+      $total += $row['amount'] * $row['price'];
+    }
+    //var_dump($total);
+    
   } catch (PDOException $e) {
     // 例外をスロー
     //throw $e;
     echo 'データベース処理でエラーが発生しました。理由：'.$e->getMessage();
  }
-
 function h($str){
   return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
@@ -111,7 +111,7 @@ function h($str){
     <a href="https://risayamasaki-risayamasaki.c9users.io/MyApron/itemlist.php">
     <img class="logo" src="./img/logo.png" alt="MyApron">
     </a>
-    <a class="nemu" href="#">ログアウト</a>
+    <a class="nemu" href="https://risayamasaki-risayamasaki.c9users.io/MyApron/logout.php">ログアウト</a>
     <a href="https://risayamasaki-risayamasaki.c9users.io/MyApron/cart.php" class="cart"></a>
   </div>
   </header>
@@ -139,9 +139,6 @@ function h($str){
 	    　<input type="hidden" name="sql_kind" value="delete_cart_item">
       </form>
       <span class="cart-item-price"><?php print h($value['price']); ?>円</span>
-        
-    
-    
     </div>
   </li>
 </ul>
@@ -150,7 +147,7 @@ function h($str){
 　<span class="buy-sum-title">合計</span>
 　  <!-- ★C-3-2 ●ショッピングカートにある商品の合計を表示する。-->
     <!-- ここから入力 -->
-    <span class="buy-sum-price">¥1000</span>
+   <span class="buy-sum-price"><?php print h($total); ?></span>
     <!-- ここまで入力 -->
 </div>
     <div>
