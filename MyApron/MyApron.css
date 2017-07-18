@@ -39,6 +39,17 @@ header {
     margin-left: auto; /*右寄せ*/
 }
 
+cart_table{
+      border-collapse: collapse;
+      text-align: center;
+}
+th, td{
+      border: solid 1px #000000;
+}
+.buy-sum-box{
+      font-weight: bold;
+}
+
 /*
 .cart-list {
     display: flex;

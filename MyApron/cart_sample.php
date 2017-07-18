@@ -13,9 +13,15 @@ $sql_kind = '';   // SQL処理の種類
 $err_msg  = [];   // エラーメッセージを格納する配列
 $msg      = [];     //エラー以外のメッセージを格納する配列
 $item_id  = '';
-$user_id  = 1;      //仮実装、ユーザーIDを１で固定
 $total    = 0;
 
+session_start();
+//ログインチェックの処理（ログイン実装後にコメントを外す）
+if(isset($_SESSION['user_id']) === TRUE){
+  $user_id = $_SESSION['user_id'];
+}else{
+  header('location: login_sample.php');//ログインしていなければ、ログイン画面へリダイレクト
+}
   
 try {
   // データベースに接続
@@ -114,8 +120,10 @@ function h($str){
       <a href="https://risayamasaki-risayamasaki.c9users.io/MyApron/itemlist_sample.php">
         <img class="logo" src="./img/logo.png" alt="MyApron">
       </a>
-      <a class="nemu" href="#">ログアウト</a>
-      <a href="https://risayamasaki-risayamasaki.c9users.io/MyApron/cart_sample.php" class="cart"></a>
+      <a class="nemu" href="logout_sample.php">ログアウト</a>
+      <a href="https://risayamasaki-risayamasaki.c9users.io/MyApron/cart_sample.php" class="cart">
+        <img class="logo" src="./img/cart.png" alt="MyApron">
+      </a>
     </div>
   </header>
   <div class="cart_list">
@@ -130,7 +138,7 @@ function h($str){
         <th>画像</th>
         <th>商品名</th>
         <th>金額</th>
-        <th>在庫数</th>
+        <th>購入数</th>
         <th>削除</th>
       </tr>
 <?php foreach ($cart_list as $cart_item)  { ?>
@@ -166,7 +174,7 @@ function h($str){
       <span class="buy-sum-price"><?php print h($total); ?>円</span>
     </div>
     <div>
-      <form action="finish.php" method="post">
+      <form action="finish_sample.php" method="post">
         <input class="buy-btn" type="submit" value="購入する">
       </form>
     </div>

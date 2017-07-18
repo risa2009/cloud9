@@ -15,15 +15,14 @@ $err_msg    = [];     // エラーメッセージを格納する配列
 $msg = [];//エラー以外のメッセージを格納する配列
 
 $item_id    = '';
-$user_id    = 1;//仮実装、ユーザーIDを１で固定
 
-
+session_start();
 //ログインチェックの処理（ログイン実装後にコメントを外す）
-// if(isset($_SESSION['user_id']) === TRUE){
-//   $user_id = $_SESSION['user_id']
-// }else{
-//   header('location: login.php');//ログインしていなければ、ログイン画面へリダイレクト
-// }
+if(isset($_SESSION['user_id']) === TRUE){
+  $user_id = $_SESSION['user_id'];
+}else{
+  header('location: login_sample.php');//ログインしていなければ、ログイン画面へリダイレクト
+}
 
 if (isset($_POST['item_id']) === TRUE) {
   $item_id = $_POST['item_id'];
@@ -136,8 +135,13 @@ function h($str){
 <body>
   <header>
     <div class="header-box">
-      <a href="#">
+      <a href="https://risayamasaki-risayamasaki.c9users.io/MyApron/itemlist_sample.php">
         <img class="logo" src="./img/logo.png" alt="MyApron">
+      </a>
+    </div>
+    <div class="cart_logo">
+      <a href="https://risayamasaki-risayamasaki.c9users.io/MyApron/cart_sample.php">
+      <img class="logo" src="./img/cart.png" alt="MyApron">
       </a>
     </div>
   </header>

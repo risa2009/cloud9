@@ -112,7 +112,6 @@ function h($str){
     <img class="logo" src="./img/logo.png" alt="MyApron">
     </a>
     <a class="nemu" href="https://risayamasaki-risayamasaki.c9users.io/MyApron/logout.php">ログアウト</a>
-    <a href="https://risayamasaki-risayamasaki.c9users.io/MyApron/cart.php" class="cart"></a>
   </div>
   </header>
   <div class="cart_list">
@@ -145,8 +144,6 @@ function h($str){
 <?php } ?>
 <div class="buy-sum-box">
 　<span class="buy-sum-title">合計</span>
-　  <!-- ★C-3-2 ●ショッピングカートにある商品の合計を表示する。-->
-    <!-- ここから入力 -->
    <span class="buy-sum-price"><?php print h($total); ?></span>
     <!-- ここまで入力 -->
 </div>
