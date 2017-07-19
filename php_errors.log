@@ -1711,3 +1711,241 @@ Stack trace:
 [18-Jul-2017 21:01:29 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/cart_sample.php on line 78
 [18-Jul-2017 21:01:29 Asia/Tokyo] PHP Stack trace:
 [18-Jul-2017 21:01:29 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart_sample.php:0
+[18-Jul-2017 23:14:18 Asia/Tokyo] PHP Notice:  Undefined variable: cart_data in /home/ubuntu/workspace/MyApron/finish.php on line 119
+[18-Jul-2017 23:14:18 Asia/Tokyo] PHP Stack trace:
+[18-Jul-2017 23:14:18 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[18-Jul-2017 23:14:18 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 119
+[18-Jul-2017 23:14:18 Asia/Tokyo] PHP Stack trace:
+[18-Jul-2017 23:14:18 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[18-Jul-2017 23:14:18 Asia/Tokyo] PHP Notice:  Undefined variable: value in /home/ubuntu/workspace/MyApron/finish.php on line 144
+[18-Jul-2017 23:14:18 Asia/Tokyo] PHP Stack trace:
+[18-Jul-2017 23:14:18 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[18-Jul-2017 23:43:46 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/finish.php on line 91
+[18-Jul-2017 23:43:46 Asia/Tokyo] PHP Stack trace:
+[18-Jul-2017 23:43:46 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[18-Jul-2017 23:43:46 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 91
+[18-Jul-2017 23:43:46 Asia/Tokyo] PHP Stack trace:
+[18-Jul-2017 23:43:46 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[18-Jul-2017 23:43:46 Asia/Tokyo] PHP Notice:  Undefined variable: cart_data in /home/ubuntu/workspace/MyApron/finish.php on line 124
+[18-Jul-2017 23:43:46 Asia/Tokyo] PHP Stack trace:
+[18-Jul-2017 23:43:46 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[18-Jul-2017 23:43:46 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 124
+[18-Jul-2017 23:43:46 Asia/Tokyo] PHP Stack trace:
+[18-Jul-2017 23:43:46 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[18-Jul-2017 23:45:35 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/finish.php on line 91
+[18-Jul-2017 23:45:35 Asia/Tokyo] PHP Stack trace:
+[18-Jul-2017 23:45:35 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[18-Jul-2017 23:45:35 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 91
+[18-Jul-2017 23:45:35 Asia/Tokyo] PHP Stack trace:
+[18-Jul-2017 23:45:35 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[18-Jul-2017 23:48:50 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/finish.php on line 91
+[18-Jul-2017 23:48:50 Asia/Tokyo] PHP Stack trace:
+[18-Jul-2017 23:48:50 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[18-Jul-2017 23:48:50 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 91
+[18-Jul-2017 23:48:50 Asia/Tokyo] PHP Stack trace:
+[18-Jul-2017 23:48:50 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 02:27:07 Asia/Tokyo] PHP Notice:  session_start(): ps_files_cleanup_dir: opendir(/var/lib/php5) failed: Permission denied (13) in /home/ubuntu/workspace/MyApron/login.php on line 17
+[19-Jul-2017 02:27:07 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 02:27:07 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/login.php:0
+[19-Jul-2017 02:27:07 Asia/Tokyo] PHP   2. session_start() /home/ubuntu/workspace/MyApron/login.php:17
+[19-Jul-2017 11:58:02 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/finish_sample.php on line 91
+[19-Jul-2017 11:58:02 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 11:58:02 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish_sample.php:0
+[19-Jul-2017 11:58:02 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish_sample.php on line 91
+[19-Jul-2017 11:58:02 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 11:58:02 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish_sample.php:0
+[19-Jul-2017 11:58:02 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/finish_sample.php on line 141
+[19-Jul-2017 11:58:02 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 11:58:02 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish_sample.php:0
+[19-Jul-2017 11:58:02 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish_sample.php on line 141
+[19-Jul-2017 11:58:02 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 11:58:02 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish_sample.php:0
+[19-Jul-2017 12:02:22 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/finish.php on line 91
+[19-Jul-2017 12:02:22 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 12:02:22 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 12:02:22 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 91
+[19-Jul-2017 12:02:22 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 12:02:22 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 12:02:22 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/finish.php on line 128
+[19-Jul-2017 12:02:22 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 12:02:22 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 12:02:22 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 128
+[19-Jul-2017 12:02:22 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 12:02:22 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 12:05:17 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/finish.php on line 91
+[19-Jul-2017 12:05:17 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 12:05:17 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 12:05:17 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 91
+[19-Jul-2017 12:05:17 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 12:05:17 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 12:05:17 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/finish.php on line 128
+[19-Jul-2017 12:05:17 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 12:05:17 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 12:05:17 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 128
+[19-Jul-2017 12:05:17 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 12:05:17 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 12:48:25 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/finish.php on line 91
+[19-Jul-2017 12:48:25 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 12:48:25 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 12:48:25 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 91
+[19-Jul-2017 12:48:25 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 12:48:25 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 12:48:25 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/finish.php on line 128
+[19-Jul-2017 12:48:25 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 12:48:25 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 12:48:25 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 128
+[19-Jul-2017 12:48:25 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 12:48:25 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 13:18:20 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/cart.php on line 78
+[19-Jul-2017 13:18:20 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 13:18:20 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[19-Jul-2017 13:37:29 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/cart.php on line 78
+[19-Jul-2017 13:37:29 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 13:37:29 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[19-Jul-2017 13:48:34 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/finish.php on line 91
+[19-Jul-2017 13:48:34 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 13:48:34 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 13:48:34 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 91
+[19-Jul-2017 13:48:34 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 13:48:34 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 13:48:34 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/finish.php on line 128
+[19-Jul-2017 13:48:34 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 13:48:34 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 13:48:34 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 128
+[19-Jul-2017 13:48:34 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 13:48:34 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 13:50:13 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/finish.php on line 91
+[19-Jul-2017 13:50:13 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 13:50:13 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 13:50:13 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 91
+[19-Jul-2017 13:50:13 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 13:50:13 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 13:50:13 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/finish.php on line 128
+[19-Jul-2017 13:50:13 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 13:50:13 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 13:50:13 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 128
+[19-Jul-2017 13:50:13 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 13:50:13 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 14:41:43 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/finish.php on line 91
+[19-Jul-2017 14:41:43 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 14:41:43 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 14:41:43 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 91
+[19-Jul-2017 14:41:43 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 14:41:43 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 14:41:43 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/finish.php on line 128
+[19-Jul-2017 14:41:43 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 14:41:43 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 14:41:43 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 128
+[19-Jul-2017 14:41:43 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 14:41:43 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 14:43:27 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/cart_sample.php on line 78
+[19-Jul-2017 14:43:27 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 14:43:27 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart_sample.php:0
+[19-Jul-2017 15:01:58 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/finish.php on line 91
+[19-Jul-2017 15:01:58 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 15:01:58 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 15:01:58 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 91
+[19-Jul-2017 15:01:58 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 15:01:58 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 15:01:58 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/finish.php on line 128
+[19-Jul-2017 15:01:58 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 15:01:58 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 15:01:58 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 128
+[19-Jul-2017 15:01:58 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 15:01:58 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 15:02:59 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/finish.php on line 91
+[19-Jul-2017 15:02:59 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 15:02:59 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 15:02:59 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 91
+[19-Jul-2017 15:02:59 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 15:02:59 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 15:02:59 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/finish.php on line 128
+[19-Jul-2017 15:02:59 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 15:02:59 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 15:02:59 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 128
+[19-Jul-2017 15:02:59 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 15:02:59 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 15:03:56 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/finish.php on line 91
+[19-Jul-2017 15:03:56 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 15:03:56 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 15:03:56 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 91
+[19-Jul-2017 15:03:56 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 15:03:56 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 15:03:56 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/finish.php on line 128
+[19-Jul-2017 15:03:56 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 15:03:56 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 15:03:56 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 128
+[19-Jul-2017 15:03:56 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 15:03:56 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 15:56:00 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/finish.php on line 91
+[19-Jul-2017 15:56:00 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 15:56:00 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 15:56:00 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 91
+[19-Jul-2017 15:56:00 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 15:56:00 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 15:56:00 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/finish.php on line 128
+[19-Jul-2017 15:56:00 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 15:56:00 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 15:56:00 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 128
+[19-Jul-2017 15:56:00 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 15:56:00 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 15:56:01 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/finish.php on line 91
+[19-Jul-2017 15:56:01 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 15:56:01 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 15:56:01 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 91
+[19-Jul-2017 15:56:01 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 15:56:01 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 15:56:01 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/finish.php on line 128
+[19-Jul-2017 15:56:01 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 15:56:01 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 15:56:01 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 128
+[19-Jul-2017 15:56:01 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 15:56:01 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 15:56:08 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/finish.php on line 91
+[19-Jul-2017 15:56:08 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 15:56:08 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 15:56:08 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 91
+[19-Jul-2017 15:56:08 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 15:56:08 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 15:56:08 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/finish.php on line 128
+[19-Jul-2017 15:56:08 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 15:56:08 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 15:56:08 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 128
+[19-Jul-2017 15:56:08 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 15:56:08 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 16:20:27 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/finish.php on line 91
+[19-Jul-2017 16:20:27 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 16:20:27 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 16:20:27 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 91
+[19-Jul-2017 16:20:27 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 16:20:27 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 16:20:27 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/finish.php on line 128
+[19-Jul-2017 16:20:27 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 16:20:27 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 16:20:27 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 128
+[19-Jul-2017 16:20:27 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 16:20:27 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 19:09:57 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/finish.php on line 91
+[19-Jul-2017 19:09:57 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 19:09:57 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 19:09:57 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 91
+[19-Jul-2017 19:09:57 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 19:09:57 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 19:09:57 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/finish.php on line 128
+[19-Jul-2017 19:09:57 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 19:09:57 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 19:09:57 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 128
+[19-Jul-2017 19:09:57 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 19:09:57 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 19:45:20 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/finish.php on line 91
+[19-Jul-2017 19:45:20 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 19:45:20 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 19:45:20 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 91
+[19-Jul-2017 19:45:20 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 19:45:20 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 19:45:20 Asia/Tokyo] PHP Notice:  Undefined variable: cart_list in /home/ubuntu/workspace/MyApron/finish.php on line 128
+[19-Jul-2017 19:45:20 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 19:45:20 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
+[19-Jul-2017 19:45:20 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/finish.php on line 128
+[19-Jul-2017 19:45:20 Asia/Tokyo] PHP Stack trace:
+[19-Jul-2017 19:45:20 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0

@@ -5,53 +5,156 @@ body{
 header {
     background: #FFFFFF;
     border-bottom: solid 1px #cccccc;
+    margin : 0 0 10px 0; /*上と下の余白*/
 }
 
-.header-box {
-    display: flex;
-    margin: 0px;
-    padding: 0px;
+footer {
+    background-color: #FC9D9D;
+    border-top: solid 1px #cccccc;
+    color: #ffffff;
+    text-align: center;
+}
+
+.container {            /*コンテナ*/
+    width: 960px;
+    margin: 0 auto;
 }
 
 .contents {
     display: flex;
+    justify-content: center;
 }
 
-.register {
+.register {             /*新規登録画面*/
     display: flex;
-    margin: 0 auto;
+    justify-content: center;
+    margin : 10px 0 5px 0; /*上と下の余白*/
 }
 
-.item_list {
-    display: flex;
+.topvie-img img {        /*メイン画像*/
+  width:960px;
+  height: auto;
+  margin : 10px 0 5px 0;  /*メイン画像上と下の余白*/
 }
 
-.item {
-    display: block;
-    margin:0 0 10px 0;
+
+.register_text {
+  display: flex;
+  justify-content: center;
+  margin : 5px 0 30px 0; /*上と下の余白*/
 }
 
-.item_img_size {  /*商品一覧の商品画像*/
-    height: 125px;
+.cart-btn {               /*カートに入れるボタン*/
+  margin : 5px 0 30px 0; /*上と下の余白*/
 }
 
 .cart_logo {
-    margin-left: auto; /*右寄せ*/
+  display: flex;
+  justify-content: flex-end;  /*カートアイコン右寄せ*/
 }
 
-cart_table{
-      border-collapse: collapse;
-      text-align: center;
+.cart_logo:active {          /*カートアイコンを押したとき*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);    /*下に動く*/
+    border-bottom: none;          　/*線を消す*/
 }
-th, td{
-      border: solid 1px #000000;
+
+.nemu {
+  text-align: right;         /*ログアウト右寄せ*/
 }
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: #FC9D9D;
+}
+
+.item {                   /*商品一覧画像*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 10px 0 10px;
+}
+
+.item_img_size {
+  width:180px;
+}
+
+/*.buy {*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*}*/
+
+/*.cart_list {*/
+/*}*/
+
+.cart-table{                  /*カート一覧テーブル*/
+  display: flex;
+  justify-content: center;
+  border-collapse: collapse;
+  text-align: center;
+}
+th, td{                       /*カート一覧テーブル*/
+  border: solid 1px #000000;
+  border-color: #C0C0C0;
+}
+
+.buy-sum-price {　            /*カート合計額*/
+  color: #ff0000;
+  text-align: right;
+}
+
 .buy-sum-box{
-      font-weight: bold;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  margin : 5px 0 30px 0; /*上と下の余白*/
 }
 
-/*
-.cart-list {
-    display: flex;
+.register-btn {
+  margin : 5px 0 30px 0; /*上と下の余白*/
 }
-*/
+
+.buy {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.buy-btn{
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #FC9D9D;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #EEF9FF;
+    border-radius: 3px;
+    margin : 5px 0 30px 0; /*上と下の余白*/
+}
+.buy-btn:active {/*ボタンを押したとき*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+}
+
+.footer-navi {
+  display: flex;
+  justify-content: center;
+	bottom:  0px;              /* 絶対位置指定(左0px,下0px) */
+	padding: 20 0px 0 0px;         /* 上下に余白を取る */
+}
+
+.box11{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #5d627b;
+    background: white;
+    border-top: solid 5px #5d627b;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+.box11 p {
+    margin: 0; 
+    padding: 0;
+}

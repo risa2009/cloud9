@@ -44,6 +44,7 @@ if($password === ''){
   $err_msg[] = "パスワードは半角英数字6文字以上でご入力ください。";
 }
 //var_dump($err_msg);
+
 if(count($err_msg) ===0) {
 
   //この高さの真下で初めて出てきた閉じかっこが対応する閉じです。
@@ -92,21 +93,33 @@ if(count($err_msg) ===0) {
 </head>
 <body>
   <header>
-    <div class="header-box">
-      <a href="#">
+    <div class="container">
+      <a href="login.php">
         <img class="logo" src="./img/logo.png" alt="MyApron">
       </a>
     </div>
   </header>
+  <main>
   <div class="contents">
+    <img class="topvie" src="./img/top1.jpg" alt="MyApronTop">
+  </div>
     <div class="register">
       <form method="post" action="login.php">
         <div>ユーザー名：<input type="text" name="user_name" placeholder="ユーザー名"></div>
         <div>パスワード：<input type="password" name="password" placeholder="パスワード"></div>
         <div><input type="submit" value="ログイン"></div>
       </form>
+      </div>
+    <div class="register_text">
+       <a href="register.php">ユーザーの新規作成</a>
     </div>
-    <a href="register.html">ユーザーの新規作成</a>
+    </main>
+    <footer>
+    <div class="container">
+      <div class="footer-navi">
+      <small>Copyright&copy;My Apron All Rights Reserved.</small>
+    </div>
   </div>
+  </footer>
 </body>
 </html>

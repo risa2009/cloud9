@@ -56,10 +56,10 @@ try {
     // SQLを実行
     $stmt->execute();
     // レコードの取得
-    $cart_data = $stmt->fetchAll();
+    $cart_list = $stmt->fetchAll();
 
     //カート内の各商品について
-    foreach($cart_data as $cart_item){
+    foreach($cart_list as $cart_item){
       //在庫更新後の値を計算
       $change = $cart_item['stock'] - $cart_item['amount'];
             
@@ -86,6 +86,12 @@ try {
   echo 'データベース処理でエラーが発生しました。理由：'.$e->getMessage();
 }
 
+//合計金額の計算処理
+$total = 0;
+foreach($cart_list as $cart_item){
+  //購入数 * 単価を合計していく
+  $total += $cart_item['amount'] * $cart_item['price'];
+}
 
 function h($str){
   return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
@@ -96,58 +102,55 @@ function h($str){
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>My Apron：ショッピングカート</title>
-  <link rel="stylesheet" href="MyApron.css">
+    <title>My Apron：購入完了</title>
+      <link rel="stylesheet" href="MyApron.css">
 </head>
 <body>
   <header>
-  <div class="header-box">
-    <a href="https://risayamasaki-risayamasaki.c9users.io/MyApron/itemlist.php">
-    <img class="logo" src="./img/logo.png" alt="MyApron">
-    </a>
-    <a class="nemu" href="https://risayamasaki-risayamasaki.c9users.io/MyApron/logout.php">ログアウト</a>
-    <a href="https://risayamasaki-risayamasaki.c9users.io/MyApron/cart.php" class="cart"></a>
-  </div>
+    <div class="container">
+      <a href="itemlist.php">
+        <img class="logo" src="./img/logo.png" alt="MyApron">
+      </a>
+      <div class="nemu">
+        <a href="logout.php">ログアウト</a>
+      </div>
+    </div>
   </header>
-  <div class="cart_list">
-    <h1>ご購入ありがとうございました</h1>
-<!-- ここに個別のアイテムを記述 -->
-  <div class="cart-list-title">
-    <span class="cart-list-price">商品</span>
-    <span class="cart-list-num">数量</span>
-  </div>
-<?php foreach ($cart_data as $value)  { ?>
-<ul class="cart-list">
-  <li>
-    <div class="cart-item">
-      <span class="item_img_size"><img src="<?php print $img_dir . h($value['img']); ?>"></span>
-      <span><?php print h($value['name']); ?></span>
-      <form action="cart.php" method="post">
-        <input type="text"  class="input_text_width text_align_right" name="change_amount" value="<?php print $value['amount']; ?>">個&nbsp;&nbsp;<input type="submit" value="変更">
-        <input type="hidden" name="item_id" value="<?php print h($value['item_id']); ?>">
-        <input type="hidden" name="sql_kind" value="change_amount">
-      </form>
-      <form action="cart.php" method="post">
-        <input type="submit" value="削除">
-        <input type="hidden" name="item_id" value="<?php print $value['item_id']; ?>">
-	    　<input type="hidden" name="sql_kind" value="delete_cart_item">
-      </form>
-      <span class="cart-item-price"><?php print h($value['price']); ?>円</span>
-    </div>
-  </li>
-</ul>
+  <main>
+    <div class="cart_list">
+      <h1>お買い上げありがとうございました</h1>
+        <table class="cart-table">
+          <tr>
+            <th>画像</th>
+            <th>商品名</th>
+            <th>金額</th>
+          </tr>
+<?php foreach ($cart_list as $cart_item)  { ?>
+          <tr class="cart-item">
+            <td>
+              <span class="item_img_size"><img src="<?php print h($img_dir . $cart_item['img']); ?>"></span>
+            </td>
+            <td>
+              <span><?php print h($cart_item['name']); ?></span>
+            </td>
+            <td>
+              <span class="cart-item-price"><?php print h($cart_item['price']); ?>円</span>
+            </td>
+          </tr>
 <?php } ?>
-<div class="buy-sum-box">
-　<span class="buy-sum-title">合計</span>
-　  <!-- ★C-3-2 ●ショッピングカートにある商品の合計を表示する。-->
-    <!-- ここから入力 -->
-    <span class="buy-sum-price"><?php print h($value['price']); ?></span>
-    <!-- ここまで入力 -->
-</div>
-    <div>
-      <!-- ★C-4 商品を購入する（「購入完了ページページ」に遷移する）。-->
+        </table>
+        <div class="buy-sum-box">
+          <span class="buy-sum-title">合計:</span>
+          <span class="buy-sum-price"><?php print h($total); ?>円</span>
+        </div>
     </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer-navi">
+        <small>Copyright&copy;My Apron All Rights Reserved.</small>
+      </div>
     </div>
-  </div>
+  </footer>
 </body>
 </html>

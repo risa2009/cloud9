@@ -12,7 +12,6 @@ $err_msg = [];  // エラーメッセージ用の配列
 $result_msg = '';     // 実行結果のメッセージ
     
 if ($_SERVER['REQUEST_METHOD'] === 'POST'){
-  //こちら、69行目でエラー出てるので移動しましょう。
   $user_name = ''; //初期化
   $password = '';
           
@@ -106,21 +105,29 @@ if (count($err_msg) === 0 && $_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body>
   <header>
-    <div class="header-box">
-      <a href="#">
+    <div class="container">
+      <a href="login.php">
         <img class="logo" src="./img/logo.png" alt="MyApron">
       </a>
     </div>
   </header>
+  <main>
   <div class="contents">
     <div class="register">
       <p><?php print($result_msg); ?></p>
       <form method="post" action="register.php">
         <div>ユーザー名：<input type="text" name="user_name" placeholder="ユーザー名"></div>
         <div>パスワード：<input type="password" name="password" placeholder="パスワード"></div>
-        <div><input type="submit" value="新規登録"></div>
+        <div class="register-btn"><input type="submit" value="新規登録"></div>
       </form>
     </div>
+    </main>
+        <footer>
+    <div class="container">
+      <div class="footer-navi">
+      <small>Copyright&copy;My Apron All Rights Reserved.</small>
+    </div>
   </div>
+  </footer>
 </body>
 </html>

@@ -1,6 +1,4 @@
 <?php
-
-
 /* 最終課題の商品一覧ページ */
  $host     = 'localhost';
  $username = 'risayamasaki';   // MySQLのユーザ名
@@ -72,7 +70,7 @@ if (isset($_POST['item_id']) === TRUE) {
         WHERE item_id = ?';
         
       //レコード一つだけなので$cart_listの0番目に取得されている。
-      $amount = $cart_list[0]['amount'] +1;
+      $amount = $cart_list[0]['amount'] + 1;
       
       $stmt = $dbh->prepare($sql);
       $stmt->bindValue(1, $amount,     PDO::PARAM_INT);
@@ -80,9 +78,9 @@ if (isset($_POST['item_id']) === TRUE) {
       $stmt->execute();
       // update文では、結果を取得するわけではないのでfetchallは不要
       
-      $msg[] = 'カートに商品を追加しました。現在の購入数:' 
-               . $cart_list[0]['name'] 
-               . '[' . $cart_list[0]['amount'] . '個]';
+      // $msg[] = 'カートに商品を追加しました。現在の購入数:' 
+      //         . $cart_list[0]['name'] 
+      //         . '[' . $cart_list[0]['amount'] . '個 + 1]';
 
     }else{
       $amount = 1; //まだカートに一つも入っていない状態
@@ -142,42 +140,58 @@ function h($str){
 </head>
 <body>
   <header>
-    <div class="header-box">
-      <a href="https://risayamasaki-risayamasaki.c9users.io/MyApron/itemlist.php">
-        <img class="logo" src="./img/logo.png" alt="MyApron">
+    <div class="container">
+      <a href="itemlist.php">
+      <img  src="./img/logo.png" alt="MyApron">
       </a>
-    </div>
     <div class="cart_logo">
-      <a href="https://risayamasaki-risayamasaki.c9users.io/MyApron/cart.php">
-      <img class="logo" src="./img/cart.png" alt="MyApron">
-      </a>
+      <a href="cart.php"><img src="./img/cart.png" alt="MyApron"></a>
+    </div>
+    <div class="nemu">
+    <a href="logout.php">ログアウト</a>
+    </div>
     </div>
   </header>
+  <main>
+  <h1>今週のメニュー</h1>
 <?php foreach ($msg as $value) { ?>
      <p><?php print h($value); ?></p>
 <?php } ?>
   <div class="item_list">
 <?php foreach ($item_list as $value)  { ?>
-   <div class="item">
-    <form method="post">
-      <span class="item_img_size"><img src="<?php print h($img_dir . $value['img']); ?>"></span>
-      <span><?php print h($value['name']); ?></span>
-      <span><?php print h($value['price']); ?>円</span>
-      <input type="hidden" name="sql_kind" value="add_product_to_cart">
+  <div class="item">
+      <form method="post">
+        <sapn class="item_img_size"><img src="<?php print h($img_dir . $value['img']); ?>"></sapn>
+        <p><?php print h($value['name']); ?>
+        <?php print h($value['price']); ?>円
+          <div class="box11">
+            <p>メニュー内容</p>
+          </div>
+        <input type="hidden" name="sql_kind" value="add_product_to_cart"></p>
 <?php if ($value['stock'] > 0) { ?>
-      <input type="hidden" name="item_id" value="<?php print h($value['item_id']); ?>">
+        <input type="hidden" name="item_id" value="<?php print h($value['item_id']); ?>">
 <?php 
 } else {
 ?>
-      <span>売り切れ</span>
+        <span>売り切れ</span>
 <?php } ?>
-      <input type="submit" value="カートに入れる">
+      <div class="cart-btn">
+        <input type="submit" value="カートに入れる">
+      </div>
       </form>
 <?php } ?>
 <?php foreach ($err_msg as $value) { ?>
-     <p><?php print h($value); ?></p>
+      <p><?php print h($value); ?></p>
 <?php } ?>
    </div>
   </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer-navi">
+      <small>Copyright&copy;My Apron All Rights Reserved.</small>
+    </div>
+    </div>
+  </footer>
 </body>
 </html>

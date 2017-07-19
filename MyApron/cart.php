@@ -47,17 +47,20 @@ if(isset($_SESSION['user_id']) === TRUE){
         $stmt->bindValue(1, $amount,     PDO::PARAM_INT);
         $stmt->bindValue(2, $item_id,    PDO::PARAM_INT);
         $stmt->execute();
-        $msg[] = '変更しました。';
+        $msg[] = '購入数を変更しました。';
+        
       }else if($sql_kind === 'delete_cart_item'){
         //カートからの削除処理
-        $sql = 'DELETE FROM carts WHERE item_id = ?';
+        $sql = 'DELETE FROM carts WHERE item_id = ? AND user_id = ?';
         $stmt = $dbh->prepare($sql);
         $stmt->bindValue(1, $item_id,   PDO::PARAM_INT);
+        $stmt->bindValue(2, $user_id,    PDO::PARAM_INT);
         $stmt->execute();
         $msg[] = '削除しました。';
       }
     }
     
+    //ログインユーザーのカート一覧を取得
     $sql = 'SELECT
                  carts.user_id,
                  carts.item_id,
@@ -71,20 +74,17 @@ if(isset($_SESSION['user_id']) === TRUE){
     
     // SQL文を実行する準備        
     $stmt = $dbh->prepare($sql);
-    
     // SQL文のプレースホルダに値をバインド
     $stmt->bindValue(1, $user_id,    PDO::PARAM_INT);
-    
     // SQLを実行
     $stmt->execute();
-    
     // レコードの取得
-    $rows = $stmt->fetchAll();
-    //var_dump($rows);
+    $cart_list = $stmt->fetchAll();
+    //var_dump($cart_list);
  
      $total = 0;
-    foreach($rows as $row){
-      $total += $row['amount'] * $row['price'];
+    foreach($cart_list as $cart_item){
+      $total += $cart_item['amount'] * $cart_item['price'];
     }
     //var_dump($total);
     
@@ -107,53 +107,71 @@ function h($str){
 </head>
 <body>
   <header>
-  <div class="header-box">
-    <a href="https://risayamasaki-risayamasaki.c9users.io/MyApron/itemlist.php">
+  <div class="container">
+    <a href="itemlist.php">
     <img class="logo" src="./img/logo.png" alt="MyApron">
     </a>
-    <a class="nemu" href="https://risayamasaki-risayamasaki.c9users.io/MyApron/logout.php">ログアウト</a>
+    <div class="nemu">
+    <a href="logout.php">ログアウト</a>
+    </div>
   </div>
   </header>
+  <main>
   <div class="cart_list">
     <h1>ショッピングカート</h1>
-<!-- ここに個別のアイテムを記述 -->
-  <div class="cart-list-title">
-    <span class="cart-list-price">商品</span>
-    <span class="cart-list-num">数量</span>
-  </div>
-<?php foreach ($rows as $value)  { ?>
-<ul class="cart-list">
-  <li>
-    <div class="cart-item">
-      <span class="item_img_size"><img src="<?php print $img_dir . h($value['img']); ?>"></span>
-      <span><?php print h($value['name']); ?></span>
-      <form action="cart.php" method="post">
-        <input type="text"  class="input_text_width text_align_right" name="change_amount" value="<?php print $value['amount']; ?>">個&nbsp;&nbsp;<input type="submit" value="変更">
-        <input type="hidden" name="item_id" value="<?php print h($value['item_id']); ?>">
-        <input type="hidden" name="sql_kind" value="change_amount">
-      </form>
-      <form action="cart.php" method="post">
-        <input type="submit" value="削除">
-        <input type="hidden" name="item_id" value="<?php print $value['item_id']; ?>">
-	    　<input type="hidden" name="sql_kind" value="delete_cart_item">
-      </form>
-      <span class="cart-item-price"><?php print h($value['price']); ?>円</span>
-    </div>
-  </li>
-</ul>
+  <table class="cart-table">
+  <tr>
+    <th>画像</th>
+    <th>商品名</th>
+    <th>金額</th>
+    <th>購入数</th>
+    <th>削除</th>
+  </tr>
+<?php foreach ($cart_list as $cart_item)  { ?>
+      <tr class="cart-item">
+        <td>
+          <span class="item_img_size"><img src="<?php print h($img_dir . $cart_item['img']); ?>"></span>
+        </td>
+        <td>
+          <span><?php print h($cart_item['name']); ?></span>
+        </td>
+        <td>
+          <span class="cart-item-price"><?php print h($cart_item['price']); ?>円</span>
+        </td>
+        <td>
+          <form method="post">
+            <input type="text"  class="input_text_width text_align_right" name="change_amount" value="<?php print h($cart_item['amount']); ?>">個&nbsp;&nbsp;<input type="submit" value="変更">
+            <input type="hidden" name="item_id" value="<?php print h($cart_item['item_id']); ?>">
+            <input type="hidden" name="sql_kind" value="change_amount">
+          </form>
+        </td>
+        <td>
+          <form method="post">
+            <input type="submit" value="削除">
+            <input type="hidden" name="item_id" value="<?php print h($cart_item['item_id']); ?>">
+    	    　<input type="hidden" name="sql_kind" value="delete_cart_item">
+          </form>
+        </td>
+      </tr>
 <?php } ?>
-<div class="buy-sum-box">
-　<span class="buy-sum-title">合計</span>
-   <span class="buy-sum-price"><?php print h($total); ?></span>
-    <!-- ここまで入力 -->
-</div>
-    <div>
-      <!-- ★C-4 商品を購入する（「購入完了ページページ」に遷移する）。-->
+    </table>
+    <div class="buy-sum-box">
+      <span class="buy-sum-title">合計:</span>
+      <span class="buy-sum-price"><?php print h($total); ?>円</span>
+    </div>
+    <div class="buy">
       <form action="finish.php" method="post">
         <input class="buy-btn" type="submit" value="購入する">
       </form>
     </div>
-    </div>
   </div>
+    </main>
+  <footer>
+    <div class="container">
+      <div class="footer-navi">
+      <small>Copyright&copy;My Apron All Rights Reserved.</small>
+    </div>
+    </div>
+  </footer>
 </body>
 </html>
