@@ -88,6 +88,9 @@ if(count($err_msg) ===0) {
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <!--最小限のビューポート設定-->
+  <!--<meta name="viewport" content="width=device-width">-->
   <title>My Apron：ログインページ</title>
   <link rel="stylesheet" href="MyApron.css">
 </head>
