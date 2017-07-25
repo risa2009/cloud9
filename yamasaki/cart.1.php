@@ -34,15 +34,12 @@ if (isset($_POST['sql_kind']) === TRUE) {
     $dbh = new PDO($dsn, $username, $password);
     $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $dbh->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
-    //ここはなんのif文ですか？
     //カート内のデータを一覧表示するのはPOSTされた時だけですか？
     //このカートのページを開くと、カートの中の商品一覧が表示されますよね？
     //ということは、POSTされていなくても、商品一覧が表示される必要があります。
     //ですので、一覧取得のSELECT文はこのif文が終わった後になります。
     //POSTされた時だけ行う処理は、「在庫数の変更」と「カートからの削除」です。
-    //一旦コメントだけ残しておいて、select文をifの外に出しましょう！
-    //はい！コメントを残しておいたので、SELECT文を移動してあげてください！
- 
+
     if($_SERVER['REQUEST_METHOD'] === 'POST') {
       if($sql_kind === 'change_amount'){
         //在庫数の変更処理
@@ -75,8 +72,6 @@ if (isset($_POST['sql_kind']) === TRUE) {
     // レコードの取得
     $rows = $stmt->fetchAll();
     
-    //処理をすることにした、ということですか？
-    //その理由はなぜでしたか？foreachの中身がないというエラーだと思いましたので、取得する必要があるのかと思いました。
     //var_dump($rows);
       
       // 1行ずつ結果を配列で取得します←このコメントが嘘つきなのが原因ですね＾＾
@@ -134,16 +129,6 @@ function h($str){
 <?php foreach ($rows as $value)  { ?>
     <tr>
       <form action="cart.php" method="post">
-      <!--はい！そうですね＾＾さらに、ここは一つ一つ購入ボタンを設定していらっしゃいますが、-->
-      <!--ここでは購入するのではなく、購入数の変更と、カートからの削除ですね！-->
-   
-      <!--formは必要ですよ！ありがとうございます。-->
-      <!--そして、action先は、finish.phpではなく、cart.phpになります。-->
-      <!--そして、最後に、全ての商品のデータが表示された後に、購入ボタンですので、-->
-      <!--foreachの後にfinish.phpへのactionが設定された購入ボタンがあることになります。-->
-      <!--action先を設定しないと、「自分自身のファイルにデータを送信する」という特徴を利用しました。-->
-      <!--サンプルではファイル名が変わるので、元のファイルとサンプルで記述を変える必要がないようにしていました。-->
-      <!--actionを設定していただいてももちろん構いません。-->
       <!--  macならcommandと/です。この行で試してみましょう！コメント解除も同じコマンドです。-->
     <td><span class="item_img_size"><img src="<?php print $img_dir . h($value['img']); ?>"></span></td>
     <td><span><?php print h($value['name']); ?></span></td>

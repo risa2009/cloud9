@@ -52,7 +52,6 @@ $user_id    = 1;      //仮実装、ユーザーIDを１で固定
         $stmt->bindValue(2, $item_id,    PDO::PARAM_INT);
         $stmt->execute();
         $msg[] = '変更しました。';
-        //hiddenの使い方でしたね。
         //まず、今回はhiddenを何のために使うかというと、
         // 1. 行う処理がカートからの削除なのか、購入数の更新なのかを分岐する
         // 2. どの商品のボタンが押されたのかを識別する
@@ -129,7 +128,6 @@ function h($str){
   </header>
   <div class="cart_list">
     <h1>ショッピングカート</h1>
-<!-- ここに個別のアイテムを記述 -->
   <div class="cart-list-title">
     <span class="cart-list-price">商品</span>
     <span class="cart-list-num">数量</span>
@@ -138,9 +136,6 @@ function h($str){
 <ul class="cart-list">
   <li>
     <div class="cart-item">
-      <!--ちなみに、この辺りは本当はtableタグを使った方が-->
-      <!--レイアウトしやすいところですね。まあ、今は仕上げるのが最優先なのでこのままでいいでしょう。-->
- 
       <span class="item_img_size"><img src="<?php print $img_dir . h($value['img']); ?>"></span>
       <span><?php print h($value['name']); ?></span>
       <form action="cart.php" method="post">
@@ -163,13 +158,9 @@ function h($str){
 <?php } ?>
 <div class="buy-sum-box">
 　<span class="buy-sum-title">合計</span>
-　  <!-- ★C-3-2 ●ショッピングカートにある商品の合計を表示する。-->
-    <!-- ここから入力 -->
     <span class="buy-sum-price">¥1000</span>
-    <!-- ここまで入力 -->
 </div>
     <div>
-      <!-- ★C-4 商品を購入する（「購入完了ページページ」に遷移する）。-->
       <form action="finish.php" method="post">
         <input class="buy-btn" type="submit" value="購入する">
       </form>

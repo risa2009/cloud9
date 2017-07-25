@@ -144,7 +144,7 @@ if (isset($_POST['item_id']) === TRUE) {
 
         $stmt->bindValue(2, $item_id,    PDO::PARAM_INT);
         $stmt->execute();
-        // update文では、結果を取得するわけではないのでfetchallは不要です。はい
+        // update文では、結果を取得するわけではないのでfetchallは不要です。
       
       }else{
         //カートに入っていないので、insert
@@ -237,7 +237,6 @@ if (isset($_POST['item_id']) === TRUE) {
   </header>
   <div class="item_list">
 <?php foreach ($item_list as $value)  { ?>
-<!--ひとまずこれで表示を確認してみましょう。51行目ですね！行きましょうはい-->
   <div class="item">
     <form action="itemlist.php" method="post">
       <span class="item_img_size"><img src="<?php print $img_dir . $value['img']; ?>"></span>
@@ -245,8 +244,6 @@ if (isset($_POST['item_id']) === TRUE) {
       <span><?php print $value['price']; ?>円</span>
       <input type="hidden" name="sql_kind" value="add_product_to_cart">
 <?php if ($value['stock'] > 0) { ?>
-<!--ここではラジオボタンになっていますが、商品ごとに「カートに入れるボタン」があるので-->
-<!--わざわざラジオボタンにする必要はありません。クリックするのが面倒なのでhiddenにしてしまいましょう。-->
 <!--はい、これで、「カートに入れるボタン」を押すだけで、該当の商品が追加されるようにできます。-->
 <input type="hidden" name="item_id" value="<?php print $value['item_id']; ?>">
 <?php 
