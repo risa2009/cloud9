@@ -1,10 +1,10 @@
 <?php
 /* 最終課題の商品管理ページ */
- $host     = 'localhost';
- $username = 'risayamasaki';   // MySQLのユーザ名
- $password = '';       // MySQLのパスワード
- $dbname   = 'camp';   // MySQLのDB名
- $charset  = 'utf8';   // データベースの文字コード
+$host     = 'localhost';
+$username = 'risayamasaki';   // MySQLのユーザ名
+$password = '';       // MySQLのパスワード
+$dbname   = 'camp';   // MySQLのDB名
+$charset  = 'utf8';   // データベースの文字コード
    
 // MySQL用のDNS文字列
 $dsn = 'mysql:dbname='.$dbname.';host='.$host.';charset='.$charset;

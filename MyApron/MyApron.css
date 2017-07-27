@@ -1,13 +1,19 @@
+/*全体の設定
+---------------------------------------------------------------------------*/
 body{
     min-width: 960px;
 }
 
+/*ヘッダー設定
+---------------------------------------------------------------------------*/
 header {
     background: #FFFFFF;
     border-bottom: solid 1px #cccccc;
     margin : 0 0 10px 0; /*上と下の余白*/
 }
 
+/*フッター設定
+---------------------------------------------------------------------------*/
 footer {
     background-color: #FC9D9D;
     border-top: solid 1px #cccccc;
@@ -15,17 +21,30 @@ footer {
     text-align: center;
 }
 
-.container {            /*コンテナ*/
+.footer-navi {
+  display: block;
+  /*justify-content: center;*/
+	/* bottom:  0px;                  絶対位置指定(左0px,下0px) */
+	/* padding: 20 0px 0 0px;         上下に余白を取る */
+}
+
+/*コンテナー（ホームページ全体を囲むブロック）
+---------------------------------------------------------------------------*/
+.container {            /*コンテナー*/
     width: 960px;
     margin: 0 auto;
 }
 
+/*コンテンツ
+---------------------------------------------------------------------------*/
 .contents {
     display: flex;
     justify-content: center;
 }
 
-.register {             /*新規登録画面*/
+/*新規登録画面
+---------------------------------------------------------------------------*/
+.register {
     display: flex;
     justify-content: center;
     margin : 10px 0 5px 0; /*上と下の余白*/
@@ -70,6 +89,8 @@ h1 {
   color: #FC9D9D;
 }
 
+/*アイテムリスト
+---------------------------------------------------------------------------*/
 .item {                   /*商品一覧画像*/
   display: flex;
   flex-wrap: wrap;
@@ -81,21 +102,28 @@ h1 {
   width:180px;
 }
 
-/*.buy {*/
-/*  display: flex;*/
-/*  justify-content: center;*/
-/*}*/
+.box11{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #5d627b;
+    background: white;
+    border-top: solid 5px #5d627b;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+.box11 p {
+    margin: 0; 
+    padding: 0;
+}
 
-/*.cart_list {*/
-/*}*/
-
+/*カート内画面
+---------------------------------------------------------------------------*/
 .cart-table{                  /*カート一覧テーブル*/
   display: flex;
   justify-content: center;
   border-collapse: collapse;
   text-align: center;
 }
-th, td{                       /*カート一覧テーブル*/
+th, td{                 
   border: solid 1px #000000;
   border-color: #C0C0C0;
 }
@@ -139,41 +167,17 @@ th, td{                       /*カート一覧テーブル*/
     border-bottom: none;/*線を消す*/
 }
 
-.footer-navi {
-  display: flex;
-  justify-content: center;
-	bottom:  0px;              /* 絶対位置指定(左0px,下0px) */
-	padding: 20 0px 0 0px;         /* 上下に余白を取る */
-}
-
-.box11{
-    padding: 0.5em 1em;
-    margin: 2em 0;
-    color: #5d627b;
-    background: white;
-    border-top: solid 5px #5d627b;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
-}
-.box11 p {
-    margin: 0; 
-    padding: 0;
-}
-
-@media screen and (max-width:375px) {
+/*画面幅480px以下の設定
+---------------------------------------------------------------------------*/
+@media screen and (max-width:480px) {
 body{
-    min-width: 375px;
-}
+    min-width: 480px;
+    overflow-x: hidden;
 }
 
-@media screen and (max-width:375px) {
 img {
 max-width : 100% ;
 height : auto ;
 }
-}
 
-@media screen and (max-width:375px) {
-.footer-navi {
-  min-width: 375px;
-}
 }
