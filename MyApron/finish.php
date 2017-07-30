@@ -102,6 +102,7 @@ function h($str){
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <title>My Apron：購入完了</title>
       <link rel="stylesheet" href="MyApron.css">
 </head>
@@ -146,11 +147,11 @@ function h($str){
     </div>
   </main>
   <footer>
-    <div class="container">
+    <!--<div class="container">-->
       <div class="footer-navi">
         <small>Copyright&copy;My Apron All Rights Reserved.</small>
       </div>
-    </div>
+    <!--</div>-->
   </footer>
 </body>
 </html>

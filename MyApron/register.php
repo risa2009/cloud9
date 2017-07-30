@@ -20,7 +20,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
   }
   //ここからエラーチェック
   if($user_name === ''){ //未入力チェック
-    
     $err_msg[] = 'ユーザー名を入力してください。';
     
   }else if(preg_match('/^[a-z\d_]{6,20}$/i', '', $_POST['user_name'])){ //正規表現チェック
@@ -100,6 +99,7 @@ if (count($err_msg) === 0 && $_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
   <title>My Apron：無料会員登録</title>
   <link rel="stylesheet" href="MyApron.css">
 </head>
@@ -122,12 +122,12 @@ if (count($err_msg) === 0 && $_SERVER['REQUEST_METHOD'] === 'POST') {
       </form>
     </div>
     </main>
-        <footer>
-    <div class="container">
+    <footer>
+    <!--<div class="container">-->
       <div class="footer-navi">
-      <small>Copyright&copy;My Apron All Rights Reserved.</small>
-    </div>
-  </div>
-  </footer>
+        <small>Copyright&copy;My Apron All Rights Reserved.</small>
+      </div>
+    <!--</div>-->
+    </footer>
 </body>
 </html>

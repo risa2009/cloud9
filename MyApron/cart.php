@@ -1,11 +1,11 @@
 <?php
 /* 最終課題のカート一覧ページ */
- $host = 'localhost';
- $username = 'risayamasaki';   // MySQLのユーザ名
- $password = '';     // MySQLのパスワード
- $dbname = 'camp';   // MySQLのDB名
- $charset = 'utf8';   // データベースの文字コード
-  // MySQL用のDNS文字列
+$host = 'localhost';
+$username = 'risayamasaki';   // MySQLのユーザ名
+$password = '';     // MySQLのパスワード
+$dbname = 'camp';   // MySQLのDB名
+$charset = 'utf8';   // データベースの文字コード
+// MySQL用のDNS文字列
 $dsn = 'mysql:dbname='.$dbname.';host='.$host.';charset='.$charset;
 $img_dir = './img/';  // 画像のディレクトリ
 $sql_kind = '';   // SQL処理の種類
@@ -82,7 +82,7 @@ if(isset($_SESSION['user_id']) === TRUE){
     $cart_list = $stmt->fetchAll();
     //var_dump($cart_list);
  
-     $total = 0;
+    $total = 0;
     foreach($cart_list as $cart_item){
       $total += $cart_item['amount'] * $cart_item['price'];
     }
@@ -102,6 +102,7 @@ function h($str){
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
   <title>My Apron：ショッピングカート</title>
   <link rel="stylesheet" href="MyApron.css">
 </head>
@@ -167,11 +168,11 @@ function h($str){
   </div>
     </main>
   <footer>
-    <div class="container">
+    <!--<div class="container">-->
       <div class="footer-navi">
       <small>Copyright&copy;My Apron All Rights Reserved.</small>
     </div>
-    </div>
+    <!--</div>-->
   </footer>
 </body>
 </html>

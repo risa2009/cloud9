@@ -1,12 +1,12 @@
 <?php
 /* 最終課題の商品一覧ページ */
- $host     = 'localhost';
- $username = 'risayamasaki';   // MySQLのユーザ名
- $password = '';       // MySQLのパスワード
- $dbname   = 'camp';   // MySQLのDB名
- $charset  = 'utf8';   // データベースの文字コード
+$host     = 'localhost';
+$username = 'risayamasaki';   // MySQLのユーザ名
+$password = '';       // MySQLのパスワード
+$dbname   = 'camp';   // MySQLのDB名
+$charset  = 'utf8';   // データベースの文字コード
  
- // MySQL用のDNS文字列
+// MySQL用のDNS文字列
 $dsn = 'mysql:dbname='.$dbname.';host='.$host.';charset='.$charset;
 
 $img_dir    = './img/';  // 画像のディレクトリ
@@ -27,47 +27,47 @@ if(isset($_SESSION['user_id']) === TRUE){
 
 if (isset($_POST['item_id']) === TRUE) {
     $item_id = $_POST['item_id'];
-  }
-  // 現在日時を取得
-  $now_date = date('Y-m-d H:i:s');
+}
+// 現在日時を取得
+$now_date = date('Y-m-d H:i:s');
   
-  try {
-    // データベースに接続
-    $dbh = new PDO($dsn, $username, $password);
-    $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $dbh->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+try {
+  // データベースに接続
+  $dbh = new PDO($dsn, $username, $password);
+  $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  $dbh->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 
-    if($_SERVER['REQUEST_METHOD'] === 'POST') {
-      //select文でカート内のデータを取得
-      $sql = 'SELECT
-                   carts.user_id,
-                   carts.item_id,
-                   carts.amount,
-                   items.name
-              FROM carts JOIN items
-              ON carts.item_id = items.item_id
-              WHERE carts.item_id = ?
-              AND user_id = ?';
+  if($_SERVER['REQUEST_METHOD'] === 'POST') {
+    //select文でカート内のデータを取得
+    $sql = 'SELECT
+                 carts.user_id,
+                 carts.item_id,
+                 carts.amount,
+                 items.name
+            FROM carts JOIN items
+            ON carts.item_id = items.item_id
+            WHERE carts.item_id = ?
+            AND user_id = ?';
    
-       $stmt = $dbh->prepare($sql);
+    $stmt = $dbh->prepare($sql);
       
-        // SQL文のプレースホルダに値をバインド
-        $stmt->bindValue(1, $item_id,    PDO::PARAM_INT);
-        $stmt->bindValue(2, $user_id,    PDO::PARAM_INT);
+    // SQL文のプレースホルダに値をバインド
+    $stmt->bindValue(1, $item_id,    PDO::PARAM_INT);
+    $stmt->bindValue(2, $user_id,    PDO::PARAM_INT);
         
-        // SQLを実行
-        $stmt->execute();
-        
-        // レコードの取得
-        $cart_list = $stmt->fetchAll();
-        //var_dump($cart_list);
+    // SQLを実行
+    $stmt->execute();
+    
+    // レコードの取得
+    $cart_list = $stmt->fetchAll();
+    //var_dump($cart_list);
         
     //カート内に該当のレコードがあるかどうかをチェック
     if(count($cart_list) >= 1){ //レコードが一つ以上取得できれば
     
       $sql = 'UPDATE carts
-        SET amount = ?
-        WHERE item_id = ?';
+              SET amount = ?
+              WHERE item_id = ?';
         
       //レコード一つだけなので$cart_listの0番目に取得されている。
       $amount = $cart_list[0]['amount'] + 1;
@@ -96,35 +96,35 @@ if (isset($_POST['item_id']) === TRUE) {
       $stmt->bindValue(4, $now_date,   PDO::PARAM_STR);
       
       $stmt->execute();
-      }
-      
     }
-
-    // 公開商品のみ表示
-      $sql = 'SELECT 
-                  items.item_id,
-                  items.name,
-                  items.price,
-                  items.img,
-                  items.status,
-                  items.stock
-            FROM items
-            WHERE status = 1';
-              
-      // SQL文を実行する準備
-      $stmt = $dbh->prepare($sql);
       
-      // SQLを実行
-      $stmt->execute();
-      
-      // レコードの取得
-      $item_list = $stmt->fetchAll();
-
-  } catch (PDOException $e) {
-    // 例外をスロー
-    // throw $e;
-    echo 'データベース処理でエラーが発生しました。理由：'.$e->getMessage();
   }
+
+  // 公開商品のみ表示
+  $sql = 'SELECT 
+              items.item_id,
+              items.name,
+              items.price,
+              items.img,
+              items.status,
+              items.stock
+          FROM items
+          WHERE status = 1';
+              
+  // SQL文を実行する準備
+  $stmt = $dbh->prepare($sql);
+  
+  // SQLを実行
+  $stmt->execute();
+  
+  // レコードの取得
+  $item_list = $stmt->fetchAll();
+
+} catch (PDOException $e) {
+  // 例外をスロー
+  // throw $e;
+  echo 'データベース処理でエラーが発生しました。理由：'.$e->getMessage();
+}
 
 function h($str){
   return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
@@ -135,6 +135,7 @@ function h($str){
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
   <title>My Apron：商品一覧</title>
   <link rel="stylesheet" href="MyApron.css">
 </head>
@@ -187,11 +188,11 @@ function h($str){
   </div>
   </main>
   <footer>
-    <div class="container">
+    <!--<div class="container">-->
       <div class="footer-navi">
       <small>Copyright&copy;My Apron All Rights Reserved.</small>
     </div>
-    </div>
+    <!--</div>-->
   </footer>
 </body>
 </html>
