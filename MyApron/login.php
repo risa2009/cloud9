@@ -25,7 +25,7 @@ if (isset($_SESSION['user_id'])) {
 
 // POST値取得
 if (isset($_POST['user_name']) === TRUE){
-  //こっちは置換処理なのでpreg_replaceが必要です。
+  //こっちは置換処理なのでpreg_replace
   $user_name = preg_replace('/^[\s　]+|[\s　]+$/u', '', $_POST['user_name']);
 }
 if($user_name === ''){ 
@@ -47,7 +47,6 @@ if($password === ''){
 
 if(count($err_msg) ===0) {
 
-  //この高さの真下で初めて出てきた閉じかっこが対応する閉じです。
   try {
     // データベースに接続
     //ここの$dsn, $username, $passwordが定数DSN, DB_USER, DB_PASSWDで置き換え

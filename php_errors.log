@@ -1950,3 +1950,18 @@ Stack trace:
 [19-Jul-2017 19:45:20 Asia/Tokyo] PHP Stack trace:
 [19-Jul-2017 19:45:20 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/finish.php:0
 [28-Jul-2017 00:43:27 Asia/Tokyo] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/MyApron/tool.php on line 385
+[31-Jul-2017 19:49:52 Asia/Tokyo] PHP Notice:  Undefined offset: 1 in /home/ubuntu/workspace/MyApron/itemlist.php on line 81
+[31-Jul-2017 19:49:52 Asia/Tokyo] PHP Stack trace:
+[31-Jul-2017 19:49:52 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[31-Jul-2017 21:29:05 Asia/Tokyo] PHP Notice:  Undefined offset: 0 in /home/ubuntu/workspace/MyApron/itemlist.php on line 66
+[31-Jul-2017 21:29:05 Asia/Tokyo] PHP Stack trace:
+[31-Jul-2017 21:29:05 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[31-Jul-2017 21:29:05 Asia/Tokyo] PHP Notice:  Undefined offset: 0 in /home/ubuntu/workspace/MyApron/itemlist.php on line 66
+[31-Jul-2017 21:29:05 Asia/Tokyo] PHP Stack trace:
+[31-Jul-2017 21:29:05 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[31-Jul-2017 21:31:45 Asia/Tokyo] PHP Notice:  Undefined offset: 0 in /home/ubuntu/workspace/MyApron/itemlist.php on line 97
+[31-Jul-2017 21:31:45 Asia/Tokyo] PHP Stack trace:
+[31-Jul-2017 21:31:45 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[31-Jul-2017 21:31:45 Asia/Tokyo] PHP Notice:  Undefined offset: 0 in /home/ubuntu/workspace/MyApron/itemlist.php on line 97
+[31-Jul-2017 21:31:45 Asia/Tokyo] PHP Stack trace:
+[31-Jul-2017 21:31:45 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0

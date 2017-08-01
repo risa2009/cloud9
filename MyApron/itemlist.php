@@ -61,7 +61,7 @@ try {
     // レコードの取得
     $cart_list = $stmt->fetchAll();
     //var_dump($cart_list);
-        
+    
     //カート内に該当のレコードがあるかどうかをチェック
     if(count($cart_list) >= 1){ //レコードが一つ以上取得できれば
     
@@ -76,12 +76,9 @@ try {
       $stmt->bindValue(1, $amount,     PDO::PARAM_INT);
       $stmt->bindValue(2, $item_id,    PDO::PARAM_INT);
       $stmt->execute();
-      // update文では、結果を取得するわけではないのでfetchallは不要
       
-      // $msg[] = 'カートに商品を追加しました。現在の購入数:' 
-      //         . $cart_list[0]['name'] 
-      //         . '[' . $cart_list[0]['amount'] . '個 + 1]';
-
+      $msg[] = 'カートに商品を追加しました。';
+      
     }else{
       $amount = 1; //まだカートに一つも入っていない状態
       //$stmt->bindValue(3, 1, PDO::PARAM_INT);としてもOK
@@ -121,8 +118,6 @@ try {
   $item_list = $stmt->fetchAll();
 
 } catch (PDOException $e) {
-  // 例外をスロー
-  // throw $e;
   echo 'データベース処理でエラーが発生しました。理由：'.$e->getMessage();
 }
 
@@ -166,7 +161,7 @@ function h($str){
         <p><?php print h($value['name']); ?>
         <?php print h($value['price']); ?>円
           <div class="box11">
-            <p>メニュー内容</p>
+            <!--<p>メニュー内容</p>-->
           </div>
         <input type="hidden" name="sql_kind" value="add_product_to_cart"></p>
 <?php if ($value['stock'] > 0) { ?>
@@ -188,11 +183,9 @@ function h($str){
   </div>
   </main>
   <footer>
-    <!--<div class="container">-->
       <div class="footer-navi">
       <small>Copyright&copy;My Apron All Rights Reserved.</small>
     </div>
-    <!--</div>-->
   </footer>
 </body>
 </html>

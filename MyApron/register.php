@@ -21,8 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
   //ここからエラーチェック
   if($user_name === ''){ //未入力チェック
     $err_msg[] = 'ユーザー名を入力してください。';
-    
-  }else if(preg_match('/^[a-z\d_]{6,20}$/i', '', $_POST['user_name'])){ //正規表現チェック
+  }else if(preg_match('/^[a-z\d_]{6,20}$/i', $user_name) !== 1){ 
     $err_msg[] = "ユーザー名は半角英数字6文字以上でご入力ください。";
   }
     
@@ -31,9 +30,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
   }
   //ここからエラーチェック
   if($password === ''){ //未入力チェック
-    $err_msg[] = 'ユーザー名を入力してください。';
-  }else if(preg_match('/^[a-z\d_]{6,20}$/i', '', $_POST['password'])){ //正規表現チェック
-    $err_msg[] = "ユーザー名は半角英数字6文字以上でご入力ください。";
+    $err_msg[] = 'パスワードを入力してください。';
+  }else if(preg_match('/^[a-z\d_]{6,20}$/i', $password) !== 1){ 
+    $err_msg[] = "パスワードは半角英数字6文字以上でご入力ください。";
   }
 }
   
@@ -121,6 +120,9 @@ if (count($err_msg) === 0 && $_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="register-btn"><input type="submit" value="新規登録"></div>
       </form>
     </div>
+<?php foreach ($err_msg as $value) { ?>
+  <p><?php print $value; ?></p>
+<?php } ?>
     </main>
     <footer>
     <!--<div class="container">-->
