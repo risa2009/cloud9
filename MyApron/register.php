@@ -125,11 +125,9 @@ if (count($err_msg) === 0 && $_SERVER['REQUEST_METHOD'] === 'POST') {
 <?php } ?>
     </main>
     <footer>
-    <!--<div class="container">-->
       <div class="footer-navi">
         <small>Copyright&copy;My Apron All Rights Reserved.</small>
       </div>
-    <!--</div>-->
     </footer>
 </body>
 </html>

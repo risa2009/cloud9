@@ -2,14 +2,14 @@
 /* 最終課題のログインページ */
 
 // データベースの接続情報
-//$dsn の代わりにDSNが使えるようになりました。
+//$dsn の代わりにDSN
 define('DB_USER',   'risayamasaki');    // MySQLのユーザ名
-define('DB_PASSWD', '');    // MySQLのパスワード
+define('DB_PASSWD', '');                // MySQLのパスワード
 define('DSN', 'mysql:dbname=camp;host=localhost;charset=utf8');
 
-$err_msg = [];  // エラーメッセージ用の配列
+$err_msg = [];      // エラーメッセージ用の配列
 $msg      = [];     //エラー以外のメッセージを格納する配列
-$user_name = ''; //初期化
+$user_name = '';    //初期化
 $password = '';
 //var_dump($_POST);
 
@@ -25,7 +25,7 @@ if (isset($_SESSION['user_id'])) {
 
 // POST値取得
 if (isset($_POST['user_name']) === TRUE){
-  //こっちは置換処理なのでpreg_replace
+  //置換処理なのでpreg_replace
   $user_name = preg_replace('/^[\s　]+|[\s　]+$/u', '', $_POST['user_name']);
 }
 if($user_name === ''){ 
@@ -88,8 +88,6 @@ if(count($err_msg) ===0) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-  <!--最小限のビューポート設定-->
-  <!--<meta name="viewport" content="width=device-width">-->
   <title>My Apron：ログインページ</title>
   <link rel="stylesheet" href="MyApron.css">
 </head>
@@ -103,25 +101,51 @@ if(count($err_msg) ===0) {
   </header>
   <main>
   <div class="contents">
-    <img class="topvie" src="./img/top1.jpg" alt="MyApronTop">
-  </div>
-    <div class="register">
-      <form method="post" action="login.php">
-        <div>ユーザー名：<input type="text" name="user_name" placeholder="ユーザー名"></div>
-        <div>パスワード：<input type="password" name="password" placeholder="パスワード"></div>
-        <div><input type="submit" value="ログイン"></div>
-      </form>
+    <div class="box">
+      <p>毎日の夕飯を献立キットでお届け</p>
+      <div class="register">
+        <div class="login_form">
+          <form method="post" action="login.php">
+            <div class='row'>
+              <label class='form-label'>ユーザー名：</label>
+              <input class='form-input' type="text" name="user_name" placeholder="ユーザー名">
+            </div>
+            <div class='row'>
+              <label class='form-label'>パスワード：</label>
+              <input class='form-input' type="password" name="password" placeholder="パスワード">
+            </div>
+              <input class='login-btn' type="submit" value="ログイン">
+            <div class="register_text">
+              <a href="register.php">ユーザーの新規作成</a>
+            </div>
+          </form>
+        </div>
       </div>
-    <div class="register_text">
-       <a href="register.php">ユーザーの新規作成</a>
     </div>
-    </main>
-    <footer>
-    <!--<div class="container">-->
-      <div class="footer-navi">
+  </div>
+  <article class="center_flex">
+    <h1>毎日の献立を 食材キットでお届け</h1>
+    <div class="first_view_icons">
+      <div class="icon_item">
+        <img src="./img/cardboardbox.png" />
+        <p>セットで注文だから簡単</p>
+      </div>
+      <div class="icon_item">
+        <img src="./img/menu.png" />
+        <p>栄養バランスが取れた献立</p>
+      </div>
+      <div class="icon_item">
+        <img src="./img/dish.png" />
+        <p>副菜の作り置きや離乳食も</p>
+      </div>
+    </div>
+    <h2>セットで届くから簡単<br><em>でも手抜きにならない</em> 食材宅配サービス</h2>
+  </article>
+  </main>
+  <footer>
+    <div class="footer-navi">
       <small>Copyright&copy;My Apron All Rights Reserved.</small>
     </div>
-    <!--</div>-->
   </footer>
 </body>
 </html>

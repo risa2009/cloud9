@@ -1,24 +1,28 @@
 /*全体の設定
 ---------------------------------------------------------------------------*/
 body{
-    min-width: 960px;
+  min-width: 960px;
+}
+
+a{
+  text-decoration: none;
 }
 
 /*ヘッダー設定
 ---------------------------------------------------------------------------*/
 header {
-    background: #FFFFFF;
-    border-bottom: solid 1px #cccccc;
-    margin : 0 0 10px 0; /*上と下の余白*/
+  background: #FFFFFF;
+  border-bottom: solid 1px #cccccc;
+  margin : 0 0 10px 0; /*上と下の余白*/
 }
 
 /*フッター設定
 ---------------------------------------------------------------------------*/
 footer {
-    background-color: #FC9D9D;
-    border-top: solid 1px #cccccc;
-    color: #ffffff;
-    text-align: center;
+  background-color: #FC9D9D;
+  border-top: solid 1px #cccccc;
+  color: #ffffff;
+  text-align: center;
 }
 
 .footer-navi {
@@ -30,23 +34,67 @@ footer {
 /*コンテナー（ホームページ全体を囲むブロック）
 ---------------------------------------------------------------------------*/
 .container {           
-    width: 960px;
-    margin: 0 auto;
+  width: 960px;
+  margin: 0 auto;
 }
 
 /*コンテンツ
 ---------------------------------------------------------------------------*/
 .contents {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 /*新規登録画面
 ---------------------------------------------------------------------------*/
 .register {
-    display: flex;
-    justify-content: center;
-    margin : 10px 0 5px 0; /*上と下の余白*/
+  display: flex;
+  justify-content: center;
+  margin : 10px 0 5px 0; /*上と下の余白*/
+}
+
+/*ログインフォーム
+---------------------------------------------------------------------------*/
+.login_form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;/*余計な隙間を除く*/
+  padding:0;/*余計な隙間を除く*/
+  background: rgba(255, 255, 255, 0.8);
+  width: 500px;
+  height: 200px;
+  text-align: center;
+}
+
+.row {
+  padding: 10px 20px;
+}
+
+.form-label {
+  color: #454545;
+}
+
+.form-input {
+  border:1px solid #777;
+  padding: 10px;
+  color: #999;
+  background: #fff;
+  border-radius: 5px;
+}
+.login-btn {
+  width: 250px;
+  font-size: 15px;
+  background: #FC9D9D;
+  text-decoration: none;
+  color: #fff;
+  padding: 3px 5px;
+  display: inline-block;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
 
 .topvie-img img {        /*メイン画像*/
@@ -54,7 +102,6 @@ footer {
   height: auto;
   margin : 10px 0 5px 0;  /*メイン画像上と下の余白*/
 }
-
 
 .register_text {
   display: flex;
@@ -72,10 +119,10 @@ footer {
 }
 
 .cart_logo:active {          /*カートアイコンを押したとき*/
-    -ms-transform: translateY(4px);
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);    /*下に動く*/
-    border-bottom: none;          　/*線を消す*/
+  -ms-transform: translateY(4px);
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);    /*下に動く*/
+  border-bottom: none;          　/*線を消す*/
 }
 
 .nemu {
@@ -88,7 +135,46 @@ h1 {
   color: #FC9D9D;
 }
 
-/*アイテムリスト
+/*トップメイン画像設定
+---------------------------------------------------------------------------*/
+.box {
+  position: relative;/*相対配置*/
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url('https://risayamasaki-risayamasaki.c9users.io/MyApron/img/top.jpeg');
+}
+.box p {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
+  font-size: 30px;
+  color: white;
+  font-family :Quicksand, sans-serif;
+}
+/*トップ画像下
+---------------------------------------------------------------------------*/
+.center_flex{
+  text-align: center;
+}
+
+.first_view_icons {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.first_view_icons p {
+  margin: 20px;
+}
+
+/*商品一覧（アイテムリスト）
 ---------------------------------------------------------------------------*/
 .item {                   /*商品一覧画像*/
   display: flex;
@@ -102,16 +188,16 @@ h1 {
 }
 
 .box11{
-    padding: 0.5em 1em;
-    margin: 2em 0;
-    color: #5d627b;
-    background: white;
-    border-top: solid 5px #5d627b;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: #5d627b;
+  background: white;
+  border-top: solid 5px #5d627b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
 }
 .box11 p {
-    margin: 0; 
-    padding: 0;
+  margin: 0; 
+  padding: 0;
 }
 
 /*カート内画面
@@ -146,24 +232,22 @@ th, td{
 .buy {
   display: flex;
   justify-content: center;
-  
 }
 
-.buy-btn{
-    display: inline-block;
-    padding: 0.5em 1em;
-    text-decoration: none;
-    background: #FC9D9D;/*ボタン色*/
-    color: #FFF;
-    border-bottom: solid 4px #EEF9FF;
-    border-radius: 3px;
-    margin : 5px 0 30px 0; /*上と下の余白*/
+.buy-btn {
+  font-size: 28px;
+  background: #FC9D9D;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
-.buy-btn:active {/*ボタンを押したとき*/
-    -ms-transform: translateY(4px);
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);/*下に動く*/
-    border-bottom: none;/*線を消す*/
+
+/* ボタンにカーソルを合わせると背景色を#EE817Bに変更 */
+.buy-btn:hover {
+  background: #EE817B;
 }
 
 /*画面幅375px以下の設定
@@ -179,11 +263,8 @@ img {
   height : auto ;
 }
 
-
 .container {
   max-width : 100% ;
   height : auto ;
 }
-
-
 }

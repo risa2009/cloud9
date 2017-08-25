@@ -1965,3 +1965,9 @@ Stack trace:
 [31-Jul-2017 21:31:45 Asia/Tokyo] PHP Notice:  Undefined offset: 0 in /home/ubuntu/workspace/MyApron/itemlist.php on line 97
 [31-Jul-2017 21:31:45 Asia/Tokyo] PHP Stack trace:
 [31-Jul-2017 21:31:45 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[16-Aug-2017 09:20:34 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/cart.php on line 78
+[16-Aug-2017 09:20:34 Asia/Tokyo] PHP Stack trace:
+[16-Aug-2017 09:20:34 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[17-Aug-2017 15:35:40 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/cart.php on line 78
+[17-Aug-2017 15:35:40 Asia/Tokyo] PHP Stack trace:
+[17-Aug-2017 15:35:40 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0

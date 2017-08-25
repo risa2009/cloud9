@@ -1,0 +1,35 @@
+.wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+header {
+  background: #fdd;
+  height: 80px;
+}
+.contents {
+  display: flex;
+}
+.main {
+  background: #faa;
+  width: 70%;
+  height: 250px;
+}
+.side {
+  background: #fc6;
+  width: 30%;
+}
+footer {
+  background: #988;
+  height: 60px;
+}
+
+/* モバイル版（400px以下ではボックスを縦並びにする） */
+@media (max-width: 400px) {
+  .contents {
+    flex-direction: column;
+  }
+  .main,
+  .side {
+    width: 100%;
+  }
+}
