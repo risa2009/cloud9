@@ -87,9 +87,10 @@ if(count($err_msg) ===0) {
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-  <title>My Apron：ログインページ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.O">
   <link rel="stylesheet" href="MyApron.css">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <title>My Apron：ログインページ</title>
 </head>
 <body>
   <header>
@@ -139,7 +140,7 @@ if(count($err_msg) ===0) {
         <p>副菜の作り置きや離乳食も</p>
       </div>
     </div>
-    <h2>セットで届くから簡単<br><em>でも手抜きにならない</em> 食材宅配サービス</h2>
+    <h2>セットで届くから簡単<br>でも手抜きにならない 食材宅配サービス</h2>
   </article>
   </main>
   <footer>

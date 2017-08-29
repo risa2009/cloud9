@@ -2,6 +2,7 @@
 ---------------------------------------------------------------------------*/
 body{
   min-width: 960px;
+  font-family: verdana, sans-serif;
 }
 
 a{
@@ -252,7 +253,7 @@ th, td{
 
 /*画面幅375px以下の設定
 ---------------------------------------------------------------------------*/
-@media screen and (max-width:375px) {
+@media screen and (max-width:600px) {
 body{
   min-width: 375px;
   overflow-x: hidden;

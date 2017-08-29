@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+  var timerId;
+  // カウントダウンの終了日
+  var endDateTime   = new Date("2020/07/24 20:00:00");
+
+  function countDownTimer() {
+    /* ここにカウントダウンの処理を追記する */
+
+
+  }
+
+  $(function() {
+    // 指定した一定時間ごとに関数countDownTimer()を呼び出す
+    timerId = setInterval('countDownTimer()', 1000);
+  });
+</script>
+</head>
+<body>
+<div id='contents'>
+  <p>東京オリンピックまで</p>
+  <div id="TimeRemaining"></div>
+</div>
+</body>
+</html>
