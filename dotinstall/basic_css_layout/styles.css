@@ -1,0 +1,8 @@
+/* ヘッダとメインの間のdividとして*/
+
+.eyecatch {
+  background: url('') no-repeat;
+  background-size: cover;
+  background-position: 50% 20%;
+  height: 100px;
+}

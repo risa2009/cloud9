@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+/* common */
+
+body {
+  font-size: 14px;
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #F8F8F8;
+}
+
+p {
+  line-height: 2;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+section {
+  padding: 60px 0;
+}
+
+section h2 {
+  text-align: center;
+  margin: 0 0 60px;
+}
+
+section:nth-child(even) {
+  background-color: #fff;
+}
+
+
+/* header */
+
+.header-mobile-menu {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.header-pc-menu {
+  display: none;
+}
+
+/* features */
+
+.features img {
+  width: 100%;
+}
+
+.features .item {
+  margin-bottom: 60px;
+}
+
+.features .item:last-child {
+  margin-bottom: 0;
+}
+
+/* news */
+
+.news .item {
+  text-align: center;
+}
+
+.news p {
+  text-align: left;
+}
+
+.news .item {
+  margin-bottom: 60px;
+}
+
+.news .item:last-child {
+  margin-bottom: 0;
+}
+
+/* how-to-use */
+
+.how-to-use iframe {
+  /*width: 100%;*/
+  /*height: auto;*/
+  /*display: none;*/
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.iframe-wrapper {
+  padding-bottom: 56.25%;
+  height: 0;
+  /*background-color: pink;*/
+  position: relative;
+}
+
+
+/* footer */
+
+footer {
+  text-align: center;
+  color: #ccc;
+  padding: 60px 0;
+}
+
+
+/* medium */
+
+@media (min-width: 570px) {
+  
+  /*body{*/
+  /*  background-color: skyblue;*/
+  /*}*/
+  
+  .features p {
+    width: 45%;
+  }
+  
+  .features img {
+    width: 50%;
+  }
+  
+  .right-side {
+    float: right;
+    padding-left: 5%;
+  }
+  
+  .left-side {
+    float: left;
+    padding-right: 5%;
+  }
+  
+  .features .item {
+    overflow: hidden;
+  }
+  
+  .news .container{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .news .item {
+    width: 30%;
+  }
+  
+  .news img {
+    width: 100%;
+  }
+  
+  
+}
+
+/* large */
+
+@media (min-width: 820px) {
+  
+  .container {
+    width: 820px;
+  }
+  
+  .header-mobile-menu {
+    display: none;
+  }
+  
+  .header-pc-menu {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: right;
+  }
+  
+  .header-pc-menu > li {
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+}

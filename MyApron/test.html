@@ -2,126 +2,85 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-  <title>My Apron：ログインページ</title>
-  <link rel="stylesheet" href="MyApron.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.O">
+  <link rel="stylesheet" href="test.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <title>My Apron：レスポンシブデザインテスト</title>
 </head>
 <body>
   <header>
     <div class="container">
-      <a href="login.php">
-        <img class="logo" src="./img/logo.png" alt="MyApron">
-      </a>
+      <i class="fa fa-bars header-mobile-menu" aria-hidden="true"></i>
+      <ul class="header-pc-menu">
+        <li>Menu</li>
+        <li>Menu</li>
+        <li>Menu</li>
+      </ul>
+      <h1>My Apron</h1>
     </div>
   </header>
-  <!--ここから入力-->
-  <main>
-  <div class="container first-view-container">
-    <div class="first-view-content">
-      <div class="row">
-        <div class="col-md-6 col-lg-6">
-          <div class="first-view-inner">
-            <h1 class="wow fadeIn show-md" data-wow-duration="1.5s"><small>毎日の献立を</small><br>食材キットでお届け<br></h1>
-            <div class="first-view-icons-wrapper">
-              <div class="icon-item">
-                <img src="./img/cardboardbox.png" />
-                <p>セットで注文だから簡単</p>
-              </div>
-              <div class="icon-item">
-                <img src="./img/menu.png" />
-                <p>栄養バランスが取れた献立</p>
-              </div>
-              <div class="icon-item">
-                <img src="./img/dish.png" />
-                <p>副菜の作り置きや離乳食も</p>
-              </div>
-            </div>
-            <h2 class="wow fadeIn" data-wow-duration="1.5s">セットで届くから<br><em>簡単なのに手抜きじゃない</em>夕食が作れる。</h2>
-            <div class="wow jello" data-wow-delay="2s">
-            </div>
-            <a class="btn-default1 btn-lg btn-block mt10 wow fadeInLeft" href="/users/new">
-              <div class="icon"><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
-              <span>今すぐ会員登録をする</span>
-                <a href="register.php"></a>
-              </div>
-          </div>
-          
-<div class='constrained-content row'>
-<div class='signup-title'>
-<h1 class='title'>Get Started</h1>
-<h3 class='subtitle no-coupon'>Farm-fresh ingredients and delicious recipes delivered weekly to your home</h3>
-</div>
-<div class='col-sm-6 col-md-push-2 col-md-4 txt-center'>
-<img class="box-shot box-shot--desktop" src="https://media.blueapron.com/assets/signup/landing/box-041e03af0672c5c1045e31449e9295674e1c1333e0484b4a2186860cab7668d1.png" alt="Box" />
-</div>
-<div class='col-sm-6 col-md-push-2 col-md-4'>
-<form action='/api/devise/registrations' id='signup-form' method='post'>
-<div class='row'>
-<div class='form-group control-group col-xs-12'>
-<label class='form-label' for='signup-email'>Email</label>
-<input class='form-input' id='signup-email' name='user[email]' type='email'>
-</div>
-</div>
-<div class='row'>
-<div class='form-group control-group col-xs-12 passGroup'>
-<label class='form-label' for='signup-pass'>Create a password</label>
-<input class='form-input' id='signup-pass' name='user[password]' placeholder='6 characters or more' type='password'>
-</div>
-</div>
-<div class='row'>
-<div class='form-group control-group col-xs-12'>
-<label class='form-label' for='signup-zip' id='signup-zip-label'>Zip</label>
-<input class='form-input' data-validate='{required: true, minlength: 5, maxlength: 5, number: true}' id='signup-zip' type='tel'>
-</div>
-</div>
-<div class='row'>
-<div class='form-group control-group col-xs-12'>
-<button class='btn btn--full' id='signup-btn' type='submit'>Continue</button>
-</div>
-</div>
-<div class='row'>
-<div class='form-divider col-xs-12'>
-<div class='txt-box'>
-<span>or</span>
-</div>
-</div>
-</div>
-<div class='row'>
-<div class='form-group control-group col-xs-12'>
-<div class='btn btn--facebook btn--full' id='signup-facebook'>
-<div class='icon icon-login-fb pull-left'></div>
-Sign Up with Facebook
-</div>
-</div>
-</div>
-<div class='row'>
-<div class='col-xs-12'>
-<div class='toc'>
-By clicking above, you agree to our
-<a class='js-tou-click' href='/pages/terms' target='_blank'>Terms of Use</a>
-and consent to our
-<a class='js-privacy-click' href='/pages/privacy' target='_blank'>Privacy Policy</a>
-</div>
-</div>
-</div>
-<div class='row'>
-<div class='col-xs-12'>
-<div class='toc'>
-Already a member?
-<a class='js-existing-click' href='/users/sign_in'>Log In</a>
-</div>
-</div>
-</div>
-</form>
-</div>
-</div>
-    </main>
-    <footer>
-    <!--<div class="container">-->
-      <div class="footer-navi">
-      <small>Copyright&copy;My Apron All Rights Reserved.</small>
+  
+  <section class="features">
+    <h2>Features</h2>
+    <div class="container">
+      <div class="item">
+      <img src="img/f9d3dfa0340ad70f0ef16981a187ad79.jpg">
+      <p class="right-side">hello. hello. hello. hello. hello. hello. 
+      hello. hello. hello. hello. hello. hello. hello. hello. 
+      hello. hello. </p>
+      </div>
+      <div class="item">
+      <img src="img/f9d3dfa0340ad70f0ef16981a187ad79.jpg">
+      <p class="left-side">hello. hello. hello. hello. hello. hello. 
+      hello. hello. hello. hello. hello. hello. hello. hello. 
+      hello. hello. </p>
+      </div>
+      <div class="item">
+      <img src="img/f9d3dfa0340ad70f0ef16981a187ad79.jpg">
+      <p class="right-side">hello. hello. hello. hello. hello. hello. 
+      hello. hello. hello. hello. hello. hello. hello. hello. 
+      hello. hello. </p>
+      </div>
     </div>
-    <!--</div>-->
+  </section>
+  
+  <section class="news">
+    <h2>News</h2>
+    <div class="container">
+      <div class="item">
+      <img src="img/8e37ba6152e0551f4c9a62895f0ded50.jpeg">
+      <p>hello. hello. hello. hello. hello. hello. 
+      hello. hello. hello. hello. hello. hello. hello. hello. 
+      hello. hello. </p>
+      </div>
+      <div class="item">
+      <img src="img/8e37ba6152e0551f4c9a62895f0ded50.jpeg">
+      <p>hello. hello. hello. hello. hello. hello. 
+      hello. hello. hello. hello. hello. hello. hello. hello. 
+      hello. hello. </p>
+      </div>
+      <div class="item">
+      <img src="img/8e37ba6152e0551f4c9a62895f0ded50.jpeg">
+      <p>hello. hello. hello. hello. hello. hello. 
+      hello. hello. hello. hello. hello. hello. hello. hello. 
+      hello. hello. </p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="how-to-use">
+    <h2>How to use</h2>
+    <div class="container">
+      <div class="iframe-wrapper">
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/pmDvPZzdGIo" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <p>My Apron.com</p>
   </footer>
+  
 </body>
 </html>

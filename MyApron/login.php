@@ -88,8 +88,8 @@ if(count($err_msg) ===0) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.O">
-  <link rel="stylesheet" href="MyApron.css">
-  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="MyApron.1.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
   <title>My Apron：ログインページ</title>
 </head>
 <body>
