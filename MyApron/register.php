@@ -98,36 +98,46 @@ if (count($err_msg) === 0 && $_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-  <title>My Apron：無料会員登録</title>
-  <link rel="stylesheet" href="MyApron.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.O">
+  <link rel="stylesheet" href="./css/MyApron.css">
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
+  <title>My Apron | 無料会員登録</title>
 </head>
 <body>
   <header>
     <div class="container">
-      <a href="login.php">
-        <img class="logo" src="./img/logo.png" alt="MyApron">
-      </a>
+      <div class="logo">
+        <a href="index.html">
+        <img src="./img/logo.png" alt="MyApron">
+        </a>
+      </div>
     </div>
   </header>
-  <main>
-  <div class="contents">
-    <div class="register">
-      <p><?php print($result_msg); ?></p>
-      <form method="post" action="register.php">
-        <div>ユーザー名：<input type="text" name="user_name" placeholder="ユーザー名"></div>
-        <div>パスワード：<input type="password" name="password" placeholder="パスワード"></div>
-        <div class="register-btn"><input type="submit" value="新規登録"></div>
-      </form>
-    </div>
+  
+  <section>
+    <div class="container">
+      <div class="login_form">
+        <p><?php print($result_msg); ?></p>
+        <form method="post" action="register.php">
+          <div class='row'>
+            <label class='form-label'>ユーザー名：</label>
+            <input class='form-input' type="text" name="user_name" placeholder="ユーザー名">
+          </div>
+          <div class='row'>
+            <label class='form-label'>パスワード：</label>
+             <input class='form-input' type="password" name="password" placeholder="パスワード">
+          </div>
+          <input class='register-btn' type="submit" value="新規登録">
+        </form>
+      </div>
 <?php foreach ($err_msg as $value) { ?>
   <p><?php print $value; ?></p>
 <?php } ?>
-    </main>
-    <footer>
-      <div class="footer-navi">
-        <small>Copyright&copy;My Apron All Rights Reserved.</small>
-      </div>
-    </footer>
+    </div>
+  </section>
+  
+  <footer>
+    <small>Copyright&copy;My Apron All Rights Reserved.</small>
+  </footer>
 </body>
 </html>

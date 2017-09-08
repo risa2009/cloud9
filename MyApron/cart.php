@@ -102,79 +102,78 @@ function h($str){
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-  <title>My Apron：ショッピングカート</title>
-  <link rel="stylesheet" href="MyApron.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.O">
+  <link rel="stylesheet" href="./css/html5reset-1.6.1.css">
+  <link rel="stylesheet" href="./css/MyApron.css">
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
+  <title>My Apron | ショッピングカート</title>
 </head>
 <body>
-  <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
-  <!--<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>-->
   <header>
-  <div class="container">
-    <a href="itemlist.php">
-    <img class="logo" src="./img/logo.png" alt="MyApron">
-    </a>
-    <div class="nemu">
-    <a href="logout.php">ログアウト</a>
+    <div class="container">
+      <div class="logo">
+        <a href="login.php">
+        <img src="./img/logo.png" alt="MyApron">
+        </a>
+      </div>
+      <div class="logout-menu">
+        <a href="logout.php">ログアウト</a>
+      </div>
     </div>
-  </div>
   </header>
-  <main>
-  <div class="cart_list">
-    <h1>ショッピングカート</h1>
-  <table class="cart-table">
-  <tr>
-    <th>画像</th>
-    <th>商品名</th>
-    <th>金額</th>
-    <th>購入数</th>
-    <th>削除</th>
-  </tr>
+  <section>
+    <div class="cart_list">
+      <h1>ショッピングカート</h1>
+      <table class="cart-table">
+        <tr>
+          <th>画像</th>
+          <th>商品名</th>
+          <th>金額</th>
+          <th>購入数</th>
+          <th>削除</th>
+        </tr>
 <?php foreach ($cart_list as $cart_item)  { ?>
-      <tr class="cart-item">
-        <td>
-          <span class="item_img_size"><img src="<?php print h($img_dir . $cart_item['img']); ?>"></span>
-        </td>
-        <td>
-          <span><?php print h($cart_item['name']); ?></span>
-        </td>
-        <td>
-          <span class="cart-item-price"><?php print h($cart_item['price']); ?>円</span>
-        </td>
-        <td>
-          <form method="post">
-            <input type="text"  class="input_text_width text_align_right" name="change_amount" value="<?php print h($cart_item['amount']); ?>">個&nbsp;&nbsp;<input type="submit" value="変更">
-            <input type="hidden" name="item_id" value="<?php print h($cart_item['item_id']); ?>">
-            <input type="hidden" name="sql_kind" value="change_amount">
-          </form>
-        </td>
-        <td>
-          <form method="post">
-            <input type="submit" value="削除">
-            <input type="hidden" name="item_id" value="<?php print h($cart_item['item_id']); ?>">
-    	    　<input type="hidden" name="sql_kind" value="delete_cart_item">
-          </form>
-        </td>
-      </tr>
+        <tr class="cart-item">
+          <td>
+            <span class="item_img_size"><img src="<?php print h($img_dir . $cart_item['img']); ?>"></span>
+          </td>
+          <td>
+            <span><?php print h($cart_item['name']); ?></span>
+          </td>
+          <td>
+            <span class="cart-item-price"><?php print h($cart_item['price']); ?>円</span>
+          </td>
+          <td>
+            <form method="post">
+              <input type="text"  class="input_text_width text_align_right" name="change_amount" value="<?php print h($cart_item['amount']); ?>">個&nbsp;&nbsp;<input type="submit" value="変更">
+              <input type="hidden" name="item_id" value="<?php print h($cart_item['item_id']); ?>">
+              <input type="hidden" name="sql_kind" value="change_amount">
+            </form>
+          </td>
+          <td>
+            <form method="post">
+              <input type="submit" value="削除">
+              <input type="hidden" name="item_id" value="<?php print h($cart_item['item_id']); ?>">
+      	    　<input type="hidden" name="sql_kind" value="delete_cart_item">
+            </form>
+          </td>
+        </tr>
 <?php } ?>
-    </table>
-    <div class="buy-sum-box">
-      <span class="buy-sum-title">合計:</span>
-      <span class="buy-sum-price"><?php print h($total); ?>円</span>
+      </table>
+      <div class="buy-sum-box">
+        <span class="buy-sum-title">合計:</span>
+        <span class="buy-sum-price"><?php print h($total); ?>円</span>
+      </div>
+      <div class="buy">
+        <form action="finish.php" method="post">
+          <input class="buy-btn" type="submit" value="購入する">
+        </form>
+      </div>
     </div>
-    <div class="buy">
-      <form action="finish.php" method="post">
-        <input class="buy-btn" type="submit" value="購入する">
-      </form>
-    </div>
-  </div>
-    </main>
+  </section>
+  
   <footer>
-    <!--<div class="container">-->
-      <div class="footer-navi">
-      <small>Copyright&copy;My Apron All Rights Reserved.</small>
-    </div>
-    <!--</div>-->
+    <small>Copyright&copy;My Apron All Rights Reserved.</small>
   </footer>
 </body>
 </html>

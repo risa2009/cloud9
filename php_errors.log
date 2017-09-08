@@ -1971,3 +1971,6 @@ Stack trace:
 [17-Aug-2017 15:35:40 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/cart.php on line 78
 [17-Aug-2017 15:35:40 Asia/Tokyo] PHP Stack trace:
 [17-Aug-2017 15:35:40 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[08-Sep-2017 15:17:36 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/cart.php on line 78
+[08-Sep-2017 15:17:36 Asia/Tokyo] PHP Stack trace:
+[08-Sep-2017 15:17:36 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0

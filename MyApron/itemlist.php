@@ -130,62 +130,62 @@ function h($str){
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-  <title>My Apron：商品一覧</title>
-  <link rel="stylesheet" href="MyApron.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.O">
+  <link rel="stylesheet" href="./css/html5reset-1.6.1.css">
+  <link rel="stylesheet" href="./css/MyApron.css">
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
+  <title>My Apron | 商品一覧</title>
 </head>
 <body>
   <header>
     <div class="container">
-      <a href="itemlist.php">
-      <img  src="./img/logo.png" alt="MyApron">
-      </a>
-    <div class="cart_logo">
-      <a href="cart.php"><img src="./img/cart.png" alt="MyApron"></a>
-    </div>
-    <div class="nemu">
-    <a href="logout.php">ログアウト</a>
-    </div>
+      <div class="logo">
+        <a href="login.php">
+        <img src="./img/logo.png" alt="MyApron">
+        </a>
+      </div>
+      <div class="cart-logo">
+        <a href="cart.php"><img src="./img/cart.png" alt="MyApron"></a>
+      </div>
+      <div class="logout-menu">
+        <a href="logout.php">ログアウト</a>
+      </div>
     </div>
   </header>
-  <main>
-  <h1>今週のメニュー</h1>
+  <section class="item_list">
+    <div class="container">
+      <h1>今週のメニュー</h1>
 <?php foreach ($msg as $value) { ?>
-     <p><?php print h($value); ?></p>
+       <p><?php print h($value); ?></p>
 <?php } ?>
-  <div class="item_list">
 <?php foreach ($item_list as $value)  { ?>
-  <div class="item">
-      <form method="post">
-        <sapn class="item_img_size"><img src="<?php print h($img_dir . $value['img']); ?>"></sapn>
-        <p><?php print h($value['name']); ?>
-        <?php print h($value['price']); ?>円
-          <div class="box11">
-            <!--<p>メニュー内容</p>-->
-          </div>
-        <input type="hidden" name="sql_kind" value="add_product_to_cart"></p>
+      <div class="item">
+        <form method="post">
+          <sapn class="item_img_size"><img src="<?php print h($img_dir . $value['img']); ?>"></sapn>
+          <p><?php print h($value['name']); ?>
+          <?php print h($value['price']); ?>円
+          <input type="hidden" name="sql_kind" value="add_product_to_cart"></p>
 <?php if ($value['stock'] > 0) { ?>
-        <input type="hidden" name="item_id" value="<?php print h($value['item_id']); ?>">
+          <input type="hidden" name="item_id" value="<?php print h($value['item_id']); ?>">
 <?php 
 } else {
 ?>
-        <span>売り切れ</span>
+          <span>売り切れ</span>
 <?php } ?>
-      <div class="cart-btn">
-        <input type="submit" value="カートに入れる">
-      </div>
-      </form>
+          <div class="cart-btn">
+            <input type="submit" value="カートに入れる">
+          </div>
+        </form>
 <?php } ?>
 <?php foreach ($err_msg as $value) { ?>
-      <p><?php print h($value); ?></p>
+        <p><?php print h($value); ?></p>
 <?php } ?>
-   </div>
-  </div>
-  </main>
-  <footer>
-      <div class="footer-navi">
-      <small>Copyright&copy;My Apron All Rights Reserved.</small>
+       </div>
     </div>
+  </section>
+  
+  <footer>
+    <small>Copyright&copy;My Apron All Rights Reserved.</small>
   </footer>
 </body>
 </html>
