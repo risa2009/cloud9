@@ -77,7 +77,8 @@ try {
       $stmt->bindValue(2, $item_id,    PDO::PARAM_INT);
       $stmt->execute();
       
-     $msg[] = 'カートに商品を追加しました。';
+     $msg[] = 'カートに商品を追加しました。現在の購入数:' 
+                . $cart_list[0]['name'] . '[' . $cart_list[0]['amount'] . '個]';
       
     }else{
       $amount = 1; //まだカートに一つも入っていない状態
@@ -132,26 +133,24 @@ function h($str){
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.O">
   <link rel="stylesheet" href="./css/html5reset-1.6.1.css">
-  <link rel="stylesheet" href="./css/MyApron_item.css">
+  <link rel="stylesheet" href="./css/MyApron.css">
   <link rel="stylesheet" href="./css/font-awesome.min.css">
   <title>My Apron | 商品一覧</title>
 </head>
 <body>
   <header>
     <div class="container">
-      <ul class="main-nav">
-        <li>
-          <a class="shop-title" href="login.php">My Apron</a>
-        </li>
-        <li>
-          <a href="cart.php">
-            <i class="fa fa-cart-arrow-down fa-3x" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li>
-          <a class="logout-menu" href="logout.php">ログアウト</a>
-        </li>
-      </ul>
+      <div class="logo">
+        <a href="login.php">
+        <img src="./img/logo.png" alt="MyApron">
+        </a>
+      </div>
+      <div class="cart-logo">
+        <a href="cart.php"><img src="./img/cart.png" alt="MyApron"></a>
+      </div>
+      <div class="logout-menu">
+        <a href="logout.php">ログアウト</a>
+      </div>
     </div>
   </header>
   <section class="item_list">
@@ -160,46 +159,33 @@ function h($str){
 <?php foreach ($msg as $value) { ?>
        <p><?php print h($value); ?></p>
 <?php } ?>
-      
-      <table>
-        <tr>
-          <th>メニュー</th>
-          <th>商品名</th>
-          <th>価格</th>
-          <th>購入ボタン</th>
-        </tr>
 <?php foreach ($item_list as $value)  { ?>
-        <tr class="item">
-          <form method="post">
-            <td>
+      <div class="item">
+        <form method="post">
+          <ul>
+            <li>
               <img src="<?php print h($img_dir . $value['img']); ?>">
-            </td>
-            <td>
-              <span><?php print h($value['name']); ?></span>
-            </td>
-            <td>
-              <span><?php print h($value['price']); ?>円</span>
-            </td>
-            <input type="hidden" name="sql_kind" value="add_product_to_cart">
+              <p><?php print h($value['name']); ?>
+              <?php print h($value['price']); ?>円
+              <input type="hidden" name="sql_kind" value="add_product_to_cart"></p>
 <?php if ($value['stock'] > 0) { ?>
-            <input type="hidden" name="item_id" value="<?php print h($value['item_id']); ?>">
+          <input type="hidden" name="item_id" value="<?php print h($value['item_id']); ?>">
 <?php 
 } else {
 ?>
-            <span>売り切れ</span>
+          <span>売り切れ</span>
 <?php } ?>
-            <td class="cart-btn">
-              <input type="submit" value="カートに入れる">
-            </td>
-          </form>
-        </tr>
+              <div class="cart-btn">
+                <input type="submit" value="カートに入れる">
+              </div>
+            </li>
+          </ul>
+        </form>
 <?php } ?>
-      </table>
-      
 <?php foreach ($err_msg as $value) { ?>
         <p><?php print h($value); ?></p>
 <?php } ?>
-    </div>
+      </div>
   </section>
   
   <footer>

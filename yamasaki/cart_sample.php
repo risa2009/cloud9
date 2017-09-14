@@ -100,7 +100,7 @@ function h($str){
 <head>
   <meta charset="UTF-8">
   <title>My Apron：ショッピングカート</title>
-  <link rel="stylesheet" href="MyApron.css">
+  <link rel="stylesheet" href="../MyApron.1.css">
   <style>
     table{
       border-collapse: collapse;

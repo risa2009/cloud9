@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>商品一覧ページ</title>
+  <link type="text/css" rel="stylesheet" href="./lib/common.css">
+</head>
+<body>
+  <header>
+    <div class="header-box">
+      <a href="21-top.php">
+        <img class="logo" src="./lib/logo.png" alt="CodeSHOP">
+      </a>
+      <a class="nemu" href="./32-logout.php">ログアウト</a>
+      <a href="22-cart.php" class="cart"></a>
+      <p class="nemu">ユーザー名：yamasaki</p>
+    </div>
+  </header>
+  <div class="content">
+
+    <ul class="item-list">
+      <li>
+        <div class="item">
+          <form action="./21-top.php" method="post">
+            <img class="item-img" src="./img/81dfdf650b58ad228069674273ef6bf5.jpg" >
+            <div class="item-info">
+              <span class="item-name">コーヒー</span>
+              <span class="item-price">¥150</span>
+            </div>
+<!-- ここから入力 -->
+<!-- ★B-2 ●商品の在庫が0の場合、「カートに入れる」ボタンは表示せず、「売り切れ」を表示する -->
+            <input class="cart-btn" type="submit" value="カートに入れる">
+<!-- ここまで入力 -->
+            <input type="hidden" name="item_id" value="11">
+            <input type="hidden" name="sql_kind" value="insert_cart">
+          </form>
+        </div>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>

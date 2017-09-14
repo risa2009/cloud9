@@ -104,26 +104,27 @@ function h($str){
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.O">
   <link rel="stylesheet" href="./css/html5reset-1.6.1.css">
-  <link rel="stylesheet" href="./css/MyApron.css">
+  <link rel="stylesheet" href="./css/MyApron_item.css">
   <link rel="stylesheet" href="./css/font-awesome.min.css">
   <title>My Apron | 購入完了</title>
 </head>
 <body>
   <header>
     <div class="container">
-      <div class="logo">
-        <a href="itemlist.php">
-        <img src="./img/logo.png" alt="MyApron">
-        </a>
-      </div>
-      <div class="nemu">
-        <a href="logout.php">ログアウト</a>
-      </div>
+      <ul class="main-nav">
+        <li>
+          <a class="shop-title" href="login.php">My Apron</a>
+        </li>
+        <li>
+          <a class="logout-menu" href="logout.php">ログアウト</a>
+        </li>
+      </ul>
     </div>
   </header>
   
   <section>
-    <div class="cart_list">
+    <div class="container">
+      <div class="cart_list">
       <h1>お買い上げありがとうございました</h1>
         <table class="cart-table">
           <tr>
@@ -149,6 +150,7 @@ function h($str){
           <span class="buy-sum-title">合計:</span>
           <span class="buy-sum-price"><?php print h($total); ?>円</span>
         </div>
+      </div>
     </div>
   </section>
   

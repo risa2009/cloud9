@@ -1974,3 +1974,13 @@ Stack trace:
 [08-Sep-2017 15:17:36 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/cart.php on line 78
 [08-Sep-2017 15:17:36 Asia/Tokyo] PHP Stack trace:
 [08-Sep-2017 15:17:36 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[11-Sep-2017 15:17:27 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/cart.php on line 78
+[11-Sep-2017 15:17:27 Asia/Tokyo] PHP Stack trace:
+[11-Sep-2017 15:17:27 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[14-Sep-2017 16:10:29 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '>' in /home/ubuntu/workspace/MyApron/itemlist.php on line 173
+[14-Sep-2017 22:03:41 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/cart.php on line 78
+[14-Sep-2017 22:03:41 Asia/Tokyo] PHP Stack trace:
+[14-Sep-2017 22:03:41 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[15-Sep-2017 00:18:03 Asia/Tokyo] PHP Fatal error:  Call to undefined function h() in /home/ubuntu/workspace/MyApron/test.1.php on line 24
+[15-Sep-2017 00:18:03 Asia/Tokyo] PHP Stack trace:
+[15-Sep-2017 00:18:03 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/test.1.php:0

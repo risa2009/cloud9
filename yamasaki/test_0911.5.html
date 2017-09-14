@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>練習5</title>
+  <link rel="stylesheet" href="test_0911.css">
+</head>
+<body>
+  <form>
+    <label for="name">お名前（必須）:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="zipCode">郵便番号:</label>
+    <input type="text" id="zipCode" name="zipCode" pattern="\d{3}-?\d{4}"
+    placeholder="例）123-4567">
+    <label for="date">生年月日:</label>
+    <input type="date" id="date" name="date" min="1900-01-01"
+    max="2013-01-31">
+    <input type="submit" value="送信">
+</form>
+</body>
+</html>
+
+<!--HTML5 Form APIでinput要素にいろいろな新しい属性が導入されました。-->
+<!--requiredは入力を必須に指定できます。patternは正規表現で要素の書式を指定します。-->
+<!--placeholderは要素の入力例を指定します。そして、minとmaxは最小値と最大値を指定します。-->
