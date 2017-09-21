@@ -99,7 +99,7 @@ if (count($err_msg) === 0 && $_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.O">
-  <link rel="stylesheet" href="./css/MyApron_item.css">
+  <link rel="stylesheet" href="./css/MyApron_form.css">
   <link rel="stylesheet" href="./css/font-awesome.min.css">
   <title>My Apron | 無料会員登録</title>
 </head>
@@ -113,29 +113,24 @@ if (count($err_msg) === 0 && $_SERVER['REQUEST_METHOD'] === 'POST') {
       </div>
     </div>
   </header>
-  
   <section>
     <div class="container">
-      <div class="login_form">
-        <p><?php print($result_msg); ?></p>
-        <form method="post" action="register.php">
-          <div class='row'>
-            <label class='form-label'>ユーザー名：</label>
-            <input class='form-input' type="text" name="user_name" placeholder="ユーザー名">
-          </div>
-          <div class='row'>
-            <label class='form-label'>パスワード：</label>
-             <input class='form-input' type="password" name="password" placeholder="パスワード">
-          </div>
-          <input class='register-btn' type="submit" value="新規登録">
-        </form>
-      </div>
+      <p><?php print($result_msg); ?></p>
+      <form method="post" action="register.php">
+        <ul class='login_form'>
+          <li class='form-Tit'>ユーザー名：</li>
+          <li><input class='form-Txt' type="text" name="user_name" placeholder="ユーザー名"></li>
+          <li class='form-Tit'>パスワード：</li>
+          <li><input class='form-Txt' type="password" name="password" placeholder="パスワード"></li>
+          <li class="register_text">※半角英数字6文字以上</li>
+          <li><input class='register-btn' type="submit" value="新規登録"></li>
+        </ul>
+      </form>
 <?php foreach ($err_msg as $value) { ?>
   <p><?php print $value; ?></p>
 <?php } ?>
     </div>
   </section>
-  
   <footer>
     <small>Copyright&copy;My Apron All Rights Reserved.</small>
   </footer>

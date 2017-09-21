@@ -172,12 +172,12 @@ function h($str){
         <tr class="item">
           <form method="post">
             <td>
-              <img src="<?php print h($img_dir . $value['img']); ?>">
+              <img class="item-list-img" src="<?php print h($img_dir . $value['img']); ?>">
             </td>
-            <td>
+            <td class="item-list-name">
               <span><?php print h($value['name']); ?></span>
             </td>
-            <td>
+            <td class="item-list-price">
               <span><?php print h($value['price']); ?>円</span>
             </td>
             <input type="hidden" name="sql_kind" value="add_product_to_cart">

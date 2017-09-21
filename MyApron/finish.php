@@ -124,33 +124,40 @@ function h($str){
   
   <section>
     <div class="container">
-      <div class="cart_list">
       <h1>お買い上げありがとうございました</h1>
-        <table class="cart-table">
-          <tr>
-            <th>画像</th>
-            <th>商品名</th>
-            <th>金額</th>
-          </tr>
+        <table class="cart_list-title">
+          <thead>
+            <tr>
+              <th><span class="cart-list-item">ご注文商品</span></th>
+              <th></th>
+              <th><span class="cart-list-price">価格</span></th>
+              <th><span class="cart-list-num">購入数</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="cart-list">
 <?php foreach ($cart_list as $cart_item)  { ?>
-          <tr class="cart-item">
-            <td>
-              <span class="item_img_size"><img src="<?php print h($img_dir . $cart_item['img']); ?>"></span>
-            </td>
-            <td>
-              <span><?php print h($cart_item['name']); ?></span>
-            </td>
-            <td>
-              <span class="cart-item-price"><?php print h($cart_item['price']); ?>円</span>
-            </td>
-          </tr>
+              <td>
+                <img class="cart-item-img" src="<?php print h($img_dir . $cart_item['img']); ?>">
+              </td>
+              <td class="item-list-name">
+                <span class="cart-item-name"><?php print h($cart_item['name']); ?></span>
+              </td>
+              <td class="item-list-price">
+                <span class="cart-item-price"><?php print h($cart_item['price']); ?>円</span>
+              </td>
+              <td>
+                <span class="item-list-amount"><?php print h($cart_item['amount']); ?>個</span>
+              </td>
+            </tr>
 <?php } ?>
+          </tbody>
         </table>
+        
         <div class="buy-sum-box">
           <span class="buy-sum-title">合計:</span>
           <span class="buy-sum-price"><?php print h($total); ?>円</span>
         </div>
-      </div>
     </div>
   </section>
   

@@ -130,41 +130,57 @@ function h($str){
   <section>
     <div class="container">
       <h1>ショッピングカート</h1>
-      <ul>
-        <li class="cart_list-title">
-          <span class="cart-list-item">ご注文商品</span>
-          <span class="cart-list-price">価格</span>
-          <span class="cart-list-num">数量</span>
-        </li>
-        <li class="cart-list">
+      <table class="cart_list-title">
+        <thead>
+          <tr>
+            <th><span class="cart-list-item">ご注文商品</span></th>
+            <th></th>
+            <th><span class="cart-list-price">価格</span></th>
+            <th><span class="cart-list-num">数量</span></th>
+            <th></th>
+          </tr>
+          </thead>
+          <tbody>
+            <tr class="cart-list">
 <?php foreach ($cart_list as $cart_item)  { ?>
-          <img class="cart-item-img" src="<?php print h($img_dir . $cart_item['img']); ?>">
-          <span class="cart-item-name"><?php print h($cart_item['name']); ?></span>
-          <span class="cart-item-price"><?php print h($cart_item['price']); ?>円</span>
-          <form class="form_select_amount" method="post">
-            <input type="text" class="input_text_width text_align_right" name="change_amount" value="<?php print h($cart_item['amount']); ?>">個&nbsp;&nbsp;<input type="submit" value="変更">
-            <input type="hidden" name="item_id" value="<?php print h($cart_item['item_id']); ?>">
-            <input type="hidden" name="sql_kind" value="change_amount">
-          </form>
-          <form class="cart-item-del" method="post">
-            <input type="submit" value="削除">
-            <input type="hidden" name="item_id" value="<?php print h($cart_item['item_id']); ?>">
-    	    　<input type="hidden" name="sql_kind" value="delete_cart_item">
-          </form>
-        </li>
+              <td>
+                <img class="cart-item-img" src="<?php print h($img_dir . $cart_item['img']); ?>">
+              </td>
+              <td class="item-list-name">
+                <span class="cart-item-name"><?php print h($cart_item['name']); ?></span>
+              </td>
+              <td class="item-list-price">
+                <span class="cart-item-price"><?php print h($cart_item['price']); ?>円</span>
+              </td>
+              <td>
+                <form class="form_select_amount" method="post">
+                  <input type="text" class="input_text_width text_align_right" name="change_amount" value="<?php print h($cart_item['amount']); ?>">個&nbsp;&nbsp;<input type="submit" value="変更">
+                  <input type="hidden" name="item_id" value="<?php print h($cart_item['item_id']); ?>">
+                  <input type="hidden" name="sql_kind" value="change_amount">
+                </form>
+              </td>
+              <td>
+              <form class="cart-item-del" method="post">
+                <input type="submit" value="削除">
+                <input type="hidden" name="item_id" value="<?php print h($cart_item['item_id']); ?>">
+        	    　<input type="hidden" name="sql_kind" value="delete_cart_item">
+              </form>
+              </td>
+            </tr>
 <?php } ?>
-      </ul>
+          </tbody>
+        </table>
 
-      <div class="buy-sum-box">
-        <span class="buy-sum-title">合計:</span>
-        <span class="buy-sum-price"><?php print h($total); ?>円</span>
+        <div class="buy-sum-box">
+          <span class="buy-sum-title">合計: </span>
+          <span class="buy-sum-price"><?php print h($total); ?>円</span>
+        </div>
+        <div class="buy">
+          <form action="finish.php" method="post">
+            <input class="buy-btn" type="submit" value="購入する">
+          </form>
+        </div>
       </div>
-      <div class="buy">
-        <form action="finish.php" method="post">
-          <input class="buy-btn" type="submit" value="購入する">
-        </form>
-      </div>
-    </div>
   </section>
   
   <footer>

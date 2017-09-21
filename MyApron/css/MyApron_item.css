@@ -20,7 +20,7 @@ a{
 }
 
 .container {
-  width: 90%;
+  width: 820px;
   margin: 0 auto;
 }
 
@@ -30,7 +30,7 @@ section {
 
 section h1 {
   margin-bottom: 30px;
-  font-size: 20px;
+  font-size: 25px;
   color: #FC9D9D;
 }
 
@@ -61,7 +61,7 @@ header {
 }
 
 .shop-title {
-  font-size: 20px;
+  font-size: 30px;
   color: #fff;
 }
 
@@ -77,8 +77,6 @@ header {
 }
 
 
-
-
 /* item_list
 ---------------------------------------------------------------------------*/
 .cart-btn {
@@ -90,9 +88,24 @@ header {
   font-size: 15px;
 }
 
-.item img {
+.item-list-img {
+  width: 300px;
+}
+
+table {
   width: 100%;
-  height: auto;
+}
+
+table th,
+table td {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+table th {
+  text-align: left;
+  font-size: 15px;
 }
 
 
@@ -106,23 +119,14 @@ ul {
   list-style:none;
 }
 
-.cart_list-title {
-  display: -webkit-flex;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #ccc;
-  
-  /*margin-top: 20px;*/
-  /*margin-bottom: 20px;*/
-  /*padding-bottom: 5px;*/
-}
-
-.cart_list-title li:first-child {
-  margin-right: auto;
+.cart_list-title table{
+  border-top: 1px solid #ccc;
+  border-collapse: collapse;
+  width: 100%;
 }
 
 .cart-item-img {
-  width: 50%;
+  width: 180px;
 }
 
 .cart-item-price {
@@ -130,16 +134,18 @@ ul {
 }
 
 .buy-sum-price {
-  font-size: 2em;
+  font-size: 25px;
   color: #FF0000;
 }
 
 .buy-sum-box {
-  margin-top: 10px;
-  border-top: 1px solid #ccc;
+  margin-top: 20px;
+  text-align: right;
 }
 
 .buy-btn {
+  -webkit-appearance: none;
+  border-radius: 0;
   display: block;
   margin-top: 60px;
   width: 100%;
@@ -148,7 +154,6 @@ ul {
   background-color: #FC9D9D;
   font-size: 16px;
   border: none;
-  border-radius: 5px;
 }
 
 
@@ -164,92 +169,71 @@ footer {
 
 /* medium
 ---------------------------------------------------------------------------*/
-@media (min-width: 570px) {
+@media screen and (max-width: 800px) {
   
-  section h1 {
-    font-size: 30px;
-    margin-bottom: 50px;
+  .container {
+    width: 90%;
   }
-  
-  .shop-title {
-    font-size: 30px;
-  }
-
-  .logout-menu {
-    font-size: 16px;
-  }
-  
-  .cart-list {
-    display: -webkit-flex;
-    display: flex;
-     justify-content: space-between;
-  }
-    
-  
-  .cart-list-price {
-  
-  }
-  
-  .cart-list-num {
-  
-  }
-  
-  .cart-item-img {
-    width: 40%;
-    height: auto;
-  }
-  
-  .cart-item-name {
-  }
-  
-  .cart-item-price {
-  }
-  
-  .cart-item-del {
-  }
-
-  
-  .form_select_amount {
-    /*float: right;*/
-    /*margin-left: 10px;*/
-  }
-  
-  .buy-sum-box {
-    /*clear: both;*/
-  }
-  
-  .buy-sum-title {
-    /*margin-left: 520px;*/
-  }
-  
 
 }
 
-/* large
+/* スマホ
 ---------------------------------------------------------------------------*/
-@media (min-width: 820px) {
+@media screen and (max-width: 480px) {
   
   .container {
-    width: 820px;
+    width: 90%;
   }
   
-  .header-mobile-menu {
-    display: none !important;
+  .item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .shop-title {
+    font-size: 20px;
+　}
+　
+　.cart-item-img {
+    width: 100%;
   }
   
-  .header-pc-menu {
+  table td {
     display: block;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    float: right;
-  }
-  
-  .header-pc-menu > li {
-    display: inline-block;
-    width: 80px;
     text-align: center;
-    cursor: pointer;
   }
   
+  table th {
+    display: none;
+  }
+  
+  .cart-btn {
+    border: none;
+  }
+  
+  .item-list-name {
+    text-align: left;
+  }
+  
+  .item-list-price {
+    text-align: right;
+  }
+  
+  section {
+    padding: 30px 0;
+  }
+
+  section h1 {
+    font-size: 20px;
+  }
+  
+  .form_select_amount {
+    text-align: right;
+  }
+  
+  .cart-item-del {
+    text-align: right;
+  }
+　
+
 }

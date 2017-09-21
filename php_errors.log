@@ -1984,3 +1984,40 @@ Stack trace:
 [15-Sep-2017 00:18:03 Asia/Tokyo] PHP Fatal error:  Call to undefined function h() in /home/ubuntu/workspace/MyApron/test.1.php on line 24
 [15-Sep-2017 00:18:03 Asia/Tokyo] PHP Stack trace:
 [15-Sep-2017 00:18:03 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/test.1.php:0
+[19-Sep-2017 19:10:13 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/cart.php on line 78
+[19-Sep-2017 19:10:13 Asia/Tokyo] PHP Stack trace:
+[19-Sep-2017 19:10:13 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[19-Sep-2017 19:15:53 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/cart.php on line 78
+[19-Sep-2017 19:15:53 Asia/Tokyo] PHP Stack trace:
+[19-Sep-2017 19:15:53 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[19-Sep-2017 19:16:34 Asia/Tokyo] PHP Notice:  session_start(): ps_files_cleanup_dir: opendir(/var/lib/php5) failed: Permission denied (13) in /home/ubuntu/workspace/MyApron/itemlist.php on line 20
+[19-Sep-2017 19:16:34 Asia/Tokyo] PHP Stack trace:
+[19-Sep-2017 19:16:34 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[19-Sep-2017 19:16:34 Asia/Tokyo] PHP   2. session_start() /home/ubuntu/workspace/MyApron/itemlist.php:20
+[19-Sep-2017 21:49:00 Asia/Tokyo] PHP Notice:  session_start(): ps_files_cleanup_dir: opendir(/var/lib/php5) failed: Permission denied (13) in /home/ubuntu/workspace/MyApron/itemlist.php on line 20
+[19-Sep-2017 21:49:00 Asia/Tokyo] PHP Stack trace:
+[19-Sep-2017 21:49:00 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[19-Sep-2017 21:49:00 Asia/Tokyo] PHP   2. session_start() /home/ubuntu/workspace/MyApron/itemlist.php:20
+[19-Sep-2017 23:15:15 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/cart.php on line 78
+[19-Sep-2017 23:15:15 Asia/Tokyo] PHP Stack trace:
+[19-Sep-2017 23:15:15 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/cart.php:0
+[19-Sep-2017 23:15:18 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/itemlist.php on line 56
+[19-Sep-2017 23:15:18 Asia/Tokyo] PHP Stack trace:
+[19-Sep-2017 23:15:18 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[19-Sep-2017 23:15:18 Asia/Tokyo] PHP Notice:  Undefined variable: user_id in /home/ubuntu/workspace/MyApron/itemlist.php on line 90
+[19-Sep-2017 23:15:18 Asia/Tokyo] PHP Stack trace:
+[19-Sep-2017 23:15:18 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[19-Sep-2017 23:15:18 Asia/Tokyo] PHP Notice:  Undefined variable: item_list in /home/ubuntu/workspace/MyApron/itemlist.php on line 171
+[19-Sep-2017 23:15:18 Asia/Tokyo] PHP Stack trace:
+[19-Sep-2017 23:15:18 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[19-Sep-2017 23:15:18 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MyApron/itemlist.php on line 171
+[19-Sep-2017 23:15:18 Asia/Tokyo] PHP Stack trace:
+[19-Sep-2017 23:15:18 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[21-Sep-2017 11:49:12 Asia/Tokyo] PHP Notice:  session_start(): ps_files_cleanup_dir: opendir(/var/lib/php5) failed: Permission denied (13) in /home/ubuntu/workspace/MyApron/itemlist.php on line 20
+[21-Sep-2017 11:49:12 Asia/Tokyo] PHP Stack trace:
+[21-Sep-2017 11:49:12 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/itemlist.php:0
+[21-Sep-2017 11:49:12 Asia/Tokyo] PHP   2. session_start() /home/ubuntu/workspace/MyApron/itemlist.php:20
+[21-Sep-2017 14:02:53 Asia/Tokyo] PHP Notice:  session_start(): ps_files_cleanup_dir: opendir(/var/lib/php5) failed: Permission denied (13) in /home/ubuntu/workspace/MyApron/login.php on line 16
+[21-Sep-2017 14:02:53 Asia/Tokyo] PHP Stack trace:
+[21-Sep-2017 14:02:53 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/MyApron/login.php:0
+[21-Sep-2017 14:02:53 Asia/Tokyo] PHP   2. session_start() /home/ubuntu/workspace/MyApron/login.php:16

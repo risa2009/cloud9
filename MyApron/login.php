@@ -86,41 +86,34 @@ if(count($err_msg) ===0) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.O">
-  <link rel="stylesheet" href="./css/MyApron_item.css">
+  <link rel="stylesheet" href="./css/MyApron_form.css">
   <link rel="stylesheet" href="./css/font-awesome.min.css">
   <title>My Apron | ログインページ</title>
 </head>
 <body>
-  <header>
+ <header>
     <div class="container">
       <div class="logo">
-        <a href="index.html">
+        <a href="login.php">
         <img src="./img/logo.png" alt="MyApron">
         </a>
       </div>
-    </div>
+     </div>
   </header>
   <section>
     <div class="container">
-      <div class="login_form">
-        <form method="post" action="login.php">
-          <div class='row'>
-            <label class='form-label'>ユーザー名：</label>
-            <input class='form-input' type="text" name="user_name" placeholder="ユーザー名">
-          </div>
-          <div class='row'>
-            <label class='form-label'>パスワード：</label>
-            <input class='form-input' type="password" name="password" placeholder="パスワード">
-          </div>
-          <input class='login-btn' type="submit" value="ログイン">
-          <div class="register_text">
-            <a href="register.php">ユーザーの新規作成</a>
-          </div>
-        </form>
-      </div>
+      <form method="post" action="login.php">
+        <ul class='login_form'>
+          <li class='form-Tit'>ユーザー名：</li>
+          <li><input class='form-Txt' type="text" name="user_name" placeholder="ユーザー名"></li>
+          <li class='form-Tit'>パスワード：</li>
+          <li><input class='form-Txt' type="password" name="password" placeholder="パスワード"></li>
+          <li class="register_text"><a href="register.php">ユーザーの新規作成</a></li>
+          <li><input class='login-btn' type="submit" value="ログイン"></li>
+        </ul>
+      </form>
     </div>
   </section>
-  
   <footer>
     <small>Copyright&copy;My Apron All Rights Reserved.</small>
   </footer>
