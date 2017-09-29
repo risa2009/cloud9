@@ -1,9 +1,9 @@
 <?php
 /* 最終課題のカート一覧ページ */
 $host = 'localhost';
-$username = 'risayamasaki';   // MySQLのユーザ名
+$username = '';   // MySQLのユーザ名
 $password = '';     // MySQLのパスワード
-$dbname = 'camp';   // MySQLのDB名
+$dbname = '';   // MySQLのDB名
 $charset = 'utf8';   // データベースの文字コード
 // MySQL用のDNS文字列
 $dsn = 'mysql:dbname='.$dbname.';host='.$host.';charset='.$charset;
