@@ -3,7 +3,7 @@
 
 // データベースの接続情報
 //$dsn の代わりにDSNが使えるようになりました。
-define('DB_USER',   'risayamasaki');    // MySQLのユーザ名
+define('DB_USER',   '');    // MySQLのユーザ名
 define('DB_PASSWD', '');    // MySQLのパスワード
 define('DSN', 'mysql:dbname=camp;host=localhost;charset=utf8');  
    
